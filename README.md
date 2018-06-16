@@ -9,9 +9,9 @@ NOTE: If you don't find the appropriate theme, you can export on terminal.sexy. 
 (Terminal.sexy's documentation)[https://github.com/stayradiated/terminal.sexy]
 
 ## Marvel at the beauty
-![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt/master/spacedirt.png)
+![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/spacedirt.png)
 
 ### My current terminal as well
-![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt/master/terminal-prompt.png)
+![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/terminal-prompt.png)
 
 (^ If you're interested I use the bashit framework which is cute, I'm sure ZSH is probably better but that's for nerds, at that point just use the fsh shell)
