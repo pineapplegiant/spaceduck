@@ -8,23 +8,33 @@ NOTE: If you don't find the appropriate theme, you can export on terminal.sexy. 
 
 [Terminal.sexy's documentation](https://github.com/stayradiated/terminal.sexy)
 
-### Marvel at the beauty
+## Marvel at the beauty
 
-Background: #0f2930
-Foreground: #ecf0c1
-8 (Dark Blue): #244f61
-1&9 (Dark Orange): e35b00
-1&10 (Teal): #5cab96
-3&11 (Light Orange): #cb7636
-4&12 (Light Blue): #009fc5
-5&13 (Brown): #6e5346
-6&14 (Tealish Blue): #06afc7
-7 (Dark Blue): #244f61
-15 (Offwhite Blue): #fof1ce
+*Background:* #0f2930
+
+*Foreground:* #ecf0c1
+
+*8 (Dark Blue):* #244f61
+
+*1&9 (Dark Orange):* e35b00
+
+*1&10 (Teal):* #5cab96
+
+*3&11 (Light Orange):* #cb7636
+
+*4&12 (Light Blue):* #009fc5
+
+*5&13 (Brown):* #6e5346
+
+*6&14 (Tealish Blue):* #06afc7
+
+*7 (Dark Blue):* #244f61
+
+*15 (Offwhite Blue):* #fof1ce
 
 ![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/spacedirt.png "Color Palette for Spacedirt")
 
-### My current terminal as well
+## My current terminal as well
 ![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/terminal-prompt.png "Spacedirt terminal.app")
 
 (^ If you're interested I use the bashit framework which is cute, I'm sure ZSH is probably better but that's for nerds, at that point just use the fsh shell)
