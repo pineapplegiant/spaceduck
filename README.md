@@ -9,7 +9,7 @@ NOTE: If you don't find the appropriate theme, you can export on terminal.sexy. 
 [Terminal.sexy's documentation](https://github.com/stayradiated/terminal.sexy)
 
 ### Marvel at the beauty
-![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/spacedirt.png "Color Palette for Spacedirt")
+
 Background: #0f2930
 Foreground: #ecf0c1
 8 (Dark Blue): #244f61
@@ -21,6 +21,8 @@ Foreground: #ecf0c1
 6&14 (Tealish Blue): #06afc7
 7 (Dark Blue): #244f61
 15 (Offwhite Blue): #fof1ce
+
+![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/spacedirt.png "Color Palette for Spacedirt")
 
 ### My current terminal as well
 ![Spacedirt color pallete](https://raw.githubusercontent.com/pineapplegiant/spacedirt-theme/master/terminal-prompt.png "Spacedirt terminal.app")
