@@ -1,4 +1,4 @@
-# Check out my Spacedirt Color Scheme
+# Check out my Spacedust Color Scheme
 It is a literal copy of hallski's [spacedust theme,](https://github.com/hallski/spacedust-theme) which is beautiful in itself. I have simply attempted to reduce and homogenized the colors so they can be more standardized in other versions. Mostly in the OSx Terminal.
 
 I plan to continuosly update and possibley make a light theme as well? And also have a VS Code and ATOM version, of course. 
