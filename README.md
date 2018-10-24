@@ -23,7 +23,7 @@ And then send me a pull request and I'll add your contribution :).
 
 # Colors
 
-![Screenshot :) ]("https://github.com/pineapplegiant/spaceduck-theme/blob/master/colorTheme.png Color pallette ")
+![Screenshot :)](https://github.com/pineapplegiant/spaceduck-theme/blob/master/colorTheme.png "Color pallette ")
 
 
 |     Type          |   Color   | 
