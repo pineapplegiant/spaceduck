@@ -1,5 +1,5 @@
 # Spaceduck Color Scheme
-![Duck Dodgers Image :) ](https://github.com/pineapplegiant/spaceduck-theme/duckdodgers.jpg "Duck Dodgers image")
+![Duck Dodgers Image :) ](https://github.com/pineapplegiant/spaceduck-theme/blob/master/duckdodgers.jpg "Duck Dodgers image")
 
 This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif).
 
@@ -23,6 +23,7 @@ And then send me a pull request and I'll add your contribution :).
 
 # Colors
 
+![Screenshot :) ]("https://github.com/pineapplegiant/spaceduck-theme/blob/master/colorTheme.png Color pallette ")
 |     Type          |   Color   | 
 |   -----------     |:---------:|
 | **Background**    | #0f2930   |
@@ -40,8 +41,6 @@ And then send me a pull request and I'll add your contribution :).
 | **Dark Blue**     | #244f61   | 
 | **Offwhite Blue** | #fof1ce   | 
 
-
-![Screenshot :) ](https://github.com/pineapplegiant/spaceduck-theme/colorTheme.jpg "Color pallette ")
 
 # Slack
 
