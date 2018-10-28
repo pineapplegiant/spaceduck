@@ -25,23 +25,22 @@ And then send me a pull request and I'll add your contribution :).
 
 ![Screenshot :)](https://github.com/pineapplegiant/spaceduck-theme/blob/master/colorTheme.png "Color pallette ")
 
-
-|     Type          |   Color   | 
-|   -----------     |:---------:|
-| **Background**    | #0f2930   |
-| **Foreground**    | #ecf0c1   |
-| **Dark Blue**     | #244f61   | 
-| **Background**    | #0f2930   | 
-| **Foreground**    | #ecf0c1   | 
-| **Dark Blue**     | #244f61   |  
-| **Dark Orange**   | #e35b00   | 
-| **Teal**          | #5cab96   | 
-| **Light Orange**  | #cb7636   | 
-| **Light Blue**    | #009fc5   | 
-| **Brown**         | #6e5346   | 
-| **Tealish Blue**  | #06afc7   | 
-| **Dark Blue**     | #244f61   | 
-| **Offwhite Blue** | #fof1ce   | 
+|     Type              |   Color   |   Escape Code  |
+|   -----------         |:---------:|:--------------:|
+| **Background**        | #0f2930   |"\[\033[0;31m\]"|
+| **Foreground**        | #ecf0c1   |"\[\033[1;37m\]"|
+| **Dark Blue**         | #244f61   |"\[\033[0;31m\]"|
+| **Background**        | #0f2930   |"\[\033[0;31m\]"|
+| **Foreground**        | #ecf0c1   |"\[\033[0;31m\]"|
+| **Dark Blue**         | #244f61   |"\[\033[0;31m\]"|
+| **Dark Orange**       | #e35b00   |"\[\033[0;31m\]"|
+| **Teal**              | #5cab96   |"\[\033[0;31m\]"|
+| **Light Orange**      | #cb7636   |"\[\033[0;31m\]"|
+| **Light Blue**        | #009fc5   |"\[\033[0;31m\]"|
+| **Brown**             | #6e5346   |"\[\033[0;31m\]"|
+| **Tealish Blue**      | #06afc7   |"\[\033[0;31m\]"|
+| **Dark Blue**         | #244f61   |"\[\033[0;31m\]"|
+| **Offwhite Blue**     | #fof1ce   |"\[\033[0;31m\]"|
 
 
 # Slack
@@ -52,6 +51,6 @@ Go to User Menu > Preferences > Sidebar Theme
 In the bottom of the window, look for a "customize your theme and share it with others" link
 Copy and paste the values below:
 
-```#0f2930,#009FC5,#E35B00,#EBC562,#B2ABBF,#ecf0c1,#5cab96,#DB6668```
+```#0f2930,#009FC5,#E35B00,#EBC562,#5CAB96,#ecf0c1,#5cab96,#B2ABBF```
 
 
