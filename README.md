@@ -25,23 +25,23 @@ And then send me a pull request and I'll add your contribution :).
 
 ![Screenshot :)](https://github.com/pineapplegiant/spaceduck-theme/blob/master/colorTheme.png "Color pallette ")
 
-|     Type              |   Color   |   Escape Code  |
-|   -----------         |:---------:|:--------------:|
-| **Background**        | #0f2930   |"\[\033[0;31m\]"|
-| **Foreground**        | #ecf0c1   |"\[\033[1;37m\]"|
-| **Dark Blue**         | #244f61   |"\[\033[0;31m\]"|
-| **Background**        | #0f2930   |"\[\033[0;31m\]"|
-| **Foreground**        | #ecf0c1   |"\[\033[0;31m\]"|
-| **Dark Blue**         | #244f61   |"\[\033[0;31m\]"|
-| **Dark Orange**       | #e35b00   |"\[\033[0;31m\]"|
-| **Teal**              | #5cab96   |"\[\033[0;31m\]"|
-| **Light Orange**      | #cb7636   |"\[\033[0;31m\]"|
-| **Light Blue**        | #009fc5   |"\[\033[0;31m\]"|
-| **Brown**             | #6e5346   |"\[\033[0;31m\]"|
-| **Tealish Blue**      | #06afc7   |"\[\033[0;31m\]"|
-| **Dark Blue**         | #244f61   |"\[\033[0;31m\]"|
-| **Offwhite Blue**     | #fof1ce   |"\[\033[0;31m\]"|
+|     Normal            |   Color   |  Bright        |  Color  |
+|   -----------         |:---------:|:--------------:|---------|
+| **Black**             | #0f2930   | **Blue**       | #244f61 |
+| **Foreground/Select** | #ecf0c1   |  n/a           |    n/a  |
+| **Selection**         | #05496f   |  n/a           |    n/a  |
+| **Links**             | #005bbb   |  n/a           |    n/a  |
+| **Red**               | #e35b00   | **Red**        | #e35b00 |
+| **Green**             | #5cab96   | **Green**      | #5cab96 |
+| **Yellow**            | #cb7636   | **Yellow**     | #cb7636 |
+| **Blue**              | #009fc5   | **Blue**       | #06AFC7 |
+| **Magenta**           | #ebc562   | **Magenta**    | #ebc562 |
+| **Cyan**              | #b2abbf   | **Cyan**       | #b2abbf |
+| **White**             | #244f61   | **White(blue)**| #f0f1ce |
 
+# Improvements
+
+I really want to change the syntax highlighting for different programming languages, so I need to play with the brights and stuff.
 
 # Slack
 
@@ -51,6 +51,6 @@ Go to User Menu > Preferences > Sidebar Theme
 In the bottom of the window, look for a "customize your theme and share it with others" link
 Copy and paste the values below:
 
-```#0f2930,#009FC5,#E35B00,#EBC562,#5CAB96,#ecf0c1,#5cab96,#B2ABBF```
+```#0F2930,#244F61,#e35b00,#FFFFFF,#244f61,#ecf0c1,#5cab96,#B2ABBF```
 
 
