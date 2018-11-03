@@ -4,16 +4,17 @@
 This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif).
 
 I simply wanted a dark/space-like-theme that made you feel futuristic and badass. 
-I didn't really like Solarized because I thought it looked like it was made by a 5 year old (with all the colors and all).
-And, the yellow/pale-off-white background from Solarized light looks like throw-up. 
+I didn't really like Solarized because I thought it looked like it was made by a 5 year old.
 
 On a side-note, I do think [Dracula](https://draculatheme.com/) is very pretty too (if you're in between color-schemes).
+I've used their layout as kind of inspiration for this theme too.
+
 
 So yeah, this is my attempt at making my own color theme. 
 So far it's mostly a copy of hallski's [spacedust theme](https://github.com/hallski/spacedust-theme). 
-There's only some minute changes; I want the purples and green to be a  bit more prominent and I wanted a darker background.
+There's only some minute changes; I want the purples and green to be a bit more prominent and I wanted a darker background.
 
-This is an ongoing project.
+It's is an ongoing project.
 
 # Contributing
 
@@ -23,21 +24,23 @@ And then send me a pull request and I'll add your contribution :).
 
 # Colors
 
-![Screenshot :)](https://github.com/pineapplegiant/spaceduck-theme/blob/master/colorTheme.png "Color pallette ")
+## Color Palette
 
-|     Normal            |   Color   |  Bright        |  Color  |
-|   -----------         |:---------:|:--------------:|---------|
-| **Black**             | #0f2930   | **Blue**       | #244f61 |
-| **Foreground/Select** | #ecf0c1   |  n/a           |    n/a  |
-| **Selection**         | #05496f   |  n/a           |    n/a  |
-| **Links**             | #005bbb   |  n/a           |    n/a  |
-| **Red**               | #e35b00   | **Red**        | #e35b00 |
-| **Green**             | #5cab96   | **Green**      | #5cab96 |
-| **Yellow**            | #cb7636   | **Yellow**     | #cb7636 |
-| **Blue**              | #009fc5   | **Blue**       | #06AFC7 |
-| **Magenta**           | #ebc562   | **Magenta**    | #ebc562 |
-| **Cyan**              | #b2abbf   | **Cyan**       | #b2abbf |
-| **White**             | #244f61   | **White(blue)**| #f0f1ce |
+Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/eyedropper.png)
+---          | ---       | ---           | ---             | ---
+Background   | `#0a1e24` | `10 30 36`    | `194° 57% 9%`   | ![Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/background.png)
+Current Line | `#0F2930` | `15 41 48`    | `193° 52% 12%`  | ![Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/current-line.png)
+Selection    | `#0F2930` | `15 41 48`    | `193° 52% 12%`  | ![Selection Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/selection.png)
+Foreground   | `#ecf0c1` | `236 240 193` | `65° 61% 85%`   | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/foreground.png)
+Comment      | `#244f61` | `36 79 97`    | `198° 46% 26%`  | ![Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/comment.png)
+Cyan         | `#009fc5` | `0 159 197`   | `192° 100% 39%` | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/cyan.png)
+Green        | `#5cab96` | `92 171 150`  | `164° 32% 52%`  | ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/green.png)
+Orange       | `#cb7636` | `203 118 54`  | `26° 59% 50%`   | ![Orange Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/orange.png)
+Blue         | `#244F61` | `36 79 97`    | `198° 46% 26%`  | ![Blue Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/blue.png)
+Purple       | `#b2abbf` | `178 171 191` | `261° 14% 71%`  | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
+Red          | `#e35b00` | `229 91 0`    | `24° 100% 45%`  | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
+Yellow       | `#ebc562` | `235 197 198` | `43° 77% 65%`   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
+
 
 # Improvements
 
