@@ -54,6 +54,6 @@ Go to User Menu > Preferences > Sidebar Theme
 In the bottom of the window, look for a "customize your theme and share it with others" link
 Copy and paste the values below:
 
-```#0F2930,#244F61,#e35b00,#FFFFFF,#244f61,#ecf0c1,#5cab96,#B2ABBF```
+```#0a1e24,#009fc5,#cb7636,#FFFFFF,#0F2931,#FFFFFF,#53B299,#8886CA```
 
 
