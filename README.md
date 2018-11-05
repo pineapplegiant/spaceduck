@@ -1,12 +1,12 @@
 # Spaceduck Color Scheme
-![Duck Dodgers Image :) ](https://github.com/pineapplegiant/spaceduck-theme/blob/master/duckdodgers.jpg "Duck Dodgers image")
+![Duck Dodgers Image :) ](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/duckdodgers.jpg "Duck Dodgers image")
 
 This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif).
 
 I simply wanted a dark/space-like-theme that made you feel futuristic and badass. 
 I didn't really like Solarized because I thought it looked like it was made by a 5 year old.
 
-This is my attempt at making my own color theme. It's is an ongoing project.
+This is my attempt at making my own color theme. It's an ongoing project.
 
 # Contributions
 
@@ -14,35 +14,38 @@ Hopefully soon...
 
 So far it's just been me and my colors.
 
-![Me and my Colors](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/colors.gif)
+![Me and my Colors](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/colors.gif)
 
 
 
 
 ## Color Palette
 
-Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/eyedropper.png)
+Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/eyedropper.png)
 ---          | ---       | ---           | ---             | ---
-Background   | `#0a1e24` | `10 30 36`    | `194° 57% 9%`   | ![Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/background.png)
-Current Line | `#0F2930` | `15 41 48`    | `193° 52% 12%`  | ![Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/current-line.png)
-Selection    | `#0F2930` | `15 41 48`    | `193° 52% 12%`  | ![Selection Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/selection.png)
-Foreground   | `#ecf0c1` | `236 240 193` | `65° 61% 85%`   | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/foreground.png)
-Comment      | `#244f61` | `36 79 97`    | `198° 46% 26%`  | ![Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/comment.png)
-Cyan         | `#009fc5` | `0 159 197`   | `192° 100% 39%` | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/cyan.png)
-Green        | `#53B299` | `83 178 153`  | `164° 38% 51%`  | ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/green.png)
-Orange       | `#cb7636` | `203 118 54`  | `26° 59% 50%`   | ![Orange Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/orange.png)
-Space-Purple | `#8886CA` | `136 134 202` | `242° 39% 66%`  | ![Space-Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/space-purple.png)
-Purple       | `#b2abbf` | `178 171 191` | `261° 14% 71%`  | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
-Red          | `#e35b00` | `229 91 0`    | `24° 100% 45%`  | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
-Yellow       | `#ebc562` | `235 197 198` | `43° 77% 65%`   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
+Background   | `#0F111B` | `15 17 27`    | `230° 29% 8%`   | ![Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/background.png)
+Current Line | `#272b45` | `39 43 69`    | `231° 28% 21%`  | ![Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/current-line.png)
+Selection    | `#272b45` | `39 43 69`    | `231° 28% 21%`  | ![Selection Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/selection.png)
+Foreground   | `#ECF0C1` | `236 240 193` | `65° 61% 85%`   | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/foreground.png)
+Comment      | `#244F61` | `36 79 97`    | `198° 46% 26%`  | ![Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/comment.png)
+Cyan         | `#009FC5` | `0 159 197`   | `192° 100% 39%` | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/cyan.png)
+Green        | `#51A77E` | `81 167 126`  | `151° 35% 49%`  | ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/green.png)
+Gray         | `#A5A7AC` | `165 167 172` | `223° 4% 66%`   | ![Gray Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/gray.png)
+Blue | `#` | `136 134 202` | `242° 39% 66%`  | ![Space-Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/space-purple.png)
+Purple       | `#8970CF` | `137 112 207` | `256° 50% 63%`  | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/purple.png)
+Red          | `#E33400` | `227 52 0`    | `14° 100% 45%`  | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/red.png)
+Yellow       | `#EBC562` | `235 197 198` | `43° 77% 65%`   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/yellow.png)
 
 
 
 # Credits
 
-Hallski's [spacedust theme](https://github.com/hallski/spacedust-theme) inspired me to create my 
-On a side-note, I do think [Dracula](https://draculatheme.com/) is very pretty (if you're in between color-schemes).
-I've used their layout as kind of inspiration for this theme too.
+* Hallski's [spacedust theme](https://github.com/hallski/spacedust-theme) inspired me to create this in the first place. 
+
+* [Vim Tokyo](https://github.com/koirand/tokyo-metro.vim) because this is mostly a ripoff of that theme.
+
+* [Dracula](https://draculatheme.com/)! It's terribly pretty, and I've taken many artistic elements from them.  
+
 
 
 
