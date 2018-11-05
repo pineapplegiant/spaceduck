@@ -37,7 +37,7 @@ Red          | `#E33400` | `227 52 0`    | `14° 100% 45%`  | ![Red Color](https
 Yellow       | `#EBC562` | `235 197 198` | `43° 77% 65%`   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/yellow.png)
 
 
-![Screenshot](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/colors.gif)
+![Screenshot](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/screenshot.png)
 
 # Credits
 
