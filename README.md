@@ -34,6 +34,7 @@ Gray         | `#A5A7AC` | `165 167 172` | `223° 4% 66%`   | ![Gray Color](http
 Purple       | `#8970CF` | `137 112 207` | `256° 50% 63%`  | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
 Red          | `#E33400` | `227 52 0`    | `14° 100% 45%`  | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
 Yellow       | `#EBC562` | `235 197 198` | `43° 77% 65%`   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
+White        | `#FFFFFF` | `255 255 255` | `0° 100% 100%`  | ![White Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/white.png)
 
 
 # Credits
