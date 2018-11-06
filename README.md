@@ -1,5 +1,5 @@
 # Spaceduck Color Scheme
-![Duck Dodgers Image :) ](https://github.com/pineapplegiant/spaceduck-theme/blob/master/duckdodgers.jpg "Duck Dodgers image")
+![Duck Dodgers Image :) ](https://raw.githubusercontent.com/pineapplegiant/spaceduck-theme/master/img/duckdodgers.jpg)
 
 This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif).
 
