@@ -1,0 +1,14 @@
+name: 'spaceduck'
+version: '1.0.0'
+license: 'MIT'
+author: 'Guillermo Rodriguez'
+url: 'https://github.com/pineapplegiant/spaceduck-theme'
+description: 'Deep-space duck Theme'
+colorschemes:
+  - name: 'spaceduck'
+    background: 'dark'
+    palette: 'spaceduck'
+airline:
+  - name: 'spaceduck'
+    palette: 'spaceduck'
+    style: 'spaceduck'

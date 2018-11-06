@@ -1,0 +1,81 @@
+# BASE UI
+ColorColumn: ''
+Conceal: ''
+Cursor: ''
+CursorIM: ''
+CursorColumn: ''
+CursorLine: 'Selection'
+Directory: ''
+DiffAdd: ''
+DiffChange: ''
+DiffDelete: ''
+DiffText: ''
+ErrorMsg: 'Red'
+VertSplit: ''
+Folded: ''
+FoldColumn: ''
+SignColumn: ''
+IncSearch: ''
+LineNr: 'Selection'
+MatchParen: ''
+ModeMsg: ''
+MoreMsg: ''
+NonText: ''
+Normal: ''
+PMenu: ''
+PMenuSel: ''
+PmenuSbar: ''
+PmenuThumb: ''
+Question: ''
+Search: ''
+SpecialKey: ''
+SpellBad: ''
+SpellLocal: ''
+SpellCap: ''
+SpellRare: ''
+StatusLine: ''
+StatusLineNC: ''
+TabLine: ''
+TabLineFill: ''
+TabLineSel: ''
+Title: ''
+Visual: 'Yellow'
+VisualNOS: ''
+WarningMsg: ''
+WildMenu: ''
+# BASE SYNTAX
+Comment: 'Comment'
+Constant: 'Gray'
+String: 'Gray' # Constant
+Character: 'Gray' # Constant
+Boolean: 'Gray' # Constant
+Number: 'Gray' # Constant
+Float: 'Gray' # Constant
+Identifier: 'Purple'
+Function: 'Purple' # Identifier
+Statement: 'Foreground'
+Conditional: 'Foreground' # Statement
+Repeat: 'Foreground' # Statement
+Label: 'Foreground' # Statement
+Operator: 'Foreground' # Statement
+Keyword: 'Foreground' # Statement
+Exception: 'Foreground' # Statement
+PreProc: 'Yellow'
+Include: 'Yellow' # PreProc
+Define: 'Yellow' # PreProc
+Macro: 'Yellow' # PreProc
+PreCondit: 'Yellow' # PreProc
+Type: 'Green'
+StorageClass: 'Green' # Type
+Structure: 'Green' # Type
+Typedef: 'Green' # Type
+Special: 'Red'
+SpecialChar: 'Red' # Special
+Tag: 'Red' # Special
+Delimiter: 'Red' # Special
+SpecialComment: 'Red' # Special
+Debug: 'Red' # Special
+Underlined: 'Comment'
+Ignore: 'Comment - b'
+Error: 'Comment - b'
+Todo: 'Comment - b'

@@ -31,7 +31,6 @@ Comment      | `#244F61` | `36 79 97`    | `198° 46% 26%`  | ![Comment Color](h
 Cyan         | `#009FC5` | `0 159 197`   | `192° 100% 39%` | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/cyan.png)
 Green        | `#51A77E` | `81 167 126`  | `151° 35% 49%`  | ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/green.png)
 Gray         | `#A5A7AC` | `165 167 172` | `223° 4% 66%`   | ![Gray Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/gray.png)
-Blue | `#` | `136 134 202` | `242° 39% 66%`  | ![Space-Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/space-purple.png)
 Purple       | `#8970CF` | `137 112 207` | `256° 50% 63%`  | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/purple.png)
 Red          | `#E33400` | `227 52 0`    | `14° 100% 45%`  | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/red.png)
 Yellow       | `#EBC562` | `235 197 198` | `43° 77% 65%`   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/deep-space-mode/img/yellow.png)
