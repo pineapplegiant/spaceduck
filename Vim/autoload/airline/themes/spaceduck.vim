@@ -4,47 +4,111 @@
 " URL:https://github.com/pineapplegiant/spaceduck-theme
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2018/11/05 20:08
+" Last Change: 2018/11/08 21:19
 " ============================================================
 
+" Spaceduck vim-airline theme
+"
+
+" Color palette
+let s:gui01 = "#44475a" " Background
+let s:gui02 = "#5f6a8e" " k 
+let s:gui03 = "#ffb86c"
+let s:gui04 = "#bd93f9"
+let s:gui05 = "#ff5555"
+let s:gui06 = "#f1fa8c" " Visual
+let s:gui07 = "#50fa7b" " Insert
+let s:gui08 = "#bd93f9" " Normal
+let s:cterm01 = "236"
+let s:cterm02 = "61"
+let s:cterm03 = "215"
+let s:cterm04 = "141"
+let s:cterm05 = "160"
+let s:cterm06 = "228"
+let s:cterm07 = "84"
+let s:cterm08 = "141"
+
+let s:guiWhite = "#f8f8f2"
+let s:guiBlack = "#282a36"
+let s:ctermWhite = "15"
+let s:ctermBlack = "16"
+
+let s:ctermChangedColor = "59"
+let s:guiChangedColor = "#5f5f5f"
+
+" Normal mode
+let s:N1 = [ s:guiBlack , s:gui08 , s:ctermBlack , s:cterm08 ]
+let s:N2 = [ s:guiWhite , s:gui02 , s:ctermWhite , s:cterm02 ]
+let s:N3 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01 ]
+
+" Insert mode
+let s:I1 = [ s:guiBlack , s:gui07 , s:ctermBlack , s:cterm07 ]
+let s:I2 = [ s:guiWhite , s:gui02 , s:ctermWhite , s:cterm02 ]
+let s:I3 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01 ]
+
+" Visual mode
+let s:V1 = [ s:guiBlack , s:gui06 , s:ctermBlack , s:cterm06 ]
+let s:V2 = [ s:guiWhite , s:gui02 , s:ctermWhite , s:cterm02 ]
+let s:V3 = [ s:guiWhite , s:gui01 , s:ctermWhite, s:cterm01 ]
+
+" Replace mode
+let s:R1 = [ s:guiBlack , s:gui05 , s:ctermWhite, s:cterm05 ]
+let s:R2 = [ s:guiWhite , s:gui02 , s:ctermWhite, s:cterm02 ]
+let s:R3 = [ s:guiWhite , s:gui01 , s:ctermWhite, s:cterm01 ]
+
+" File changed
+let s:changed = [ s:guiWhite , s:guiChangedColor , s:ctermWhite , s:ctermChangedColor ]
+
 let g:airline#themes#spaceduck#palette = {}
+let g:airline#themes#spaceduck#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let g:airline#themes#spaceduck#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let g:airline#themes#spaceduck#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#spaceduck#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#spaceduck#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
-let s:normal1 = [ "#000000", "#8970CF", 0, 98 ]
-let s:normal2 = [ "#244F61", "#272b45", 23, 236 ]
-let s:normal3 = [ "#ECF0C1", "#0F111B", 255, 233 ]
-let g:airline#themes#spaceduck#palette.normal = airline#themes#generate_color_map(s:normal1, s:normal2, s:normal3)
+" Inactive mode
+let s:IN1 = [ s:gui04 , s:guiWhite , s:cterm04 , s:ctermWhite ]
+let s:IN2 = [ s:gui04 , s:gui01 , s:cterm04  , s:cterm01 ]
+let s:IA = [ s:IN1[1] , s:IN2[1] , s:IN1[3] , s:IN2[3] , '' ]
+let g:airline#themes#spaceduck#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 
-let s:insert1 = [ "#000000", "#51A77E", 0, 72 ]
-let s:insert2 = [ "#244F61", "#272b45", 23, 236 ]
-let s:insert3 = [ "#ECF0C1", "#0F111B", 255, 233 ]
-let g:airline#themes#spaceduck#palette.insert = airline#themes#generate_color_map(s:insert1, s:insert2, s:insert3)
+" Warning info
+let s:WARNING = [ s:guiBlack, s:gui03, s:ctermBlack, s:cterm03 ]
+let s:ERROR = [ s:guiWhite, s:gui05, s:ctermWhite, s:cterm05 ]
 
-let s:replace1 = [ "#000000", "#009FC5", 0, 38 ]
-let s:replace2 = [ "#244F61", "#272b45", 23, 236 ]
-let s:replace3 = [ "#ECF0C1", "#0F111B", 255, 233 ]
-let g:airline#themes#spaceduck#palette.replace = airline#themes#generate_color_map(s:replace1, s:replace2, s:replace3)
+let g:airline#themes#spaceduck#palette.normal.airline_warning = s:WARNING
+let g:airline#themes#spaceduck#palette.insert.airline_warning = s:WARNING
+let g:airline#themes#spaceduck#palette.visual.airline_warning = s:WARNING
+let g:airline#themes#spaceduck#palette.replace.airline_warning = s:WARNING
 
-let s:visual1 = [ "#000000", "#EBC562", 0, 185 ]
-let s:visual2 = [ "#244F61", "#272b45", 23, 236 ]
-let s:visual3 = [ "#ECF0C1", "#0F111B", 255, 233 ]
-let g:airline#themes#spaceduck#palette.visual = airline#themes#generate_color_map(s:visual1, s:visual2, s:visual3)
+let g:airline#themes#spaceduck#palette.normal.airline_error = s:ERROR
+let g:airline#themes#spaceduck#palette.insert.airline_error = s:ERROR
+let g:airline#themes#spaceduck#palette.visual.airline_error = s:ERROR
+let g:airline#themes#spaceduck#palette.replace.airline_error = s:ERROR
 
-let s:inactive1 = [ "#000000", "#244F61", 0, 23 ]
-let s:inactive2 = [ "#244F61", "#272b45", 23, 236 ]
-let s:inactive3 = [ "#ECF0C1", "#0F111B", 255, 233 ]
-let g:airline#themes#spaceduck#palette.inactive = airline#themes#generate_color_map(s:inactive1, s:inactive2, s:inactive3)
+" File modified and not saved
+let g:airline#themes#spaceduck#palette.normal_modified = airline#themes#generate_color_map(s:N1, s:N2, s:changed)
+let g:airline#themes#spaceduck#palette.insert_modified = airline#themes#generate_color_map(s:I1, s:I2, s:changed)
+let g:airline#themes#spaceduck#palette.replace_modified = airline#themes#generate_color_map(s:R1, s:R2, s:changed)
+let g:airline#themes#spaceduck#palette.visual_modified = airline#themes#generate_color_map(s:V1, s:V2, s:changed)
 
+let g:airline#themes#spaceduck#palette.normal_modified.airline_warning = s:WARNING
+let g:airline#themes#spaceduck#palette.insert_modified.airline_warning = s:WARNING
+let g:airline#themes#spaceduck#palette.visual_modified.airline_warning = s:WARNING
+let g:airline#themes#spaceduck#palette.replace_modified.airline_warning = s:WARNING
+
+let g:airline#themes#spaceduck#palette.normal_modified.airline_error = s:ERROR
+let g:airline#themes#spaceduck#palette.insert_modified.airline_error = s:ERROR
+let g:airline#themes#spaceduck#palette.visual_modified.airline_error = s:ERROR
+let g:airline#themes#spaceduck#palette.replace_modified.airline_error = s:ERROR
+
+" CtrlP
 if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 
-let s:CP1 = [ "#000000", "#009FC5", 0, 38 ]
-let s:CP2 = [ "#244F61", "#272b45", 23, 236 ]
-let s:CP3 = [ "#ECF0C1", "#0F111B", 255, 233 ]
+let s:CP1 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01 ]
+let s:CP2 = [ s:guiWhite , s:gui02 , s:ctermWhite , s:cterm02 ]
+let s:CP3 = [ s:guiWhite , s:gui08 , s:ctermWhite , s:cterm08 ]
 
 let g:airline#themes#spaceduck#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
-
-" ===================================
-" Generated by Estilo 1.3.3
-" https://github.com/jacoborus/estilo
-" ===================================
