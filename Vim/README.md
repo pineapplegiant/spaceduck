@@ -1,7 +1,6 @@
-# This Vim color scheme was created with [Estilo](https://github.com/jacoborus/estilo)
+# This Vim color scheme is under construction
 
 NOTE THIS SUCKS DONT USE IT YET
-
 
 Vim stuff is in the colors folder. If you want this theme add that your vim-config:
 
