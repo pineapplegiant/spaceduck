@@ -39,11 +39,10 @@ White        | `#FFFFFF` | `255 255 255` |   | ![White Color](https://github.com
 
 # Credits
 
-* [Iceberg](https://draculatheme.com/)! This theme is the working boilerplate for this theme.
-* [Vim Tokyo](https://github.com/koirand/tokyo-metro.vim) because this is mostly a ripoff of that theme.
-* Hallski's [spacedust theme](https://github.com/hallski/spacedust-theme) inspired me to create this in the first place. 
-* [Dracula](https://draculatheme.com/)! It's terribly pretty, and I've taken many artistic elements from them.  
-
+* [Iceberg](https://draculatheme.com/)! This theme is the working boilerplate at the moment.
+* [Vim Tokyo](https://github.com/koirand/tokyo-metro.vim) this is kinda a ripoff of that theme.
+* Hallski's [spacedust theme](https://github.com/hallski/spacedust-theme) inspired me to create this in the first place.
+* [Dracula](https://draculatheme.com/)! It's terribly pretty, and I've taken many artistic elements from them.
 
 
 
