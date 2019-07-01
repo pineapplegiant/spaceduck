@@ -21,20 +21,20 @@ So far it's just been me and my colors.
 
 ## Color Palette
 
-Palette      | Hex       | RGB           | HSV             | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/eyedropper.png)
----          | ---       | ---           | ---             | ---
-Background   | `#0F111B` | `15 17 27`    |   | ![Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/background.png)
-Current Line | `#272b45` | `39 43 69`    |   | ![Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/current-line.png)
-Selection    | `#272b45` | `39 43 69`    |   | ![Selection Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/selection.png)
-Foreground   | `#ECF0C1` | `236 240 193` |   | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/foreground.png)
-Comment      | `#244F61` | `36 79 97`    |   | ![Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/comment.png)
-Cyan         | `#009FC5` | `0 159 197`   |   | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/cyan.png)
-Green        | `#51A77E` | `81 167 126`  |   | ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/green.png)
-Gray         | `#A5A7AC` | `165 167 172` |   | ![Gray Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/gray.png)
-Purple       | `#8970CF` | `137 112 207` |   | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
-Red          | `#E33400` | `227 52 0`    |   | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
-Yellow       | `#EBC562` | `235 197 198` |   | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
-White        | `#FFFFFF` | `255 255 255` |   | ![White Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/white.png)
+Palette      | Hex       | RGB           | HSV              | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/eyedropper.png)
+---          | ---       | ---           | ---              | ---
+Background   | `#0F111B` | `15, 17, 27`    | `230, 44.4, 10.6`| ![Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/background.png)
+Current Line | `#272b45` | `39, 43, 69`    | `232, 43.5, 27.1`| ![Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/current-line.png)
+Selection    | `#272b45` | `39, 43, 69`    | `232, 43.5, 27.1`| ![Selection Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/selection.png)
+Foreground   | `#ECF0C1` | `236, 240, 193` | `65, 19.6, 94.1` | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/foreground.png)
+Comment      | `#244F61` | `36, 79, 97`    | `198, 62.9, 38.0`| ![Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/comment.png)
+Cyan         | `#009FC5` | `0, 159, 197`   | `192, 100, 77.3` | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/cyan.png)
+Green        | `#51A77E` | `81, 167, 126`  | `151, 51.5, 65.5`| ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/green.png)
+Gray         | `#A5A7AC` | `165, 167, 172` | `223, 4.1, 67.5` | ![Gray Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/gray.png)
+Purple       | `#8970CF` | `137, 112, 207` | `256, 45.9, 81.2`| ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
+Red          | `#E33400` | `227, 52, 0`    | `14, 100, 89`    | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
+Yellow       | `#EBC562` | `235, 197, 198` | `43, 58.3, 92.2` | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
+White        | `#FFFFFF` | `255, 255, 255` | `0, 0, 100`      | ![White Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/white.png)
 
 
 # Credits
