@@ -8,7 +8,7 @@
 "
 " File:       spaceduck.vim
 " Maintainer: pineapplegiant.com <grod937@gmail.com>
-" Modified:   Monday July 15, at 04:04 PM MDT
+" Modified:   Tuesday July 16, at 01:50 AM MDT
 " License:    MIT
 
 if !has('gui_running') && &t_Co < 256
@@ -61,7 +61,7 @@ hi! PreProc ctermfg=99 guifg=#8970CF
 hi! Question ctermfg=99 guifg=#8970CF
 hi! QuickFixLine ctermbg=236 ctermfg=230 guibg=#272c42 guifg=#ecf0c1
 " TODO: Need to FIX
-hi! Search ctermbg=234 ctermfg=0 guibg=#16172d guifg=#ffffff
+hi! Search ctermbg=237 ctermfg=252 guibg=#114fd6 guifg=#c1c3cc
 hi! SignColumn ctermbg=233 ctermfg=24 guibg=#0F111B guifg=#444b71
 hi! Special ctermfg=99 guifg=#8970CF
 hi! SpellBad ctermbg=95 ctermfg=230 gui=undercurl guisp=#e33400
@@ -70,10 +70,10 @@ hi! SpellLocal ctermbg=23 ctermfg=230 gui=undercurl guisp=#ecf0c1
 hi! SpellRare ctermbg=97 ctermfg=230 gui=undercurl guisp=#ebc562
 hi! Statement ctermfg=72 gui=NONE guifg=#51a77e
 " Vim special stuff
-hi! StatusLine cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#0f111b guifg=#444b71 term=reverse
-hi! StatusLineTerm cterm=reverse ctermbg=234 ctermfg=245 gui=reverse guibg=#17171b guifg=#818596 term=reverse
-hi! StatusLineNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
-hi! StatusLineTermNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
+hi! StatusLine cterm=reverse ctermbg=60 ctermfg=233 gui=reverse guibg=#444b71 guifg=#0f111b term=reverse
+hi! StatusLineTerm cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#0f111b guifg=#444b71 term=reverse
+hi! StatusLineNC cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#0f111b guifg=#0f1117
+hi! StatusLineTermNC cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#17171b guifg=#0f1117
 hi! StorageClass ctermfg=72 guifg=#51a77e
 hi! String ctermfg=39 guifg=#009FC5
 hi! Structure ctermfg=39 guifg=#009FC5

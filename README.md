@@ -17,18 +17,18 @@ So far it's just been me and my colors.
 
 ## Color Palette
 
-Palette       | Hex       | HSV/HSB            RGB              | Cterm |  [Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/eyedropper.png)
----           | ---       | ---               | ---             | --    |  --
-Background    | `#0f111b` | `230, 44, 11`     | `15, 17, 27`    | `233` |  [Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/background.png)
-Current Line  | `#16172d` | `237, 51, 18`     | `22, 23, 45`    | `234` |  [Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/current-line.png)
-Foreground    | `#ecf0c1` | `65, 20, 94`      | `236, 240, 193` | `230` |  [Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/foreground.png)
-Comment       | `#444b71` | `231, 40, 44`     | `67, 69, 112`   | `60`  |  [Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/comment.png)
-Cyan          | `#009fc5` | `192, 100, 77`    | `0, 159, 197`   | `39`  |  [Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/cyan.png)
-Green         | `#51a77e` | `151, 51, 65`     | `81, 167, 126`  | `35`  |  [Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/green.png)
-Purple        | `#8970cf` | `256, 46, 81`     | `137, 112, 207` | `99`  |  [Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
-Red           | `#e33400` | `14, 100, 89`     | `227, 52, 0`    | `202` |  [Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
-Yellow        | `#ffd700` | `51, 100, 100`    | `235, 215, 0`   | `220` |  [Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
-Orange        | `#e09100` | `39, 100, 88`     | `255, 255, 255` | `214` |  [Orange Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/orange.png)
+Palette       | Hex       | HSV/HSB           |RGB              | Cterm | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/eyedropper.png)
+---           | ---       | ---               | ---             | --    | --
+Background    | `#0f111b` | `230, 44, 11`     | `15, 17, 27`    | `233` | ![Background Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/background.png)
+Current Line  | `#16172d` | `237, 51, 18`     | `22, 23, 45`    | `234` | ![Current Line Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/current-line.png)
+Foreground    | `#ecf0c1` | `65, 20, 94`      | `236, 240, 193` | `230` | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/foreground.png)
+Comment       | `#444b71` | `231, 40, 44`     | `67, 69, 112`   | `60`  | ![Comment Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/comment.png)
+Cyan          | `#009fc5` | `192, 100, 77`    | `0, 159, 197`   | `39`  | ![Cyan Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/cyan.png)
+Green         | `#51a77e` | `151, 51, 65`     | `81, 167, 126`  | `35`  | ![Green Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/green.png)
+Purple        | `#8970cf` | `256, 46, 81`     | `137, 112, 207` | `99`  | ![Purple Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/purple.png)
+Red           | `#e33400` | `14, 100, 89`     | `227, 52, 0`    | `202` | ![Red Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/red.png)
+Yellow        | `#ffd700` | `51, 100, 100`    | `235, 215, 0`   | `220` | ![Yellow Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/yellow.png)
+Orange        | `#e09100` | `39, 100, 88`     | `255, 255, 255` | `214` | ![Orange Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/orange.png)
 
 
 # Credits
