@@ -70,10 +70,10 @@ hi! SpellLocal ctermbg=23 ctermfg=230 gui=undercurl guisp=#ecf0c1
 hi! SpellRare ctermbg=97 ctermfg=230 gui=undercurl guisp=#ebc562
 hi! Statement ctermfg=72 gui=NONE guifg=#51a77e
 " Vim special stuff
-hi! StatusLine cterm=reverse ctermbg=60 ctermfg=233 gui=reverse guibg=#444b71 guifg=#0f111b term=reverse
+hi! StatusLine cterm=reverse ctermbg=60 ctermfg=233 gui=reverse guibg=#0f111b guifg=#444b71 term=reverse
 hi! StatusLineTerm cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#0f111b guifg=#444b71 term=reverse
-hi! StatusLineNC cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#0f111b guifg=#0f1117
-hi! StatusLineTermNC cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#17171b guifg=#0f1117
+hi! StatusLineNC cterm=reverse ctermbg=234 ctermfg=60 gui=reverse guibg=#16172d guifg=#0f1117
+hi! StatusLineTermNC cterm=reverse ctermbg=234 ctermfg=60 gui=reverse guibg=#16172d guifg=#0f1117
 hi! StorageClass ctermfg=72 guifg=#51a77e
 hi! String ctermfg=39 guifg=#009FC5
 hi! Structure ctermfg=39 guifg=#009FC5
@@ -85,7 +85,7 @@ hi! Title ctermfg=214 gui=NONE guifg=#e09100
 hi! Todo ctermbg=234 ctermfg=99 guibg=#45493e guifg=#8970CF
 hi! Type ctermfg=72 gui=NONE guifg=#51a77e
 hi! Underlined cterm=underline ctermfg=72 gui=underline guifg=#51a77e term=underline
-hi! VertSplit cterm=NONE ctermbg=233 ctermfg=233 gui=NONE guibg=#0f1117 guifg=#0f1117
+hi! VertSplit cterm=NONE ctermbg=233 ctermfg=60 gui=NONE guibg=#0f1117 guifg=#444b71
 "Visualbg
 hi! Visual ctermbg=236 guibg=#272c42
 hi! WildMenu ctermbg=255 ctermfg=234 guibg=#d4d5db guifg=#17171b
