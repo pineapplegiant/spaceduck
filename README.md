@@ -44,6 +44,8 @@ Go to User Menu > Preferences > Sidebar Theme
 In the bottom of the window, look for a "customize your theme and share it with others" link
 Copy and paste the values below:
 
-```#0F111B,#8970CF,#8970CF,#FFFFFF,#272b45,#ECF0C1,#51A77E,#009FC5```
+```#0f111b,#8970cf,#8970cf,#ffffff,#16172d,#ecf0c1,#51a77e,#009fc5```
 
-
+# TODO:
+* Fix Airline/Lightline
+* Fix CTERM colors because they're 💩 right now
