@@ -72,8 +72,8 @@ hi! Statement ctermfg=72 gui=NONE guifg=#51a77e
 " Vim special stuff
 hi! StatusLine cterm=reverse ctermbg=60 ctermfg=233 gui=reverse guibg=#0f111b guifg=#444b71 term=reverse
 hi! StatusLineTerm cterm=reverse ctermbg=233 ctermfg=60 gui=reverse guibg=#0f111b guifg=#444b71 term=reverse
-hi! StatusLineNC cterm=reverse ctermbg=234 ctermfg=60 gui=reverse guibg=#16172d guifg=#0f1117
-hi! StatusLineTermNC cterm=reverse ctermbg=234 ctermfg=60 gui=reverse guibg=#16172d guifg=#0f1117
+hi! StatusLineNC cterm=reverse ctermbg=234 ctermfg=60 gui=reverse guibg=#3e445e guifg=#0f1117
+hi! StatusLineTermNC cterm=reverse ctermbg=234 ctermfg=60 gui=reverse guibg=#3e445e guifg=#0f1117
 hi! StorageClass ctermfg=72 guifg=#51a77e
 hi! String ctermfg=39 guifg=#009FC5
 hi! Structure ctermfg=39 guifg=#009FC5
@@ -245,6 +245,8 @@ hi! link typescriptParens Normal
 
 "Nvim
 if has('nvim')
+  hi! link TermCursor Cursor
+  hi! link TermCursorNC Comment
   let g:terminal_color_0  = '#0f111b'  " #0f111b bg
   let g:terminal_color_1  = '#e33400'  " #e33400 red
   let g:terminal_color_2  = '#51a77e'  " #51a77e green
