@@ -36,13 +36,13 @@ hi! DiffAdd ctermbg=72 ctermfg=22 guibg=#1f302a guifg=#5a7a70
 hi! DiffChange ctermbg=23 ctermfg=37 guibg=#183c3f guifg=#6ab3ba
 hi! DiffDelete ctermbg=88 ctermfg=181 guibg=#4c2d2d guifg=#c6a4a3
 hi! DiffText cterm=NONE ctermbg=30 ctermfg=195 gui=NONE guibg=#5b7881 guifg=#ecf0c1
-hi! Directory ctermfg=39 guifg=#009FC5
+hi! Directory ctermfg=39 guifg=#009fc5
 hi! Error ctermbg=234 ctermfg=202 guibg=#of111b guifg=#e33400
 hi! ErrorMsg ctermbg=234 ctermfg=202 guibg=#of111b guifg=#e33400
 hi! WarningMsg ctermbg=234 ctermfg=214 guibg=#of111b guifg=#e09100
 hi! EndOfBuffer ctermbg=233 ctermfg=60 guibg=#of111b guifg=#444b71
 hi! NonText ctermbg=234 ctermfg=236 guibg=#of111b guifg=#444b71
-hi! SpecialKey ctermbg=234 ctermfg=202 guibg=#of111b guifg=#e09100
+hi! SpecialKey ctermbg=234 ctermfg=214 guibg=#of111b guifg=#e09100
 hi! Folded ctermbg=233 ctermfg=245 guibg=#0F111B guifg=#686f9a
 hi! FoldColumn ctermbg=233 ctermfg=24 guibg=#0F111B guifg=#444b71
 hi! Function ctermfg=35 guifg=#51a77e
@@ -50,20 +50,20 @@ hi! Identifier cterm=NONE ctermfg=230 guifg=#ecf0c1
 hi! Include ctermfg=35 guifg=#51a77e
 hi! LineNr ctermbg=233 ctermfg=60 guibg=#0f111b guifg=#444b71
 hi! MatchParen ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
-hi! MoreMsg ctermfg=99 guifg=#8970CF
+hi! MoreMsg ctermfg=99 guifg=#8970cf
 hi! Normal ctermbg=233 ctermfg=230 guibg=#of111b guifg=#ecf0c1
 hi! Operator ctermfg=72 guifg=#51a77e
 hi! Pmenu ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#ecf0c1
 hi! PmenuSbar ctermbg=236 guibg=#3d425b
 hi! PmenuSel ctermbg=240 ctermfg=255 guibg=#5b6389 guifg=#eff0f4
 hi! PmenuThumb ctermbg=251 guibg=#ecf0c1
-hi! PreProc ctermfg=99 guifg=#8970CF
-hi! Question ctermfg=99 guifg=#8970CF
+hi! PreProc ctermfg=99 guifg=#8970cf
+hi! Question ctermfg=99 guifg=#8970cf
 hi! QuickFixLine ctermbg=236 ctermfg=230 guibg=#272c42 guifg=#ecf0c1
 " TODO: Need to FIX
 hi! Search ctermbg=237 ctermfg=252 guibg=#114fd6 guifg=#c1c3cc
 hi! SignColumn ctermbg=233 ctermfg=24 guibg=#0F111B guifg=#444b71
-hi! Special ctermfg=99 guifg=#8970CF
+hi! Special ctermfg=99 guifg=#8970cf
 hi! SpellBad ctermbg=95 ctermfg=230 gui=undercurl guisp=#e33400
 hi! SpellCap ctermbg=24 ctermfg=230 gui=undercurl guisp=#51a77e
 hi! SpellLocal ctermbg=23 ctermfg=230 gui=undercurl guisp=#ecf0c1
@@ -82,14 +82,14 @@ hi! TabLineFill cterm=reverse ctermbg=234 ctermfg=245 gui=reverse guibg=#17171b 
 hi! TabLineSel cterm=NONE ctermbg=234 ctermfg=230 gui=NONE guibg=#of111b guifg=#9a9ca5
 hi! Title ctermfg=214 gui=NONE guifg=#e09100
 "TODO: Fix todo
-hi! Todo ctermbg=234 ctermfg=99 guibg=#45493e guifg=#8970CF
+hi! Todo ctermbg=234 ctermfg=99 guibg=#45493e guifg=#8970cf
 hi! Type ctermfg=72 gui=NONE guifg=#51a77e
 hi! Underlined cterm=underline ctermfg=72 gui=underline guifg=#51a77e term=underline
 hi! VertSplit cterm=NONE ctermbg=233 ctermfg=60 gui=NONE guibg=#0f1117 guifg=#444b71
 "Visualbg
 hi! Visual ctermbg=236 guibg=#272c42
 hi! WildMenu ctermbg=255 ctermfg=234 guibg=#d4d5db guifg=#17171b
-hi! diffAdded ctermfg=99 guifg=#8970CF
+hi! diffAdded ctermfg=99 guifg=#8970cf
 hi! diffRemoved ctermfg=202 guifg=#e33400
 hi! ALEErrorSign ctermbg=233 ctermfg=202 guibg=#0F111B guifg=#e33400
 hi! ALEWarningSign ctermbg=233 ctermfg=214 guibg=#0F111B guifg=#e09100
@@ -99,10 +99,10 @@ hi! ALEVirtualTextWarning ctermfg=214 guifg=#e09100
 " TODO: Need to fix
 hi! CtrlPMode1 ctermbg=241 ctermfg=234 guibg=#5a5f72 guifg=#17171b
 hi! EasyMotionShade ctermfg=24 guifg=#3d425b
-hi! EasyMotionTarget ctermfg=99 guifg=#8970CF
+hi! EasyMotionTarget ctermfg=99 guifg=#8970cf
 hi! EasyMotionTarget2First ctermfg=214 guifg=#e09100
 hi! EasyMotionTarget2Second ctermfg=214 guifg=#e09100
-hi! GitGutterAdd ctermbg=233 ctermfg=99 guibg=#0F111B guifg=#8970CF
+hi! GitGutterAdd ctermbg=233 ctermfg=99 guibg=#0F111B guifg=#8970cf
 hi! GitGutterChange ctermbg=233 ctermfg=109 guibg=#0F111B guifg=#ecf0c1
 hi! GitGutterChangeDelete ctermbg=233 ctermfg=109 guibg=#0F111B guifg=#ecf0c1
 hi! GitGutterDelete ctermbg=233 ctermfg=202 guibg=#0F111B guifg=#e33400
@@ -123,8 +123,13 @@ hi! link cssClassName Special
 hi! link cssClassNameDot Normal
 hi! link cssPseudoClassId Special
 hi! link cssTagName Statement
+" CSS {VimPolyglot}
+hi! link cssAttrComma cssNoise
+hi! link cssAttrComma cssBraces
+
 " Hyper Help Text
 hi! link helpHyperTextJump Constant
+
 "HTML
 hi! link htmlArg Constant
 hi! link htmlEndTag Statement
@@ -133,8 +138,12 @@ hi! link htmlTag Statement
 hi! link jsonQuote Normal
 " PHP
 hi! link phpVarSelector Identifier
-" Python stuff
-hi! link pythonFunction Title
+" Python stuff {VimPolyglot}
+hi! link pythonImport MoreMsg
+hi! pythonClassVar ctermfg=24 guifg=#244F61
+hi! link pythonDot Title
+hi! pythonBuiltinType ctermfg=24 guifg=#244F61
+
 " Ruby
 hi! link rubyDefine Statement
 hi! link rubyFunction Title
@@ -199,6 +208,10 @@ hi! link jsObjectKey Identifier
 hi! link jsSuper Statement
 hi! link jsTemplateBraces Special
 hi! link jsUndefined Constant
+" JS {Vim polyglot}
+hi! link jsStorageClass MoreMsg
+hi! jsFuncCall ctermfg=147 guifg=#b09cd8
+
 "Markdown
 hi! link markdownBold Special
 hi! link markdownCode String
