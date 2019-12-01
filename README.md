@@ -1,19 +1,17 @@
-# Spaceduck Color Scheme
-![Duck Dodgers Image :) ](https://raw.githubusercontent.com/pineapplegiant/spaceduck-theme/master/img/duckdodgers.jpg)
+# Spaceduck 🚀
+[![Stars](https://img.shields.io/github/stars/pineapplegiant/spaceduck-theme?style=social)](https://img.shields.io/github/stars/pineapplegiant/spaceduck-theme?style=social)
+[![Fork](https://img.shields.io/github/forks/pineapplegiant/spaceduck-theme?style=social)](https://img.shields.io/github/forks/pineapplegiant/spaceduck-theme?style=social)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Repo Size](https://img.shields.io/github/repo-size/pineapplegiant/spaceduck-theme)](https://img.shields.io/github/repo-size/pineapplegiant/spaceduck-theme)
+[![Made with Vim :)](https://img.shields.io/badge/madewith-vim%E2%9D%A4%EF%B8%8F-red)](https://img.shields.io/badge/madewith-vim%E2%9D%A4%EF%B8%8F-red)
 
-This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif).
+<center>
+<img src="https://raw.githubusercontent.com/pineapplegiant/spaceduck-theme/master/img/duckdodgers.jpg" alt="Duck Dodgers Image">
+</center>
 
-I simply wanted a dark/futurustic/space-like-theme that made me feel futuristic and badass.
-I didn't really like Solarized because I thought it looked like it was made by a 5 year old with a bunch of crayons.
+![Screenshot of Vim Colorscheme on ITERM](https://raw.githubusercontent.com/pineapplegiant/spaceduck-theme/master/img/screenshot.png)
 
-So, this is my attempt at making my own color theme. Feel free to contribute or tell me it sucks, it's an ongoing project.
-
-# Contributions
-
-So far it's just been me and my colors.
-
-![Me and my Colors](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/colors.gif)
-
+This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif). I wanted a dark/space-inspired-theme that made me feel futuristic and badass.
 
 ## Color Palette
 
@@ -31,21 +29,28 @@ Yellow        | `#ffd700` | `51, 100, 100`    | `235, 215, 0`   | `220` | ![Yell
 Orange        | `#e09100` | `39, 100, 88`     | `255, 255, 255` | `214` | ![Orange Color](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/orange.png)
 
 
-# Credits
 
-* [Iceberg](https://cocopon.github.io/iceberg.vim/)! This theme is the working boilerplate at the moment. 
+# Install 
+
+TODO: Fix this
+
+### Neovim
+
+Clone it into your colors folder 
+
+I recommend adding vim-polyglot for improved syntax highlighting.
+
+`Plug 'sheerun/vim-polyglot'`
+
+
+### Slack
+* Go to User Menu > Preferences > Sidebar Theme
+* In the bottom of the window, look for a "customize your theme and share it with others" link
+* Copy and paste the values below: 
+    - `#0f111b,#8970cf,#8970cf,#ffffff,#16172d,#ecf0c1,#51a77e,#009fc5`
+
+# Credits/Inspiration
+
+* [Iceberg](https://cocopon.github.io/iceberg.vim/) 
 * [Hallski's spacedust theme](https://github.com/hallski/spacedust-theme) inspired me to create this in the first place.
-
-# Slack
-
-## Install manually
-
-Go to User Menu > Preferences > Sidebar Theme
-In the bottom of the window, look for a "customize your theme and share it with others" link
-Copy and paste the values below:
-
-```#0f111b,#8970cf,#8970cf,#ffffff,#16172d,#ecf0c1,#51a77e,#009fc5```
-
-# TODO:
-* Fix Airline/Lightline
-* Fix CTERM colors because they're 💩 right now
+* [Rigel](https://github.com/Rigellute/rigel) 
