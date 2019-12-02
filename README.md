@@ -11,7 +11,7 @@
 
 ![Screenshot of Vim Colorscheme on ITERM](https://raw.githubusercontent.com/pineapplegiant/spaceduck-theme/master/img/screenshot.png)
 
-This theme is based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif). I wanted a dark/space-inspired-theme that made me feel futuristic and badass.
+A 24bit theme based on my inspiration from duck dodgers and [space](http://www.reactiongifs.com/r/2011/09/mind_blown.gif). I wanted a dark/space-inspired-theme that made me feel cool, futuristic, and badass.
 
 ## Color Palette
 
@@ -34,13 +34,24 @@ Orange        | `#e09100` | `39, 100, 88`     | `255, 255, 255` | `214` | ![Oran
 
 TODO: Fix this
 
-### Neovim
+### Vim & Neovim
 
 Clone it into your colors folder 
 
 I recommend adding vim-polyglot for improved syntax highlighting.
 
 `Plug 'sheerun/vim-polyglot'`
+
+### Iterm2
+
+To get the theme in Iterm, just download the file raw and import it into your settings.
+
+My preferences can be seen below.
+![Screenshot :)](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/colorTheme.png)
+
+A screenshot of how it looks for me on iterm2.
+![Screenshot :)](https://github.com/pineapplegiant/spaceduck-theme/blob/master/img/iterm.png)
+
 
 
 ### Slack
