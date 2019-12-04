@@ -36,11 +36,29 @@ TODO: Fix this
 
 ### Vim & Neovim
 
-Clone it into your colors folder 
+Add to `.vimrc` or `init.vim` :
+```
+    if exists('+termguicolors')
+      let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+      let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+      set termguicolors
+    endif
 
-I recommend adding vim-polyglot for improved syntax highlighting.
+   colorscheme spaceduck
+```
 
+Add to your vim config the spaceduck colors file:
+#### Vim
+* `~/.vim/colors/`
+    - `~/.vim/autoload/vim-airline-themes/`
+#### Neovim
+* `~/.config/nvim/colors/`
+    - ` ~/.local/share/nvim/site/pack/git-plugins/start/vim-airline-themes/autoload/airline/themes `
+
+
+I recommend adding vim-polyglot for improved syntax highlighting:  
 `Plug 'sheerun/vim-polyglot'`
+
 
 ### Iterm2
 
@@ -62,6 +80,6 @@ A screenshot of how it looks for me on iterm2.
 
 # Credits/Inspiration
 
-* [Iceberg](https://cocopon.github.io/iceberg.vim/) 
-* [Hallski's spacedust theme](https://github.com/hallski/spacedust-theme) inspired me to create this in the first place.
-* [Rigel](https://github.com/Rigellute/rigel) 
+* [Iceberg](https://cocopon.github.io/iceberg.vim/)  - Gave me guidance on creating a beautiful theme.
+* [Hallski's spacedust theme](https://github.com/hallski/spacedust-theme) -  inspired me to first create this in the first place.
+* [Rigel](https://github.com/Rigellute/rigel) - Showed me the ways of estilo & that I can make a good theme, just gotta stay true to your clout game.
