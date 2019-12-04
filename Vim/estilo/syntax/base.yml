@@ -1,0 +1,262 @@
+# BASE UI
+olorColumn: '- background'
+Conceal: ''  # IDK what these are bro
+Cursor: 'background foreground'
+CursorIM: '' # IDK what these are bro
+CursorColumn: '@CursorLine'
+CursorLine: '- backgroundDark'
+CursorLineNr: 'cursorColor backgroundDark'
+Directory: 'cyan1'
+DiffAdd: ''    # TODO
+DiffChange: '' # TODO
+DiffDelete: '' # TODO
+DiffText: ''   # TODO
+EndOfBuffer: 'black1 background'
+ErrorMsg: 'background red1'
+VertSplit: '@EndOfBuffer'
+Folded: 'white1 background'
+FoldColumn: '@EndOfBuffer'
+SignColumn: '@EndOfBuffer'
+IncSearch: '' # TODO
+LineNr: '@EndOfBuffer'
+MatchParen: 'pureWhite white1'
+ModeMsg: 'purple1'
+MoreMsg: ''
+NonText: '@EndOfBuffer'
+Normal: 'foreground backgroundDark'
+PMenu: 'foreground black2'  # TODO
+PMenuSel: 'magenta1 white2' # TODO
+PmenuSbar: ''  # TODO
+PmenuThumb: '' # TODO
+Question: 'purple1'
+QuickFixLine: 'white2 foreground'
+Search: 'cursorColor search'
+SpecialKey: 'yellow2 background'
+SpellBad: 'white1 - u'
+SpellLocal: '@SpellBad'
+SpellCap: '@SpellBad'
+SpellRare: '@SpellBad'
+StatusLine: 'background black1'
+StatusLineTerm: '@StatusLine'
+StatusLineTermNC: 'white1 background'
+StatusLineNC: '@StatusLineTermNC'
+TabLine: 'darkness'
+TabLineFill: ''
+TabLineSel: ''
+Title: ''
+Visual: ''
+VisualNOS: ''
+WarningMsg: ''
+WildMenu: ''
+diffAdded: ''
+diffRemoved: ''
+# PLUGINS
+CtrlPMode1: '' 
+EasyMotionShade: ''
+EasyMotionTarget: ''
+EasyMotionTarget2: ''
+EasyMotionTarget2Second: ''
+GitGutterAdd: ''
+GitGutterChange:
+GitGutterChangeDelete: ''
+GitGutterDelete: ''
+gitmessengerEndOfBuffer: ''
+gitmessengerPopupNormal: ''
+Sneak: ''
+SneakScope: ''
+SyntasticErrorSign: ''
+SyntasticStyleErrorSign: ''
+SyntasticStyleWarningSign: ''
+SyntasticWarningSign: '' 
+# BASE SYNTAX
+Comment: ''
+Constant: ''
+String: '' # Constant
+Character: '' # Constant
+Boolean: '' # Constant
+Number: '' # Constant
+Float: '' # Constant
+Identifier: ''
+Function: '' # Identifier
+Statement: ''
+Conditional: '' # Statement
+Repeat: '' # Statement
+Label: '' # Statement
+Operator: '' # Statement
+Keyword: '' # Statement
+Exception: '' # Statement
+PreProc: ''
+Include: '' # PreProc
+Define: '' # PreProc
+Macro: '' # PreProc
+PreCondit: '' # PreProc
+Type: ''
+StorageClass: '' # Type
+Structure: '' # Type
+Typedef: '' # Type
+Special: ''
+SpecialChar: '' # Special
+Tag: '' # Special
+Delimiter: '' # Special
+SpecialComment: '' # Special
+Debug: '' # Special
+Underlined: ''
+Ignore: ''
+Error: '@ErrorMsg'
+Todo: ''
+
+
+# CSS
+cssBraces: ''
+cssClassName: ''
+cssClassNameDot: ''
+cssPseudoClassId: ''
+cssTagName: ''
+# CSS {VimPolyglot}
+
+cssAttrComma: ''
+
+# Hyper Help Text
+helpHyperTextJump: ''
+
+# HTML
+htmlArg: ''
+htmlEndTag: ''
+htmlTag: ''
+
+# JSON
+jsonQuote: ''
+
+# PHP
+phpVarSelector: ''
+
+# Python stuff {VimPolyglot}
+pythonImport: ''
+pythonClassVar: ''
+pythonDot: ''
+pythonBuiltinType: ''
+
+# Ruby
+rubyDefine: ''
+rubyFunction: ''
+rubyInterpolationDelimiter: ''
+rubySharpBang: ''
+rubyStringDelimiter: ''
+
+# Shell script
+sassClass: ''
+
+# Shell
+shFunction: ''
+
+#Vim Shit
+vimContinue: ''
+vimFuncSID: ''
+vimFuncVar: ''
+vimFunction: ''
+vimGroup: ''
+vimHiGroup: ''
+vimHiTerm: ''
+vimMapModKey: ''
+vimOption: ''
+vimVar: ''
+
+# XML
+xmlAttrib: ''
+xmlAttribPunct: ''
+xmlEndTag: ''
+xmlNamespace: ''
+xmlTag: ''
+xmlTagName: ''
+
+# Yaml and things
+yamlKeyValueDelimiter: ''
+CtrlPPrtCursor: ''
+CtrlPMatch: ''
+CtrlPMode2: ''
+
+# Denite
+deniteMatched: ''
+deniteMatchedChar: ''
+
+# JSFlow?
+jsFlowMaybe: ''
+jsFlowObject: ''
+jsFlowType: ''
+
+# GraphQL?
+graphqlName: ''
+graphqlOperator: ''
+
+# GitMessage
+gitmessengerHash: ''
+gitmessengerHeader: ''
+gitmessengerHistory: ''
+
+# Javascript
+jsArrowFunction: ''
+jsClassDefinition: ''
+jsClassFuncName: ''
+jsExport: ''
+jsFuncName: ''
+jsFutureKeys: ''
+jsFuncCall: ''
+jsGlobalObjects: ''
+jsModuleKeywords: ''
+jsModuleOperators: ''
+jsNull: ''
+jsObjectFuncName: ''
+jsObjectKey: ''
+jsSuper: ''
+jsTemplateBraces: ''
+jsUndefined: ''
+
+# JS {Vim polyglot}
+jsStorageClass: ''
+
+# Markdown
+markdownBold: ''
+markdownCode: ''
+markdownCodeDelimiter: ''
+markdownHeadingDelimiter: ''
+markdownRule: ''
+ngxDirective: ''
+
+# Plug
+plug1: ''
+plug2: ''
+plugDash: ''
+plugMessage: ''
+
+# Signify
+SignifySignAdd: ''
+SignifySignChange: ''
+SignifySignChangeDelete: ''
+SignifySignDelete: ''
+SignifySignDeleteFirstLine: ''
+
+# Startify
+StartifyBracket: ''
+StartifyFile: ''
+StartifyFooter: ''
+StartifyHeader: ''
+StartifyNumber: ''
+StartifyPath: ''
+StartifySection: ''
+StartifySlash: ''
+StartifySpecial: ''
+
+# Swift
+swiftIdentifier: ''
+
+# Typescript
+typescriptAjaxMethods: ''
+typescriptBraces: ''
+typescriptEndColons: ''
+typescriptFuncKeyword: ''
+typescriptGlobalObjects: ''
+typescriptHtmlElemProperties: ''
+typescriptIdentifier: ''
+typescriptMessage: ''
+typescriptNull: ''
+typescriptParens: ''
