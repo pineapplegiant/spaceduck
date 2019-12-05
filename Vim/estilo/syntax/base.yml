@@ -7,10 +7,10 @@ CursorColumn: '@CursorLine'
 CursorLine: '- backgroundDark'
 CursorLineNr: 'cursorColor backgroundDark'
 Directory: 'cyan1'
-DiffAdd: ''    # TODO
-DiffChange: '' # TODO
-DiffDelete: '' # TODO
-DiffText: ''   # TODO
+DiffAdd: 'green2 black2'    # TODO
+DiffChange: 'cyan2 black2' # TODO
+DiffDelete: 'red2 black2' # TODO
+DiffText: 'foreground black2'   # TODO
 EndOfBuffer: 'black1 background'
 ErrorMsg: 'background red1'
 VertSplit: '@EndOfBuffer'
@@ -21,13 +21,13 @@ IncSearch: '' # TODO
 LineNr: '@EndOfBuffer'
 MatchParen: 'pureWhite white1'
 ModeMsg: 'purple1'
-MoreMsg: ''
+MoreMsg: 'purple1'
 NonText: '@EndOfBuffer'
-Normal: 'foreground backgroundDark'
+Normal: 'foreground background'
 PMenu: 'foreground black2'  # TODO
-PMenuSel: 'magenta1 white2' # TODO
-PmenuSbar: ''  # TODO
-PmenuThumb: '' # TODO
+PMenuSel: 'magenta1 pureWhite' # TODO
+PmenuSbar: 'foreground'  # TODO h
+PmenuThumb: '- foreground' # TODO
 Question: 'purple1'
 QuickFixLine: 'white2 foreground'
 Search: 'cursorColor search'
@@ -43,64 +43,47 @@ StatusLineNC: '@StatusLineTermNC'
 TabLine: 'darkness'
 TabLineFill: ''
 TabLineSel: ''
-Title: ''
-Visual: ''
-VisualNOS: ''
-WarningMsg: ''
-WildMenu: ''
-diffAdded: ''
-diffRemoved: ''
-# PLUGINS
-CtrlPMode1: '' 
-EasyMotionShade: ''
-EasyMotionTarget: ''
-EasyMotionTarget2: ''
-EasyMotionTarget2Second: ''
-GitGutterAdd: ''
-GitGutterChange:
-GitGutterChangeDelete: ''
-GitGutterDelete: ''
-gitmessengerEndOfBuffer: ''
-gitmessengerPopupNormal: ''
-Sneak: ''
-SneakScope: ''
-SyntasticErrorSign: ''
-SyntasticStyleErrorSign: ''
-SyntasticStyleWarningSign: ''
-SyntasticWarningSign: '' 
+Title: 'yellow2'
+Visual: '- visualSel'
+VisualNOS: '' #TODO
+WarningMsg: 'yellow2 background'
+WildMenu: 'darkness cursorColor'
+diffAdded: 'purple1'
+diffRemoved: 'red1'
+
 # BASE SYNTAX
-Comment: ''
-Constant: ''
-String: '' # Constant
+Comment: 'black1 background'
+Constant: 'yellow1 background'
+String: 'cyan1 background' # Constant
 Character: '' # Constant
 Boolean: '' # Constant
 Number: '' # Constant
 Float: '' # Constant
-Identifier: ''
-Function: '' # Identifier
-Statement: ''
+Identifier: 'foreground background'
+Function: 'green1 background' # Identifier
+Statement: 'green1 background'
 Conditional: '' # Statement
 Repeat: '' # Statement
 Label: '' # Statement
-Operator: '' # Statement
+Operator: 'green1 background' # Statement
 Keyword: '' # Statement
 Exception: '' # Statement
-PreProc: ''
-Include: '' # PreProc
+PreProc: 'purple1 background'
+Include: 'green1 background' # PreProc
 Define: '' # PreProc
 Macro: '' # PreProc
 PreCondit: '' # PreProc
-Type: ''
-StorageClass: '' # Type
-Structure: '' # Type
+Type: 'green1 background'
+StorageClass: 'green1 background' # Type
+Structure: 'cyan1 background' # Type
 Typedef: '' # Type
-Special: ''
-SpecialChar: '' # Special
+Special: 'purple1 background'
+SpecialChar: 'foreground background' # Special
 Tag: '' # Special
 Delimiter: '' # Special
 SpecialComment: '' # Special
 Debug: '' # Special
-Underlined: ''
+Underlined: 'green1'
 Ignore: ''
 Error: '@ErrorMsg'
 Todo: ''
@@ -260,3 +243,22 @@ typescriptIdentifier: ''
 typescriptMessage: ''
 typescriptNull: ''
 typescriptParens: ''
+
+# PLUGINS
+CtrlPMode1: 'darkness white1' 
+EasyMotionShade: 'white1'
+EasyMotionTarget: 'purple1'
+EasyMotionTarget2First: 'yellow2'
+EasyMotionTarget2Second: 'yellow2'
+GitGutterAdd: 'purple1 background'
+GitGutterChange: 'foreground background'
+GitGutterChangeDelete: 'foreground background'
+GitGutterDelete: 'red1 background'
+gitmessengerEndOfBuffer: 'black1 darkness'
+gitmessengerPopupNormal: 'foreground background'
+Sneak: 'background yellow1'
+SneakScope: 'green2 visualSel'
+SyntasticErrorSign: 'red1 background'
+SyntasticStyleErrorSign: '@SyntasticStyleErrorSign'
+SyntasticStyleWarningSign: 'red2 background'
+SyntasticWarningSign: '@SyntasticStyleWarningSign' 

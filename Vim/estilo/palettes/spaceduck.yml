@@ -5,7 +5,10 @@ background:     '#0f111b' # #0f111b
 cursorColor:    '#c1c3cc' # #c1c3cc
 search:         '#114fd6' # #114fd6
 pureWhite:      '#ffffff' # #ffffff
+
 darkness:       '#17171b' # #17171b
+visualSel:      '#272c42' # #272c42
+
 # Black
 black1:         '#444b71' # #444b71 Comment
 black2:         '#1a1b35' # #1a1b35
@@ -38,4 +41,3 @@ cyan2:          '#35A3BF' # #35A3BF
 white1:        '#656782'  # #656782
 white2:        '#B6A8DD'  # #B6A8DD
 
-miscwhite:     '#3e445e'  # #3e445e
