@@ -24,7 +24,7 @@ endif
 
 let g:colors_name = 'spaceduck'
 
-hi! ColorColumn cterm=NONE ctermbg=233 guibg=#0f111b
+hi! ColorColumn cterm=NONE ctermbg=233 guibg=#16172d
 hi! CursorColumn cterm=NONE ctermbg=233 guibg=#0f111b
 hi! CursorLine cterm=NONE ctermbg=234 guibg=#16172d
 hi! Comment ctermfg=60 guifg=#444b71
