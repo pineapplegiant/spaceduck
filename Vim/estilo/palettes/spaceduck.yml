@@ -1,8 +1,16 @@
 # Special
-backgroundDark: '#16172d' # #16172d Cursor Line
-foreground:     '#ecf0c1' # #ecf0c1 CursorColor
-background:     '#0f111b' # #0f111b
+cursorLine:     '#16172d' # #16172d 
+cursorLineNr:   '#2e3459' # #2e3459
 cursorColor:    '#c1c3cc' # #c1c3cc
+vertSplit:      '#0f1117' # #0f1117
+folded:         '#686f9a' # #686f9a
+matchParen:     '#3e445e' # #3e445e
+pmenu:          '#3d425b' # #3d425b
+quickFixLine:   '#272c42' # #272c42
+tabline:        '#818596' # #818596
+tablineSel:     '#9a9ca5' # #9a9ca5
+foreground:     '#ecf0c1' # #ecf0c1 
+background:     '#0f111b' # #0f111b
 search:         '#114fd6' # #114fd6
 pureWhite:      '#ffffff' # #ffffff
 
@@ -41,3 +49,4 @@ cyan2:          '#35A3BF' # #35A3BF
 white1:        '#656782'  # #656782
 white2:        '#B6A8DD'  # #B6A8DD
 
+# Not Currently Used

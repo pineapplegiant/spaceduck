@@ -1,248 +1,248 @@
-# BASE UI
-olorColumn: '- background'
+# BASE UI -> Foreground Background buri
+ColorColumn: '- background'
 Conceal: ''  # IDK what these are bro
 Cursor: 'background foreground'
 CursorIM: '' # IDK what these are bro
-CursorColumn: '@CursorLine'
-CursorLine: '- backgroundDark'
-CursorLineNr: 'cursorColor backgroundDark'
+CursorColumn: '- cursorLine'
+CursorLine: '- cursorLine'
+CursorLineNr: 'cursorColor cursorLine'
 Directory: 'cyan1'
-DiffAdd: 'green2 black2'    # TODO
-DiffChange: 'cyan2 black2' # TODO
-DiffDelete: 'red2 black2' # TODO
+DiffAdd: 'green2 black2'        # TODO
+DiffChange: 'cyan2 black2'      # TODO
+DiffDelete: 'red2 black2'       # TODO
 DiffText: 'foreground black2'   # TODO
 EndOfBuffer: 'black1 background'
-ErrorMsg: 'background red1'
-VertSplit: '@EndOfBuffer'
-Folded: 'white1 background'
-FoldColumn: '@EndOfBuffer'
-SignColumn: '@EndOfBuffer'
+ErrorMsg: 'red1 background'
+VertSplit: 'black1 vertSplit'
+Folded: 'folded background'
+FoldColumn: 'black1 background'
+SignColumn: 'black1 background'
 IncSearch: '' # TODO
-LineNr: '@EndOfBuffer'
-MatchParen: 'pureWhite white1'
+LineNr: 'black1 background'
+MatchParen: 'pureWhite matchParen'
 ModeMsg: 'purple1'
 MoreMsg: 'purple1'
 NonText: '@EndOfBuffer'
 Normal: 'foreground background'
-PMenu: 'foreground black2'  # TODO
+PMenu: 'foreground pmenu'  # TODO
 PMenuSel: 'magenta1 pureWhite' # TODO
-PmenuSbar: 'foreground'  # TODO h
-PmenuThumb: '- foreground' # TODO
+PmenuSbar: '- pmenu'  # TODO h
+PmenuThumb: 'foreground' # TODO
 Question: 'purple1'
-QuickFixLine: 'white2 foreground'
+QuickFixLine: 'foreground quickFixLine'
 Search: 'cursorColor search'
 SpecialKey: 'yellow2 background'
-SpellBad: 'white1 - u'
-SpellLocal: '@SpellBad'
-SpellCap: '@SpellBad'
-SpellRare: '@SpellBad'
-StatusLine: 'background black1'
+SpellBad: 'red1 - u'
+SpellLocal: 'foreground - u'
+SpellCap: 'green1 - u'
+SpellRare: 'yellow1 - u'
+StatusLine: 'foreground background r'
 StatusLineTerm: '@StatusLine'
-StatusLineTermNC: 'white1 background'
+StatusLineTermNC: 'vertSplit matchParen r'
 StatusLineNC: '@StatusLineTermNC'
-TabLine: 'darkness'
-TabLineFill: ''
-TabLineSel: ''
+TabLine: 'darkness tabline'
+TabLineFill: 'tabline darkness'
+TabLineSel: 'tablineSel background'
 Title: 'yellow2'
-Visual: '- visualSel'
+Visual: '- quickFixLine'
 VisualNOS: '' #TODO
 WarningMsg: 'yellow2 background'
 WildMenu: 'darkness cursorColor'
-diffAdded: 'purple1'
-diffRemoved: 'red1'
+diffAdded: 'purple1 -'
+diffRemoved: 'red1 -'
 
 # BASE SYNTAX
-Comment: 'black1 background'
-Constant: 'yellow1 background'
-String: 'cyan1 background' # Constant
+Comment: 'black1'
+Constant: 'yellow1'
+String: 'cyan1' # Constant
 Character: '' # Constant
 Boolean: '' # Constant
 Number: '' # Constant
 Float: '' # Constant
-Identifier: 'foreground background'
-Function: 'green1 background' # Identifier
-Statement: 'green1 background'
+Identifier: 'foreground'
+Function: 'green1' # Identifier
+Statement: 'green1'
 Conditional: '' # Statement
 Repeat: '' # Statement
 Label: '' # Statement
-Operator: 'green1 background' # Statement
+Operator: 'green1' # Statement
 Keyword: '' # Statement
 Exception: '' # Statement
-PreProc: 'purple1 background'
-Include: 'green1 background' # PreProc
+PreProc: 'purple1'
+Include: 'green1' # PreProc
 Define: '' # PreProc
 Macro: '' # PreProc
 PreCondit: '' # PreProc
-Type: 'green1 background'
-StorageClass: 'green1 background' # Type
-Structure: 'cyan1 background' # Type
+Type: 'green1'
+StorageClass: 'green1' # Type
+Structure: 'cyan1' # Type
 Typedef: '' # Type
-Special: 'purple1 background'
-SpecialChar: 'foreground background' # Special
+Special: 'purple1'
+SpecialChar: '' # Special
 Tag: '' # Special
-Delimiter: '' # Special
+Delimiter: 'foreground' # Special
 SpecialComment: '' # Special
 Debug: '' # Special
-Underlined: 'green1'
+Underlined: 'green1 - u'
 Ignore: ''
 Error: '@ErrorMsg'
-Todo: ''
+Todo: 'black2 yellow2 u'
 
 
 # CSS
-cssBraces: ''
-cssClassName: ''
-cssClassNameDot: ''
-cssPseudoClassId: ''
-cssTagName: ''
-# CSS {VimPolyglot}
+cssBraces: '@Delimiter'
+cssClassName: '@Special'
+cssClassNameDot: '@Normal'
+cssPseudoClassId: '@Special'
+cssTagName: '@Statement'
 
-cssAttrComma: ''
+# CSS {VimPolyglot}
+cssAttrComma: '@cssNoise'
 
 # Hyper Help Text
-helpHyperTextJump: ''
+helpHyperTextJump: '@Constant'
 
 # HTML
-htmlArg: ''
-htmlEndTag: ''
-htmlTag: ''
+htmlArg: '@Constant'
+htmlEndTag: '@Statement'
+htmlTag: '@Statement'
 
 # JSON
-jsonQuote: ''
+jsonQuote: '@Normal'
 
 # PHP
-phpVarSelector: ''
+phpVarSelector: '@Identifier'
 
 # Python stuff {VimPolyglot}
-pythonImport: ''
-pythonClassVar: ''
-pythonDot: ''
-pythonBuiltinType: ''
+pythonImport: '@MoreMsg'
+pythonClassVar: 'cyan2'
+pythonDot: '@Title'
+pythonBuiltinType: '@pythonClassVar'
 
 # Ruby
-rubyDefine: ''
-rubyFunction: ''
-rubyInterpolationDelimiter: ''
-rubySharpBang: ''
-rubyStringDelimiter: ''
+rubyDefine: '@Statement'
+rubyFunction: '@Title'
+rubyInterpolationDelimiter: '@String'
+rubySharpBang: '@Comment'
+rubyStringDelimiter: '@String'
 
 # Shell script
-sassClass: ''
+sassClass: '@Special'
 
 # Shell
-shFunction: ''
+shFunction: '@Normal'
 
 #Vim Shit
-vimContinue: ''
-vimFuncSID: ''
-vimFuncVar: ''
-vimFunction: ''
-vimGroup: ''
-vimHiGroup: ''
-vimHiTerm: ''
-vimMapModKey: ''
-vimOption: ''
-vimVar: ''
+vimContinue: '@Comment'
+vimFuncSID: '@vimFunction'
+vimFuncVar: '@Normal'
+vimFunction: '@Title'
+vimGroup: '@Statement'
+vimHiGroup: '@Statement'
+vimHiTerm: '@Identifier'
+vimMapModKey: '@Special'
+vimOption: '@Identifier'
+vimVar: '@Normal'
 
 # XML
-xmlAttrib: ''
-xmlAttribPunct: ''
-xmlEndTag: ''
-xmlNamespace: ''
-xmlTag: ''
-xmlTagName: ''
+xmlAttrib: '@Constant'
+xmlAttribPunct: '@Statement'
+xmlEndTag: '@Statement'
+xmlNamespace: '@Statement'
+xmlTag: '@Statement'
+xmlTagName: '@Statement'
 
 # Yaml and things
-yamlKeyValueDelimiter: ''
-CtrlPPrtCursor: ''
-CtrlPMatch: ''
-CtrlPMode2: ''
+yamlKeyValueDelimiter: '@Delimiter'
+CtrlPPrtCursor: '@Cursor'
+CtrlPMatch: '@Title'
+CtrlPMode2: '@StatusLine'
 
 # Denite
-deniteMatched: ''
-deniteMatchedChar: ''
+deniteMatched: '@Normal'
+deniteMatchedChar: '@Title'
 
 # JSFlow?
-jsFlowMaybe: ''
-jsFlowObject: ''
-jsFlowType: ''
+jsFlowMaybe: '@Normal'
+jsFlowObject: '@Normal'
+jsFlowType: '@PreProc'
 
 # GraphQL?
-graphqlName: ''
-graphqlOperator: ''
+graphqlName: '@Normal'
+graphqlOperator: '@Normal'
 
 # GitMessage
-gitmessengerHash: ''
-gitmessengerHeader: ''
-gitmessengerHistory: ''
+gitmessengerHash: '@Comment'
+gitmessengerHeader: '@Statement'
+gitmessengerHistory: '@Constant'
 
 # Javascript
-jsArrowFunction: ''
-jsClassDefinition: ''
-jsClassFuncName: ''
-jsExport: ''
-jsFuncName: ''
-jsFutureKeys: ''
-jsFuncCall: ''
-jsGlobalObjects: ''
-jsModuleKeywords: ''
-jsModuleOperators: ''
-jsNull: ''
-jsObjectFuncName: ''
-jsObjectKey: ''
-jsSuper: ''
-jsTemplateBraces: ''
-jsUndefined: ''
+jsArrowFunction: '@Operator'
+jsClassDefinition: '@Normal'
+jsClassFuncName: '@Title'
+jsExport: '@Statement'
+jsFuncName: '@Title'
+jsFutureKeys: '@Statement'
+jsFuncCall: '@Normal'
+jsGlobalObjects: '@Statement'
+jsModuleKeywords: '@Statement'
+jsModuleOperators: '@Statement'
+jsNull: '@Constant'
+jsObjectFuncName: '@Title'
+jsObjectKey: '@Identifier'
+jsSuper: '@Statement'
+jsTemplateBraces: '@Special'
+jsUndefined: '@Constant'
 
 # JS {Vim polyglot}
-jsStorageClass: ''
+jsStorageClass: '@MoreMsg'
 
 # Markdown
-markdownBold: ''
-markdownCode: ''
-markdownCodeDelimiter: ''
-markdownHeadingDelimiter: ''
-markdownRule: ''
-ngxDirective: ''
+markdownBold: '@Special'
+markdownCode: '@String'
+markdownCodeDelimiter: '@String'
+markdownHeadingDelimiter: '@Comment'
+markdownRule: '@Comment'
+ngxDirective: '@Statement'
 
 # Plug
-plug1: ''
-plug2: ''
-plugDash: ''
-plugMessage: ''
+plug1: '@Normal'
+plug2: '@Identifier'
+plugDash: '@Comment'
+plugMessage: '@Special'
 
 # Signify
-SignifySignAdd: ''
-SignifySignChange: ''
-SignifySignChangeDelete: ''
-SignifySignDelete: ''
-SignifySignDeleteFirstLine: ''
+SignifySignAdd: '@GitGutterAdd'
+SignifySignChange: '@GitGutterChange'
+SignifySignChangeDelete: '@GitGutterChangeDelete'
+SignifySignDelete: '@GitGutterDelete'
+SignifySignDeleteFirstLine: '@SignifySignDelete'
 
 # Startify
-StartifyBracket: ''
-StartifyFile: ''
-StartifyFooter: ''
-StartifyHeader: ''
-StartifyNumber: ''
-StartifyPath: ''
-StartifySection: ''
-StartifySlash: ''
-StartifySpecial: ''
+StartifyBracket: '@Comment'
+StartifyFile: '@Identifier'
+StartifyFooter: '@Constant'
+StartifyHeader: '@Constant'
+StartifyNumber: '@Special'
+StartifyPath: '@Comment'
+StartifySection: '@Statement'
+StartifySlash: '@Comment'
+StartifySpecial: '@Normal'
 
 # Swift
-swiftIdentifier: ''
+swiftIdentifier: '@Normal'
 
 # Typescript
-typescriptAjaxMethods: ''
-typescriptBraces: ''
-typescriptEndColons: ''
-typescriptFuncKeyword: ''
-typescriptGlobalObjects: ''
-typescriptHtmlElemProperties: ''
-typescriptIdentifier: ''
-typescriptMessage: ''
-typescriptNull: ''
-typescriptParens: ''
+typescriptAjaxMethods: '@Normal'
+typescriptBraces: '@Normal'
+typescriptEndColons: '@Normal'
+typescriptFuncKeyword: '@Statement'
+typescriptGlobalObjects: '@Statement'
+typescriptHtmlElemProperties: '@Normal'
+typescriptIdentifier: '@Statement'
+typescriptMessage: '@Normal'
+typescriptNull: '@Constant'
+typescriptParens: '@Normal'
 
 # PLUGINS
 CtrlPMode1: 'darkness white1' 
@@ -262,3 +262,13 @@ SyntasticErrorSign: 'red1 background'
 SyntasticStyleErrorSign: '@SyntasticStyleErrorSign'
 SyntasticStyleWarningSign: 'red2 background'
 SyntasticWarningSign: '@SyntasticStyleWarningSign' 
+
+
+# DART
+dartSdkClass: 'yellow2'
+dartFunction: 'magenta1'
+dartOperator: 'yellow1'
+dartRepeat: 'magenta2'
+dartUserType: 'purple2'
+dartTypeDef: 'yellow2'
+dartCoreType: 'green2'

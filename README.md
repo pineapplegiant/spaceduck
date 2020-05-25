@@ -87,7 +87,7 @@ set -g default-terminal "tmux-256color"
 set -as terminal-overrides ',xterm*:sitm=\E[3m'
 ```
 
-And in your `.bash_profile || .zshrc`
+And in your `.bash_profile or .zshrc`
 
 ```bash
 export TERM="xterm-256color"
