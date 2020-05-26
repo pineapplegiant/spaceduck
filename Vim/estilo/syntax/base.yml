@@ -106,6 +106,8 @@ helpHyperTextJump: '@Constant'
 htmlArg: '@Constant'
 htmlEndTag: '@Statement'
 htmlTag: '@Statement'
+htmlTagName: 'green1'
+htmlTagN: 'purple1'
 
 # JSON
 jsonQuote: '@Normal'
@@ -114,10 +116,15 @@ jsonQuote: '@Normal'
 phpVarSelector: '@Identifier'
 
 # Python stuff {VimPolyglot}
-pythonImport: '@MoreMsg'
+pythonImport: 'magenta1'
 pythonClassVar: 'cyan2'
 pythonDot: '@Title'
 pythonBuiltinType: '@pythonClassVar'
+pythonFunction: 'green2'
+pythonBuiltinFunc: 'purple1'
+pythonRepeat: 'magenta1'
+pythonOperator: 'purple2'
+
 
 # Ruby
 rubyDefine: '@Statement'
@@ -178,24 +185,30 @@ gitmessengerHistory: '@Constant'
 
 # Javascript
 jsArrowFunction: '@Operator'
+jsBuiltins: 'magenta1'
+jsLabel: 'purple2'
+jsFuncBraces: ''
+jsStatement: 'yellow2'
 jsClassDefinition: '@Normal'
 jsClassFuncName: '@Title'
+jsDot: 'yellow1'
 jsExport: '@Statement'
-jsFuncName: '@Title'
+jsFuncName: 'purple1'
+jsFunction: 'green2'
 jsFutureKeys: '@Statement'
-jsFuncCall: '@Normal'
+jsFuncCall: 'purple1'
 jsGlobalObjects: '@Statement'
 jsModuleKeywords: '@Statement'
 jsModuleOperators: '@Statement'
 jsNull: '@Constant'
 jsObjectFuncName: '@Title'
 jsObjectKey: '@Identifier'
+jsObjectProp: 'magenta1'
+jsOperator: 'foreground'
 jsSuper: '@Statement'
 jsTemplateBraces: '@Special'
 jsUndefined: '@Constant'
-
-# JS {Vim polyglot}
-jsStorageClass: '@MoreMsg'
+jsStorageClass: 'purple2'
 
 # Markdown
 markdownBold: '@Special'
@@ -265,10 +278,23 @@ SyntasticWarningSign: '@SyntasticStyleWarningSign'
 
 
 # DART
-dartSdkClass: 'yellow2'
-dartFunction: 'magenta1'
-dartOperator: 'yellow1'
-dartRepeat: 'magenta2'
+dartSdkClass: 'green2'
+dartInterpolation: 'magenta1'
+dartFunction: 'purple1'
+dartOperator: 'purple2'
+dartRepeat: 'green1'
 dartUserType: 'purple2'
-dartTypeDef: 'yellow2'
+dartTypeDef: 'yellow1'
 dartCoreType: 'green2'
+dartSpecialChar: 'yellow2'
+
+# Java even though nobody would ever use this lolz
+javaScopeDecl: 'purple1'
+javaClassDecl: 'green2'
+javaStorageClass: 'green1'
+javaType: 'yellow2'
+javaFold: 'cyan1'
+javaConditional: 'purple1'
+javaStatement: 'yellow2'
+javaParenT: 'cyan1'
+javaParen: ''

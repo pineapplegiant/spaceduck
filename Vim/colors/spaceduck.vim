@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/05/25 17:47
+" Last Change: 2020/05/25 21:48
 " ===============================================================
 
 set background=dark
@@ -101,12 +101,18 @@ hi link helpHyperTextJump Constant
 hi link htmlArg Constant
 hi link htmlEndTag Statement
 hi link htmlTag Statement
+hi htmlTagName guifg=#51a77e ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi htmlTagN guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsonQuote Normal
 hi link phpVarSelector Identifier
-hi link pythonImport MoreMsg
+hi pythonImport guifg=#CE6FBE ctermfg=169 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi pythonClassVar guifg=#35A3BF ctermfg=73 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link pythonDot Title
 hi link pythonBuiltinType pythonClassVar
+hi pythonFunction guifg=#66d6a0 ctermfg=79 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonBuiltinFunc guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonRepeat guifg=#CE6FBE ctermfg=169 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonOperator guifg=#b09cd8 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link rubyDefine Statement
 hi link rubyFunction Title
 hi link rubyInterpolationDelimiter String
@@ -145,22 +151,29 @@ hi link gitmessengerHash Comment
 hi link gitmessengerHeader Statement
 hi link gitmessengerHistory Constant
 hi link jsArrowFunction Operator
+hi jsBuiltins guifg=#CE6FBE ctermfg=169 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsLabel guifg=#b09cd8 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsStatement guifg=#e09100 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsClassDefinition Normal
 hi link jsClassFuncName Title
+hi jsDot guifg=#ffd700 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsExport Statement
-hi link jsFuncName Title
+hi jsFuncName guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsFunction guifg=#66d6a0 ctermfg=79 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsFutureKeys Statement
-hi link jsFuncCall Normal
+hi jsFuncCall guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsGlobalObjects Statement
 hi link jsModuleKeywords Statement
 hi link jsModuleOperators Statement
 hi link jsNull Constant
 hi link jsObjectFuncName Title
 hi link jsObjectKey Identifier
+hi jsObjectProp guifg=#CE6FBE ctermfg=169 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsOperator guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsSuper Statement
 hi link jsTemplateBraces Special
 hi link jsUndefined Constant
-hi link jsStorageClass MoreMsg
+hi jsStorageClass guifg=#b09cd8 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link markdownBold Special
 hi link markdownCode String
 hi link markdownCodeDelimiter String
@@ -213,13 +226,23 @@ hi SyntasticErrorSign guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NO
 hi link SyntasticStyleErrorSign SyntasticStyleErrorSign
 hi SyntasticStyleWarningSign guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi link SyntasticWarningSign SyntasticStyleWarningSign
-hi dartSdkClass guifg=#e09100 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartFunction guifg=#CE6FBE ctermfg=169 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartOperator guifg=#ffd700 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartRepeat guifg=#CE6F8F ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartSdkClass guifg=#66d6a0 ctermfg=79 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartInterpolation guifg=#CE6FBE ctermfg=169 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartFunction guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartOperator guifg=#b09cd8 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartRepeat guifg=#51a77e ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi dartUserType guifg=#b09cd8 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartTypeDef guifg=#e09100 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartTypeDef guifg=#ffd700 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi dartCoreType guifg=#66d6a0 ctermfg=79 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartSpecialChar guifg=#e09100 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaScopeDecl guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaClassDecl guifg=#66d6a0 ctermfg=79 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaStorageClass guifg=#51a77e ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaType guifg=#e09100 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaFold guifg=#009fc5 ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaConditional guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaStatement guifg=#e09100 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaParenT guifg=#009fc5 ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)
