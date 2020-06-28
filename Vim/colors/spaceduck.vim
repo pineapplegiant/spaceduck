@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/05/25 21:48
+" Last Change: 2020/06/28 16:53
 " ===============================================================
 
 set background=dark
@@ -50,7 +50,7 @@ hi MoreMsg guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link NonText EndOfBuffer
 hi Normal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi PMenu guifg=#ecf0c1 ctermfg=255 guibg=#3d425b ctermbg=238 gui=NONE cterm=NONE
-hi PMenuSel guifg=#CE6FBE ctermfg=169 guibg=#ffffff ctermbg=15 gui=NONE cterm=NONE
+hi PMenuSel guifg=#ffd700 ctermfg=220 guibg=#2e3459 ctermbg=236 gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE ctermfg=NONE guibg=#3d425b ctermbg=238 gui=NONE cterm=NONE
 hi PmenuThumb guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Question guifg=#8970cf ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE

@@ -25,7 +25,7 @@ MoreMsg: 'purple1'
 NonText: '@EndOfBuffer'
 Normal: 'foreground background'
 PMenu: 'foreground pmenu'  # TODO
-PMenuSel: 'magenta1 pureWhite' # TODO
+PMenuSel: 'yellow1 cursorLineNr' # TODO
 PmenuSbar: '- pmenu'  # TODO h
 PmenuThumb: 'foreground' # TODO
 Question: 'purple1'
