@@ -1,0 +1,327 @@
+# BASE UI -> Foreground Background buri (bold, underlined, reverse ,italic)
+ColorColumn: '- background'
+Conceal: ''  # IDK what these are bro
+Cursor: 'background grey'
+CursorIM: '' # IDK what these are either, bro
+CursorColumn: '- cursorLine'
+CursorLine: '- cursorLine'
+CursorLineNr: 'grey2 cursorLine'
+Directory: 'cyan'
+DiffAdd: 'green2 darkPurp2'         # TODO
+DiffChange: 'cyan darkPurp2'        # TODO
+DiffDelete: 'red darkPurp2'         # TODO
+DiffText: 'foreground darkPurp2'    # TODO
+EndOfBuffer: 'darkPurp background'
+ErrorMsg: 'red background'
+VertSplit: 'pureBlack pureBlack'
+Folded: 'darkPurp2 background'
+FoldColumn: 'darkPurp background'
+SignColumn: 'darkPurp background'
+IncSearch: 'pureWhite visualSel'                       # TODO
+LineNr: 'darkPurp background'
+MatchParen: 'grey darkPurp'
+ModeMsg: 'purple'
+MoreMsg: 'purple'
+NonText: '@EndOfBuffer'
+Normal: 'foreground background'
+PMenu: 'foreground darkPurp'        # TODO 
+PMenuSel: 'yellow visualSel'        # TODO
+PmenuSbar: 'foreground darkPurp2'   # TODO
+PmenuThumb: 'foreground darkPurp2 ' # TODO
+Question: 'purple'
+QuickFixLine: 'foreground cursorLine'
+Search: 'pureWhite search'
+SpecialKey: 'orange background'
+SpellBad: 'red - u'
+SpellLocal: 'foreground - u'
+SpellCap: 'green - u'
+SpellRare: 'yellow - u'
+StatusLine: 'foreground background r'
+StatusLineTerm: '@StatusLine'
+StatusLineTermNC: 'pureBlack darkPurp r'
+StatusLineNC: '@StatusLineTermNC'
+TabLine: 'pureBlack grey'
+TabLineFill: 'grey pureBlack'
+TabLineSel: 'grey2 background'
+Title: 'orange'
+Visual: 'foreground darkPurp2'
+VisualNOS: '' #TODO
+WarningMsg: 'orange background'
+WildMenu: 'pureBlack grey2'
+diffAdded: 'purple -'
+diffRemoved: 'red -'
+
+# BASE SYNTAX
+Comment: 'comment'
+Constant: 'yellow'
+String: 'cyan'                      # Constant
+Character: ''                       # Constant
+Boolean: ''                         # Constant
+Number: ''                          # Constant
+Float: ''                           # Constant
+Identifier: 'foreground'
+Function: 'green'                   # Identifier
+Statement: 'green'
+Conditional: 'green2'               # Statement
+Repeat: ''                          # Statement
+Label: ''                           # Statement
+Operator: 'orange'                   # Statement
+Keyword: ''                         # Statement
+Exception: ''                       # Statement
+PreProc: 'purple'
+Include: 'green'                    # PreProc
+Define: ''                          # PreProc
+Macro: ''                           # PreProc
+PreCondit: ''                       # PreProc
+Type: 'yellow'
+StorageClass: 'green'               # Type
+Structure: 'cyan'                   # Type
+Typedef: 'cyan'                     # Type
+Special: 'purple'
+SpecialChar: 'red'                  # Special
+Tag: ''                             # Special
+Delimiter: 'foreground'             # Special
+SpecialComment: ''                  # Special
+Debug: ''                           # Special
+Underlined: 'green - u'
+Ignore: ''
+Error: '@ErrorMsg'
+Todo: 'pureWhite purple2 u'
+
+
+# C Lang 
+cFormat: 'orange'
+cCppOutIf2: 'foreground background'
+cUserFunction: 'purple'
+
+
+
+# CSS
+cssBraces: '@Delimiter'
+cssPositioningProp: '@SpecialChar'
+cssSelecterOp: 'purple2'
+cssMediaProp: '@Special'
+cssClassName: '@Special'
+cssClassNameDot: '@Normal'
+cssPseudoClassId: '@Special'
+cssTagName: '@Special'
+cssBoxProp: 'pink'
+cssUIProp: 'orange'
+cssFontProp: ''
+cssAttrComma: '@cssNoise' # CSS {VimPolyglot}
+
+# Hyper Help Text
+helpHyperTextJump: '@Constant'
+
+# HTML
+htmlArg: '@Constant'
+htmlEndTag: '@Statement'
+htmlTag: '@Statement'
+htmlTagName: 'purple'
+htmlTagN: 'purple'
+
+# JSON
+jsonQuote: '@Normal'
+
+# SQL
+sqlFold: 'cyan'
+
+
+# PHP
+phpVarSelector: '@Identifier'
+phpUseClass: 'cyan'
+phpClass: 'yellow'
+phpClassExtends: 'purple'
+phpClassImplements: 'orange'
+
+# Python stuff {VimPolyglot}
+pythonImport: 'magenta'
+pythonClassVar: 'cyan'
+pythonDot: '@Title'
+pythonBuiltinType: '@pythonClassVar'
+pythonFunction: 'green2'
+pythonBuiltinFunc: 'purple'
+pythonRepeat: 'magenta'
+pythonOperator: '@Operator'
+
+
+# Ruby
+rubyDefine: '@Statement'
+rubyKeywordAsMethod: 'pink'
+rubyFunction: '@Title'
+rubyInterpolationDelimiter: '@String'
+rubySharpBang: '@Comment'
+rubyStringDelimiter: '@String'
+
+# Shell script
+sassClass: '@Special'
+
+# Shell
+shFunction: '@Normal'
+
+#Vim Shit
+vimContinue: '@Comment'
+vimFuncSID: '@vimFunction'
+vimFuncVar: '@Normal'
+vimFunction: '@Title'
+vimGroup: '@Statement'
+vimHiGroup: '@Statement'
+vimHiTerm: '@Identifier'
+vimMapModKey: '@Special'
+vimOption: '@Identifier'
+vimVar: '@Normal'
+
+# XML
+xmlAttrib: '@Constant'
+xmlAttribPunct: '@Statement'
+xmlEndTag: '@Statement'
+xmlNamespace: '@Statement'
+xmlTag: '@Statement'
+xmlTagName: '@Statement'
+
+# Yaml and things
+yamlKeyValueDelimiter: '@Delimiter'
+CtrlPPrtCursor: '@Cursor'
+CtrlPMatch: '@Title'
+CtrlPMode2: '@StatusLine'
+
+# Denite
+deniteMatched: '@Normal'
+deniteMatchedChar: '@Title'
+
+# JSFlow?
+jsFlowMaybe: '@Normal'
+jsFlowObject: '@Normal'
+jsFlowType: '@PreProc'
+
+# GraphQL?
+graphqlName: '@Normal'
+graphqlOperator: '@Operator'
+
+# GitMessage
+gitmessengerHash: '@Comment'
+gitmessengerHeader: '@Statement'
+gitmessengerHistory: '@Constant'
+
+# Javascript
+jsArrowFunction: '@Function'
+jsBuiltins: 'magenta'
+jsLabel: 'purple2'
+jsExceptions: 'red'
+jsFuncArgs: 'yellow'
+jsFuncBraces: '@Normal'
+jsStatement: 'orange'
+jsClassDefinition: '@Normal'
+jsClassFuncName: '@Title'
+jsDot: 'orange'
+jsExport: '@Statement'
+jsFuncName: 'purple'
+jsFunction: 'green2'
+jsFutureKeys: '@Statement'
+jsFuncCall: 'green'
+jsGlobalObjects: '@Constant'
+jsModuleKeywords: '@Statement'
+jsModuleOperators: '@Operator'
+jsNull: '@Constant'
+jsObjectFuncName: '@Title'
+jsObjectKey: '@Identifier'
+jsObjectProp: 'magenta'
+jsOperator: 'orange'
+jsSuper: '@Statement'
+jsTemplateBraces: '@Special'
+jsUndefined: '@Constant'
+jsStorageClass: 'purple2'
+
+# Haskell
+haskellIdentifier: '@Special'
+haskellOperators: 'magenta'
+
+# Markdown
+markdownBold: '@Special'
+markdownCode: '@String'
+markdownCodeDelimiter: '@String'
+markdownHeadingDelimiter: '@Comment'
+markdownRule: '@Comment'
+ngxDirective: '@Statement'
+
+# Plug
+plug1: '@Normal'
+plug2: '@Identifier'
+plugDash: '@Comment'
+plugMessage: '@Special'
+
+# Signify
+SignifySignAdd: '@GitGutterAdd'
+SignifySignChange: '@GitGutterChange'
+SignifySignChangeDelete: '@GitGutterChangeDelete'
+SignifySignDelete: '@GitGutterDelete'
+SignifySignDeleteFirstLine: '@SignifySignDelete'
+
+# Startify
+StartifyBracket: '@Comment'
+StartifyFile: '@Identifier'
+StartifyFooter: '@Constant'
+StartifyHeader: '@Constant'
+StartifyNumber: '@Special'
+StartifyPath: '@Comment'
+StartifySection: '@Statement'
+StartifySlash: '@Comment'
+StartifySpecial: '@Normal'
+
+# Swift
+swiftIdentifier: '@Normal'
+
+# Typescript
+typescriptAjaxMethods: '@Normal'
+typescriptBraces: '@Normal'
+typescriptEndColons: '@Normal'
+typescriptFuncKeyword: '@Statement'
+typescriptGlobalObjects: '@Statement'
+typescriptHtmlElemProperties: '@Normal'
+typescriptIdentifier: '@Statement'
+typescriptMessage: '@Normal'
+typescriptNull: '@Constant'
+typescriptParens: '@Normal'
+
+# PLUGINS
+CtrlPMode1: 'pureBlack grey' 
+EasyMotionShade: 'grey'
+EasyMotionTarget: 'purple'
+EasyMotionTarget2First: 'orange'
+EasyMotionTarget2Second: 'orange'
+GitGutterAdd: 'purple background'
+GitGutterChange: 'foreground background'
+GitGutterChangeDelete: 'foreground background'
+GitGutterDelete: 'red background'
+gitmessengerEndOfBuffer: 'darkPurp pureBlack'
+gitmessengerPopupNormal: 'foreground background'
+Sneak: '@Search'
+SneakScope: '@IncSearch'
+SyntasticErrorSign: 'red background'
+SyntasticStyleErrorSign: '@SyntasticStyleErrorSign'
+SyntasticStyleWarningSign: 'red background'
+SyntasticWarningSign: '@SyntasticStyleWarningSign' 
+
+
+# DART
+dartSdkClass: 'green2'
+dartInterpolation: 'magenta'
+dartFunction: 'purple'
+dartOperator: '@Operator'
+dartRepeat: 'green'
+dartUserType: 'purple2'
+dartTypeDef: 'yellow'
+dartCoreType: 'green2'
+dartSpecialChar: 'orange'
+
+# Java even though nobody would ever use this, unless?
+javaParenT: 'pink'
+javaScopeDecl: 'purple'
+javaClassDecl: 'yellow'
+javaStorageClass: 'green'
+javaOperator: 'pink'
+javaType: 'orange'
+javaFold: 'cyan'
+javaConditional: 'purple'
+javaStatement: 'orange'
+javaParen: '@Normal'
