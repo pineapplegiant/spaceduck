@@ -121,11 +121,23 @@ Don't be afraid of the vim documentation either for more information, like for m
 
 ## Iterm2
 
-To get the theme into Iterm, download the spaceduck.itermcolors file and import it into your settings.
+To get the theme into Iterm, download the spaceduck.itermcolors file and [import it into your settings](https://iterm2colorschemes.com/).
+
+You can curl it if you wanna be cool?
+
+```bash
+  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/spaceduck.itermcolors"
+```
 
 ## Terminal.app MacOS
 
 To get the theme into Iterm, download the spaceduck.terminal file and import it into your settings.
+
+You can curl it if you wanna be cool?
+
+```bash
+  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/spaceduck.terminal"
+```
 
 ## Slack
 
