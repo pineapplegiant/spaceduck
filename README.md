@@ -11,8 +11,6 @@
 </center>
 
 # Table of Contents
-- [Spaceduck 🚀🦆](#spaceduck-----)
-- [Table of Contents](#table-of-contents)
 - [Inspiration 💭](#inspiration---)
   * [Colors Palette (WIP) 🎨 (TODO Cterm colors)](#colors-palette--wip------todo-cterm-colors-)
 - [Install 💾](#install---)
