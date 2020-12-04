@@ -1,0 +1,13 @@
+# CSS
+cssBraces: '@Delimiter'
+cssPositioningProp: '@SpecialChar'
+cssSelecterOp: 'purple2'
+cssMediaProp: '@Special'
+cssClassName: '@Special'
+cssClassNameDot: '@Normal'
+cssPseudoClassId: '@Special'
+cssTagName: '@Special'
+cssBoxProp: 'pink'
+cssUIProp: 'orange'
+cssFontProp: ''
+cssAttrComma: '@cssNoise' # CSS {VimPolyglot}

@@ -1,0 +1,6 @@
+# PHP
+phpVarSelector: '@Identifier'
+phpUseClass: 'cyan'
+phpClass: 'yellow'
+phpClassExtends: 'purple'
+phpClassImplements: 'orange'

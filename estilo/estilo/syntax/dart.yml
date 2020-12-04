@@ -1,0 +1,10 @@
+# DART
+dartSdkClass: 'green2'
+dartInterpolation: 'magenta'
+dartFunction: 'purple'
+dartOperator: '@Operator'
+dartRepeat: 'green'
+dartUserType: 'purple2'
+dartTypeDef: 'yellow'
+dartCoreType: 'green2'
+dartSpecialChar: 'orange'

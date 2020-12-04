@@ -1,0 +1,7 @@
+# XML
+xmlAttrib: '@Constant'
+xmlAttribPunct: '@Statement'
+xmlEndTag: '@Statement'
+xmlNamespace: '@Statement'
+xmlTag: '@Statement'
+xmlTagName: '@Statement'

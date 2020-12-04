@@ -1,0 +1,7 @@
+# Markdown
+markdownBold: '@Special'
+markdownCode: '@String'
+markdownCodeDelimiter: '@String'
+markdownHeadingDelimiter: '@Comment'
+markdownRule: '@Comment'
+

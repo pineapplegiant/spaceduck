@@ -1,0 +1,6 @@
+# HTML
+htmlArg: '@Constant'
+htmlEndTag: '@Statement'
+htmlTag: '@Statement'
+htmlTagName: 'purple'
+htmlTagN: 'purple'

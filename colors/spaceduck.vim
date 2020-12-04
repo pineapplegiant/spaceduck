@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/03 22:24
+" Last Change: 2020/12/04 15:23
 " ===============================================================
 
 set background=dark
@@ -109,65 +109,35 @@ hi link cssTagName Special
 hi cssBoxProp guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi cssUIProp guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link cssAttrComma cssNoise
-hi link helpHyperTextJump Constant
+hi dartSdkClass guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartInterpolation guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartFunction guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link dartOperator Operator
+hi dartRepeat guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartUserType guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartTypeDef guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartCoreType guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi dartSpecialChar guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link gitmessengerHash Comment
+hi link gitmessengerHeader Statement
+hi link gitmessengerHistory Constant
+hi link haskellIdentifier Special
+hi haskellOperators guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link htmlArg Constant
 hi link htmlEndTag Statement
 hi link htmlTag Statement
 hi htmlTagName guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi htmlTagN guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link jsonQuote Normal
-hi sqlFold guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link phpVarSelector Identifier
-hi phpUseClass guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi phpClass guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi phpClassExtends guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi phpClassImplements guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi pythonImport guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi pythonClassVar guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link pythonDot Title
-hi link pythonBuiltinType pythonClassVar
-hi pythonFunction guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi pythonBuiltinFunc guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi pythonRepeat guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link pythonOperator Operator
-hi link rubyDefine Statement
-hi rubyKeywordAsMethod guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link rubyFunction Title
-hi link rubyInterpolationDelimiter String
-hi link rubySharpBang Comment
-hi link rubyStringDelimiter String
-hi link sassClass Special
-hi link shFunction Normal
-hi link vimContinue Comment
-hi link vimFuncSID vimFunction
-hi link vimFuncVar Normal
-hi link vimFunction Title
-hi link vimGroup Statement
-hi link vimHiGroup Statement
-hi link vimHiTerm Identifier
-hi link vimMapModKey Special
-hi link vimOption Identifier
-hi link vimVar Normal
-hi link xmlAttrib Constant
-hi link xmlAttribPunct Statement
-hi link xmlEndTag Statement
-hi link xmlNamespace Statement
-hi link xmlTag Statement
-hi link xmlTagName Statement
-hi link yamlKeyValueDelimiter Delimiter
-hi link CtrlPPrtCursor Cursor
-hi link CtrlPMatch Title
-hi link CtrlPMode2 StatusLine
-hi link deniteMatched Normal
-hi link deniteMatchedChar Title
-hi link jsFlowMaybe Normal
-hi link jsFlowObject Normal
-hi link jsFlowType PreProc
-hi link graphqlName Normal
-hi link graphqlOperator Operator
-hi link gitmessengerHash Comment
-hi link gitmessengerHeader Statement
-hi link gitmessengerHistory Constant
+hi javaParenT guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaScopeDecl guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaClassDecl guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaStorageClass guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaOperator guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaType guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaFold guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaConditional guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi javaStatement guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link javaParen Normal
 hi link jsArrowFunction Function
 hi jsBuiltins guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi jsLabel guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -195,14 +165,44 @@ hi link jsSuper Statement
 hi link jsTemplateBraces Special
 hi link jsUndefined Constant
 hi jsStorageClass guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link haskellIdentifier Special
-hi haskellOperators guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link jsonQuote Normal
 hi link markdownBold Special
 hi link markdownCode String
 hi link markdownCodeDelimiter String
 hi link markdownHeadingDelimiter Comment
 hi link markdownRule Comment
-hi link ngxDirective Statement
+hi link phpVarSelector Identifier
+hi phpUseClass guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi phpClass guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi phpClassExtends guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi phpClassImplements guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link graphqlName Normal
+hi link graphqlOperator Operator
+hi link deniteMatched Normal
+hi link deniteMatchedChar Title
+hi link jsFlowMaybe Normal
+hi link jsFlowObject Normal
+hi link jsFlowType PreProc
+hi link CtrlPPrtCursor Cursor
+hi link CtrlPMatch Title
+hi CtrlPMode1 guifg=#000000 ctermfg=0 guibg=#818596 ctermbg=102 gui=NONE cterm=NONE
+hi link CtrlPMode2 StatusLine
+hi EasyMotionShade guifg=#818596 ctermfg=102 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi EasyMotionTarget guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi EasyMotionTarget2First guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi EasyMotionTarget2Second guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi GitGutterAdd guifg=#b3a1e6 ctermfg=146 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi GitGutterChange guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi GitGutterChangeDelete guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi GitGutterDelete guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi gitmessengerEndOfBuffer guifg=#2e3459 ctermfg=236 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
+hi gitmessengerPopupNormal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi link Sneak Search
+hi link SneakScope IncSearch
+hi SyntasticErrorSign guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi link SyntasticStyleErrorSign SyntasticStyleErrorSign
+hi SyntasticStyleWarningSign guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi link SyntasticWarningSign SyntasticStyleWarningSign
 hi link plug1 Normal
 hi link plug2 Identifier
 hi link plugDash Comment
@@ -221,6 +221,25 @@ hi link StartifyPath Comment
 hi link StartifySection Statement
 hi link StartifySlash Comment
 hi link StartifySpecial Normal
+hi link helpHyperTextJump Constant
+hi pythonImport guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonClassVar guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link pythonDot Title
+hi link pythonBuiltinType pythonClassVar
+hi pythonFunction guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonBuiltinFunc guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi pythonRepeat guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link pythonOperator Operator
+hi link rubyDefine Statement
+hi rubyKeywordAsMethod guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link rubyFunction Title
+hi link rubyInterpolationDelimiter String
+hi link rubySharpBang Comment
+hi link rubyStringDelimiter String
+hi link sassClass Special
+hi link shFunction Normal
+hi link ngxDirective Statement
+hi sqlFold guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link swiftIdentifier Normal
 hi link typescriptAjaxMethods Normal
 hi link typescriptBraces Normal
@@ -232,42 +251,22 @@ hi link typescriptIdentifier Statement
 hi link typescriptMessage Normal
 hi link typescriptNull Constant
 hi link typescriptParens Normal
-hi CtrlPMode1 guifg=#000000 ctermfg=0 guibg=#818596 ctermbg=102 gui=NONE cterm=NONE
-hi EasyMotionShade guifg=#818596 ctermfg=102 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi EasyMotionTarget guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi EasyMotionTarget2First guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi EasyMotionTarget2Second guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi GitGutterAdd guifg=#b3a1e6 ctermfg=146 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi GitGutterChange guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi GitGutterChangeDelete guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi GitGutterDelete guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi gitmessengerEndOfBuffer guifg=#2e3459 ctermfg=236 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
-hi gitmessengerPopupNormal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi link Sneak Search
-hi link SneakScope IncSearch
-hi SyntasticErrorSign guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi link SyntasticStyleErrorSign SyntasticStyleErrorSign
-hi SyntasticStyleWarningSign guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi link SyntasticWarningSign SyntasticStyleWarningSign
-hi dartSdkClass guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartInterpolation guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartFunction guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link dartOperator Operator
-hi dartRepeat guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartUserType guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartTypeDef guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartCoreType guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi dartSpecialChar guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaParenT guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaScopeDecl guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaClassDecl guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaStorageClass guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaOperator guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaType guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaFold guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaConditional guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi javaStatement guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi link javaParen Normal
+hi link vimContinue Comment
+hi link vimFuncSID vimFunction
+hi link vimFuncVar Normal
+hi link vimFunction Title
+hi link vimGroup Statement
+hi link vimHiGroup Statement
+hi link vimHiTerm Identifier
+hi link vimMapModKey Special
+hi link vimOption Identifier
+hi link vimVar Normal
+hi link xmlAttrib Constant
+hi link xmlAttribPunct Statement
+hi link xmlEndTag Statement
+hi link xmlNamespace Statement
+hi link xmlTag Statement
+hi link xmlTagName Statement
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)

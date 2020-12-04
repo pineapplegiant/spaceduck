@@ -1,0 +1,11 @@
+#Vim Shit
+vimContinue: '@Comment'
+vimFuncSID: '@vimFunction'
+vimFuncVar: '@Normal'
+vimFunction: '@Title'
+vimGroup: '@Statement'
+vimHiGroup: '@Statement'
+vimHiTerm: '@Identifier'
+vimMapModKey: '@Special'
+vimOption: '@Identifier'
+vimVar: '@Normal'

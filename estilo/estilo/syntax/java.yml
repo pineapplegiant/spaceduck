@@ -1,0 +1,11 @@
+# Java even though nobody would ever use this, unless?
+javaParenT: 'pink'
+javaScopeDecl: 'purple'
+javaClassDecl: 'yellow'
+javaStorageClass: 'green'
+javaOperator: 'pink'
+javaType: 'orange'
+javaFold: 'cyan'
+javaConditional: 'purple'
+javaStatement: 'orange'
+javaParen: '@Normal'

@@ -1,0 +1,73 @@
+# PLUGINS // MISC
+
+# GraphQL?
+graphqlName: '@Normal'
+graphqlOperator: '@Operator'
+
+# Denite
+deniteMatched: '@Normal'
+deniteMatchedChar: '@Title'
+
+# JSFlow?
+jsFlowMaybe: '@Normal'
+jsFlowObject: '@Normal'
+jsFlowType: '@PreProc'
+
+# CtrlP
+CtrlPPrtCursor: '@Cursor'
+CtrlPMatch: '@Title'
+CtrlPMode1: 'pureBlack grey' 
+CtrlPMode2: '@StatusLine'
+
+# EasyMotion
+EasyMotionShade: 'grey'
+EasyMotionTarget: 'purple'
+EasyMotionTarget2First: 'orange'
+EasyMotionTarget2Second: 'orange'
+
+# Gitgutter
+GitGutterAdd: 'purple background'
+GitGutterChange: 'foreground background'
+GitGutterChangeDelete: 'foreground background'
+GitGutterDelete: 'red background'
+gitmessengerEndOfBuffer: 'darkPurp pureBlack'
+gitmessengerPopupNormal: 'foreground background'
+
+# Sneakin'
+Sneak: '@Search'
+SneakScope: '@IncSearch'
+
+# Syntastic
+SyntasticErrorSign: 'red background'
+SyntasticStyleErrorSign: '@SyntasticStyleErrorSign'
+SyntasticStyleWarningSign: 'red background'
+SyntasticWarningSign: '@SyntasticStyleWarningSign' 
+
+# Plug
+plug1: '@Normal'
+plug2: '@Identifier'
+plugDash: '@Comment'
+plugMessage: '@Special'
+
+# Signify
+SignifySignAdd: '@GitGutterAdd'
+SignifySignChange: '@GitGutterChange'
+SignifySignChangeDelete: '@GitGutterChangeDelete'
+SignifySignDelete: '@GitGutterDelete'
+SignifySignDeleteFirstLine: '@SignifySignDelete'
+
+
+# Startify
+StartifyBracket: '@Comment'
+StartifyFile: '@Identifier'
+StartifyFooter: '@Constant'
+StartifyHeader: '@Constant'
+StartifyNumber: '@Special'
+StartifyPath: '@Comment'
+StartifySection: '@Statement'
+StartifySlash: '@Comment'
+StartifySpecial: '@Normal'
+
+
+# Hyper Help Text
+helpHyperTextJump: '@Constant'

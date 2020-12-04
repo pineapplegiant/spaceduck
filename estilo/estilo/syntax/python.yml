@@ -1,0 +1,9 @@
+# Python stuff {VimPolyglot}
+pythonImport: 'magenta'
+pythonClassVar: 'cyan'
+pythonDot: '@Title'
+pythonBuiltinType: '@pythonClassVar'
+pythonFunction: 'green2'
+pythonBuiltinFunc: 'purple'
+pythonRepeat: 'magenta'
+pythonOperator: '@Operator'
