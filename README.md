@@ -110,6 +110,13 @@ Add this to your vimrc/init.vim configuration file:
 
 * [Lightline](https://github.com/itchyny/lightline.vim)
 
+<center>
+  <img  src="./www/img/normal.png" alt="lightline normal mode screenshot">
+  <img  src="./www/img/visual.png" alt="lightline visual mode screenshot">
+  <img  src="./www/img/insert.png" alt="lightline insert mode screenshot">
+  <img  src="./www/img/replace.png" alt="lightline replace mode screenshot">
+</center>
+
 ```vimscript
   let g:spaceduck_lightline = 1
   let g:lightline = { 'colorscheme': 'spaceduck' }
@@ -121,6 +128,10 @@ Don't be afraid of the vim documentation either for more information, like for m
 
 ## Iterm2
 
+<center>
+  <img  src="./iTerm.png" alt="iTerm2 screenshot of terminal with neofetch program ran">
+</center>
+
 To get the theme into Iterm, download the spaceduck.itermcolors file and [import it into your settings](https://iterm2colorschemes.com/).
 
 You can curl it if you wanna be cool?
@@ -130,6 +141,10 @@ You can curl it if you wanna be cool?
 ```
 
 ## Terminal.app MacOS
+
+<center>
+  <img  src="./terminal.png" alt="Terminal screenshot of terminal with neofetch program ran">
+</center>
 
 To get the theme into Iterm, download the spaceduck.terminal file and import it into your settings.
 

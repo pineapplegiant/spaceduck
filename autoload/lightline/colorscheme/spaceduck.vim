@@ -4,32 +4,32 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/03 22:24
+" Last Change: 2020/12/05 02:28
 " ============================================================
 
 let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {} }
 
-let s:p.normal.left = [[["#000000", 0], ["#2e3459", 236]], [["#1f2440", 235], ["#686f9a", 60]]]
-let s:p.normal.middle = [[["#1f2440", 235], ["#272c42", 236]]]
-let s:p.normal.right = [[["#1f2440", 235], ["#272c42", 236]], [["#1f2440", 235], ["#272c42", 236]]]
+let s:p.normal.left = [[["", ], ["", ]], [["#1f2440", 235], ["#686f9a", 60]]]
+let s:p.normal.middle = [[["#686f9a", 60], ["#272c42", 236]]]
+let s:p.normal.right = [[["#000000", 0], ["#2e3459", 236]], [["#686f9a", 60], ["#272c42", 236]]]
 let s:p.normal.error = [[["#000000", 0], ["#e33400", 166]]]
 let s:p.normal.warning = [[["#000000", 0], ["#e39400", 172]]]
 
-let s:p.inactive.left = [[["#272c42", 236], ["#16172d", 234]], [["#272c42", 236], ["#16172d", 234]]]
-let s:p.inactive.middle = [[["#272c42", 236], ["#16172d", 234]]]
-let s:p.inactive.right = [[["#272c42", 236], ["#16172d", 234]], [["#272c42", 236], ["#16172d", 234]]]
+let s:p.inactive.left = [[["#686f9a", 60], ["#272c42", 236]], [["#686f9a", 60], ["#272c42", 236]]]
+let s:p.inactive.middle = [[["#686f9a", 60], ["#272c42", 236]]]
+let s:p.inactive.right = [[["#686f9a", 60], ["#272c42", 236]], [["#686f9a", 60], ["#272c42", 236]]]
 
 let s:p.insert.left = [[["#000000", 0], ["#5ccc96", 78]], [["#1f2440", 235], ["#686f9a", 60]]]
-let s:p.insert.middle = [[["#1f2440", 235], ["#272c42", 236]]]
-let s:p.insert.right = [[["#1f2440", 235], ["#272c42", 236]], [["#1f2440", 235], ["#272c42", 236]]]
+let s:p.insert.middle = [[["#686f9a", 60], ["#272c42", 236]]]
+let s:p.insert.right = [[["#000000", 0], ["#5ccc96", 78]], [["#686f9a", 60], ["#272c42", 236]]]
 
 let s:p.replace.left = [[["#000000", 0], ["#7a5ccc", 98]], [["#1f2440", 235], ["#686f9a", 60]]]
-let s:p.replace.middle = [[["#1f2440", 235], ["#272c42", 236]]]
-let s:p.replace.right = [[["#1f2440", 235], ["#272c42", 236]], [["#1f2440", 235], ["#272c42", 236]]]
+let s:p.replace.middle = [[["#686f9a", 60], ["#272c42", 236]]]
+let s:p.replace.right = [[["#000000", 0], ["#7a5ccc", 98]], [["#686f9a", 60], ["#272c42", 236]]]
 
 let s:p.visual.left = [[["#000000", 0], ["#f2ce00", 220]], [["#1f2440", 235], ["#686f9a", 60]]]
-let s:p.visual.middle = [[["#1f2440", 235], ["#272c42", 236]]]
-let s:p.visual.right = [[["#1f2440", 235], ["#272c42", 236]], [["#1f2440", 235], ["#272c42", 236]]]
+let s:p.visual.middle = [[["#686f9a", 60], ["#272c42", 236]]]
+let s:p.visual.right = [[["#000000", 0], ["#f2ce00", 220]], [["#686f9a", 60], ["#272c42", 236]]]
 
 let s:p.tabline.left = [[["#ecf0c1", 255], ["#0f111b", 233]]]
 let s:p.tabline.tabsel = [[["#ecf0c1", 255], ["#0f111b", 233]]]

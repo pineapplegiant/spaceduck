@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/04 15:23
+" Last Change: 2020/12/05 02:28
 " ===============================================================
 
 set background=dark
