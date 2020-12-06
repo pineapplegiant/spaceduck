@@ -104,7 +104,6 @@ Add this to your vimrc/init.vim configuration file:
 * [Airline](https://github.com/vim-airline/vim-airline)
 
 ```vimscript
-  let g:spaceduck_airline = 1
   let g:airline_theme = 'spaceduck'
 ```
 
@@ -118,8 +117,9 @@ Add this to your vimrc/init.vim configuration file:
 </center>
 
 ```vimscript
-  let g:spaceduck_lightline = 1
-  let g:lightline = { 'colorscheme': 'spaceduck' }
+    let g:lightline = {
+          \ 'colorscheme': 'spaceduck',
+          \ }
 ```
 
 Don't be afraid of the vim documentation either for more information, like for manual installs! I know I am:

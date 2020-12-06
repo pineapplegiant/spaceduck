@@ -17,7 +17,7 @@ VertSplit: 'pureBlack pureBlack'
 Folded: 'darkPurp2 background'
 FoldColumn: 'darkPurp background'
 SignColumn: 'darkPurp background'
-IncSearch: '- visualSel'                       # TODO
+IncSearch: 'pureWhite visualSel'                       # TODO
 LineNr: 'darkPurp background'
 MatchParen: 'grey darkPurp'
 ModeMsg: 'purple'
@@ -30,7 +30,7 @@ PmenuSbar: 'foreground darkPurp2'   # TODO
 PmenuThumb: 'foreground darkPurp2 ' # TODO
 Question: 'purple'
 QuickFixLine: 'foreground cursorLine'
-Search: '- search'
+Search: 'pureWhite search'
 SpecialKey: 'orange background'
 SpellBad: 'red - u'
 SpellLocal: 'foreground - u'
@@ -44,7 +44,7 @@ TabLine: 'pureBlack grey'
 TabLineFill: 'grey pureBlack'
 TabLineSel: 'grey2 background'
 Title: 'orange'
-Visual: 'foreground darkPurp2'
+Visual: '- darkPurp2'
 VisualNOS: '' #TODO
 WarningMsg: 'orange background'
 WildMenu: 'pureBlack grey2'
