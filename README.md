@@ -146,9 +146,9 @@ You can curl it if you wanna be cool?
   <img  src="./terminal.png" alt="Terminal screenshot of terminal with neofetch program ran">
 </center>
 
-To get the theme into Iterm, download the spaceduck.terminal file and import it into your settings.
+To get the theme into the Mac Terminal app, download the spaceduck.terminal file and import it into your settings.
 
-You can curl it if you wanna be cool?
+You can curl it if you wanna be cool too!?
 
 ```bash
   curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/spaceduck.terminal"
