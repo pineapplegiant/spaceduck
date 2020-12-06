@@ -16,7 +16,7 @@
 
 # Table of Contents
 - [Inspiration 💭](#inspiration---)
-- [Colors Palette (WIP) 🎨 (TODO Cterm colors)](#colors-palette--wip------todo-cterm-colors-)
+- [Colors Palette](#colors-palette)
   * [Base Colors](#base-colors)
   * [Special Colors](#special-colors)
   * [Coloration Colors](#coloration-colors)
