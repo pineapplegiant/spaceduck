@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/06 02:43
+" Last Change: 2020/12/06 03:12
 " ===============================================================
 
 set background=dark
@@ -43,7 +43,7 @@ hi VertSplit guifg=#000000 ctermfg=0 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
 hi Folded guifg=#686f9a ctermfg=60 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi FoldColumn guifg=#2e3459 ctermfg=236 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi SignColumn guifg=#2e3459 ctermfg=236 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi IncSearch guifg=#ffffff ctermfg=15 guibg=#272c42 ctermbg=236 gui=NONE cterm=NONE
+hi IncSearch guifg=NONE ctermfg=NONE guibg=#272c42 ctermbg=236 gui=NONE cterm=NONE
 hi LineNr guifg=#2e3459 ctermfg=236 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi MatchParen guifg=#818596 ctermfg=102 guibg=#2e3459 ctermbg=236 gui=NONE cterm=NONE
 hi ModeMsg guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -56,7 +56,7 @@ hi PmenuSbar guifg=#ecf0c1 ctermfg=255 guibg=#686f9a ctermbg=60 gui=NONE cterm=N
 hi PmenuThumb guifg=#ecf0c1 ctermfg=255 guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
 hi Question guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi QuickFixLine guifg=#ecf0c1 ctermfg=255 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-hi Search guifg=#ffffff ctermfg=15 guibg=#114fd6 ctermbg=26 gui=NONE cterm=NONE
+hi Search guifg=NONE ctermfg=NONE guibg=#114fd6 ctermbg=26 gui=NONE cterm=NONE
 hi SpecialKey guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi SpellBad guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi SpellLocal guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=underline cterm=underline
