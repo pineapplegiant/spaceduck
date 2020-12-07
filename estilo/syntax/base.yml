@@ -2,32 +2,32 @@
 ColorColumn: '- background'
 Conceal: ''  # IDK what these are bro
 Cursor: 'background grey'
-CursorIM: '' # IDK what these are either, bro
+CursorIM: '' # IDK what these are either...
 CursorColumn: '- cursorLine'
 CursorLine: '- cursorLine'
 CursorLineNr: 'grey2 cursorLine'
 Directory: 'cyan'
-DiffAdd: 'green2 darkPurp2'         # TODO
-DiffChange: 'cyan darkPurp2'        # TODO
-DiffDelete: 'red darkPurp2'         # TODO
-DiffText: 'foreground darkPurp2'    # TODO
+DiffAdd: 'green2 darkPurp2'
+DiffChange: 'cyan darkPurp2'
+DiffDelete: 'red darkPurp2'
+DiffText: 'foreground darkPurp2'
 EndOfBuffer: 'darkPurp background'
 ErrorMsg: 'red background'
 VertSplit: 'pureBlack pureBlack'
 Folded: 'darkPurp2 background'
 FoldColumn: 'darkPurp background'
 SignColumn: 'darkPurp background'
-IncSearch: 'pureWhite visualSel'                       # TODO
+IncSearch: 'pureWhite visualSel'
 LineNr: 'darkPurp background'
 MatchParen: 'grey darkPurp'
 ModeMsg: 'purple'
 MoreMsg: 'purple'
 NonText: '@EndOfBuffer'
 Normal: 'foreground background'
-PMenu: 'foreground darkPurp'        # TODO 
-PMenuSel: 'yellow visualSel'        # TODO
-PmenuSbar: 'foreground darkPurp2'   # TODO
-PmenuThumb: 'foreground darkPurp2 ' # TODO
+PMenu: 'foreground darkPurp'
+PMenuSel: 'yellow visualSel'
+PmenuSbar: 'foreground darkPurp2'
+PmenuThumb: 'foreground darkPurp2'
 Question: 'purple'
 QuickFixLine: 'foreground cursorLine'
 Search: 'pureWhite search'
@@ -55,34 +55,34 @@ diffRemoved: 'red -'
 Comment: 'comment'
 Constant: 'yellow'
 String: 'cyan'                      # Constant
-Character: ''                       # Constant
-Boolean: ''                         # Constant
-Number: ''                          # Constant
-Float: ''                           # Constant
+Character: '@Constant'              # Constant
+Boolean: '@Constant'                # Constant
+Number: '@Constant'                 # Constant
+Float: '@Constant'                  # Constant
 Identifier: 'foreground'
 Function: 'green'                   # Identifier
 Statement: 'green'
 Conditional: 'green2'               # Statement
-Repeat: ''                          # Statement
-Label: ''                           # Statement
-Operator: 'orange'                   # Statement
-Keyword: ''                         # Statement
+Repeat: '@Statement'                # Statement
+Label: '@Statement'                 # Statement
+Operator: 'orange'                  # Statement
+Keyword: '@Operator'                # Statement
 Exception: ''                       # Statement
 PreProc: 'purple'
 Include: 'green'                    # PreProc
-Define: ''                          # PreProc
-Macro: ''                           # PreProc
-PreCondit: ''                       # PreProc
+Define: '@PreProc'                  # PreProc
+Macro: '@PreProc'                   # PreProc
+PreCondit: '@PreProc'               # PreProc
 Type: 'yellow'
 StorageClass: 'green'               # Type
 Structure: 'cyan'                   # Type
 Typedef: 'cyan'                     # Type
 Special: 'purple'
 SpecialChar: 'red'                  # Special
-Tag: ''                             # Special
+Tag: '@Special'                     # Special
 Delimiter: 'foreground'             # Special
 SpecialComment: ''                  # Special
-Debug: ''                           # Special
+Debug: '@Special'                   # Special
 Underlined: 'green - u'
 Ignore: ''
 Error: '@ErrorMsg'
