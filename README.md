@@ -15,21 +15,21 @@
 </center>
 
 # Table of Contents
-- [Inspiration 💭](#inspiration---)
-- [Colors Palette](#colors-palette)
+- [Inspiration 💭](#inspiration-💭)
+- [Colors Palette 🎨](#colors-palette-🎨)
   * [Base Colors](#base-colors)
   * [Special Colors](#special-colors)
   * [Coloration Colors](#coloration-colors)
-- [Install 💾](#install---)
-  * [Vim / Neovim](#vim---neovim)
+- [Install 💾](#install-💾)
+  * [Vim and Neovim](#vim-and-neovim)
   * [Iterm2](#iterm2)
   * [Terminal.app MacOS](#terminalapp-macos)
   * [Slack](#slack)
-- [Troubleshooting 🔧](#troubleshooting---)
+- [Troubleshooting 🔧](#troubleshooting)
   * [True color](#true-color)
   * [Colors don't look right](#colors-don-t-look-right)
-- [Credits 💳](#credits---)
-- [Contribute? 🙏](#contribute----)
+- [Credits 💳](#credits-💳)
+- [Contribute 🙏](#contribute-🙏)
 
 # Inspiration 💭
 
@@ -83,7 +83,7 @@ If using Vim/Neovim I recommend installing the [vim-polyglot](https://github.com
 
 `Plug 'sheerun/vim-polyglot'`
 
-## Vim / Neovim
+## Vim and Neovim
 
 Install the plugin with whatever plugin manager you use:
 
@@ -191,6 +191,6 @@ And in your `.bash_profile or .zshrc`:
 * [Rigel](https://github.com/Rigellute/rigel) - Showed me the ways of using Estilo to manage colors & that sexy themes can exist.
 
 
-# Contribute? 🙏
+# Contribute 🙏
 
 If you'd like to contribute please reach out! I don't know what I'm doing.
