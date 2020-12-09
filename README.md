@@ -78,7 +78,6 @@ If it looks ugly it's because I don't know what I'm doing pls help. If it's the 
 | ![Foreground Color](./www/img/foreground.png)            | Foreground       | `#ecf0c1` | `65,20,94`     | `236, 240, 193` | `255`     |
 | ![Visual Selection Color](./www/img/visualSelection.png) | Visual Selection | `#272c42` | `229,41,26`    | `39, 44, 66`    | `236`     |
 | ![Cursor Line Color](./www/img/cursorLine.png)           | Cursor Line      | `#16172d` | `237,51,18`    | `22, 23, 45`    | `234`     |
-| ![Comment Color](./www/img/comment.png)                  | Comment          | `#1f2440` | `231,52,25`    | `31, 36, 64`    | `235`     |
 | ![Search Color](./www/img/search.png)                    | Search           | `#114fd6` | `221,92,84`    | `17, 79, 214`   | `26`      |
 
 ## Coloration Colors                                                                                                                       

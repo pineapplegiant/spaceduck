@@ -3,7 +3,6 @@ background:     '#0f111b'
 foreground:     '#ecf0c1'
 visualSel:      '#272c42'
 cursorLine:     '#16172d'
-comment:        '#1f2440'
 search:         '#114fd6'
 
 # Base Colors

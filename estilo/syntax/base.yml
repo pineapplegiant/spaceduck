@@ -52,7 +52,7 @@ diffAdded: 'purple -'
 diffRemoved: 'red -'
 
 # BASE SYNTAX
-Comment: 'comment'
+Comment: 'darkPurp'
 Constant: 'yellow'
 String: 'cyan'                      # Constant
 Character: '@Constant'              # Constant
