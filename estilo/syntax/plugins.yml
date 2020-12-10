@@ -71,3 +71,9 @@ StartifySpecial: '@Normal'
 
 # Hyper Help Text
 helpHyperTextJump: '@Constant'
+
+# Vista
+VistaTag: 'green'
+VistaIcon: 'cyan'
+VistaScope: 'yellow'
+VistaKind: 'green2'

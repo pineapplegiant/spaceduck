@@ -16,6 +16,7 @@
 
 # Table of Contents
 - [Inspiration 💭](#inspiration-💭)
+- [TODO](#todo)
 - [Colors Palette 🎨](#colors-palette-🎨)
   * [Base Colors](#base-colors)
   * [Special Colors](#special-colors)
@@ -38,7 +39,7 @@ This theme was inspired from my incessant desire to feel like I'm in space when 
 
 If it looks ugly it's because I don't know what I'm doing pls help. If it's the sexiest thing you've ever seen, well then uhm.. you're welcome 😎
 
-# TODO (WIP)
+# TODO 
 
 - [ ] Screenshots gallery for colorscheme.
 - [ ] Fix ugly VimDiff.
@@ -52,7 +53,7 @@ If it looks ugly it's because I don't know what I'm doing pls help. If it's the 
 - [ ] Make a pretty website landing page.
 
 
-# Colors Palette
+# Colors Palette 🎨
 
 ## Base Colors
 

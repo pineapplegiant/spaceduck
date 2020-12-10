@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/10 15:13
+" Last Change: 2020/12/10 16:23
 " ===============================================================
 
 set background=dark
@@ -33,10 +33,10 @@ hi CursorColumn guifg=NONE ctermfg=NONE guibg=#16172d ctermbg=234 gui=NONE cterm
 hi CursorLine guifg=NONE ctermfg=NONE guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#c1c3cc ctermfg=251 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
 hi Directory guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi DiffAdd guifg=#67bf95 ctermfg=72 guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
-hi DiffChange guifg=#00a3cc ctermfg=38 guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
-hi DiffDelete guifg=#e33400 ctermfg=166 guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
-hi DiffText guifg=#ecf0c1 ctermfg=255 guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
+hi DiffAdd guifg=#5ccc96 ctermfg=78 guibg=#272c42 ctermbg=236 gui=NONE cterm=NONE
+hi DiffChange guifg=#e39400 ctermfg=172 guibg=#272c42 ctermbg=236 gui=NONE cterm=NONE
+hi DiffDelete guifg=#e33400 ctermfg=166 guibg=#272c42 ctermbg=236 gui=NONE cterm=NONE
+hi DiffText guifg=#f2ce00 ctermfg=220 guibg=#272c42 ctermbg=236 gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#2e3459 ctermfg=236 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi ErrorMsg guifg=#e33400 ctermfg=166 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi VertSplit guifg=#000000 ctermfg=0 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
@@ -234,6 +234,10 @@ hi link StartifySection Statement
 hi link StartifySlash Comment
 hi link StartifySpecial Normal
 hi link helpHyperTextJump Constant
+hi VistaTag guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi VistaIcon guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi VistaScope guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi VistaKind guifg=#67bf95 ctermfg=72 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi pythonImport guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi pythonClassVar guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link pythonDot Title

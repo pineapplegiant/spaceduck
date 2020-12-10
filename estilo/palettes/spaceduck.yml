@@ -27,7 +27,11 @@ grey:           '#818596'
 grey2:          '#c1c3cc'
 
 
-# Deprecated??
+# Deprecated maybe
+#diffAdd:        '#6bb391'
+#diffChange:     '#b39a6b'
+#diffDelete:     '#b37d6b'
+#diffText:       '#6b76b3'
 #white1:         '#656782' 
 #white2:         '#B6A8DD' 
 #cursorColor:    '#c1c3cc'
@@ -39,6 +43,5 @@ grey2:          '#c1c3cc'
 # tabline:        '#818596'
 # TablineSel:     '#9a9ca5'
 #darkness:       '#17171b'
-# Black
 #black1:         '#444b71'
 #black2:         '#1a1b35'
