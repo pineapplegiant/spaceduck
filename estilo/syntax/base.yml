@@ -44,7 +44,7 @@ TabLine: 'pureBlack grey'
 TabLineFill: 'grey pureBlack'
 TabLineSel: 'grey2 background'
 Title: 'orange'
-Visual: '- darkPurp2'
+Visual: '- visualSel'
 VisualNOS: '' #TODO
 WarningMsg: 'orange background'
 WildMenu: 'pureBlack grey2'
