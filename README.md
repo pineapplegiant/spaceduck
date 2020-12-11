@@ -11,26 +11,30 @@
 </center>
 
 <center>
-  <img  src="./screenshot.png" alt="Screenshot of terminal with vim spaceduck theme installed">
+  <img  src="./www/screenshots/screenshot.png" alt="Screenshot of terminal with vim spaceduck theme installed">
 </center>
 
 # Table of Contents
-- [Inspiration 💭](#inspiration-💭)
-- [TODO](#todo)
-- [Colors Palette 🎨](#colors-palette-🎨)
-  * [Base Colors](#base-colors)
-  * [Special Colors](#special-colors)
-  * [Coloration Colors](#coloration-colors)
-- [Install 💾](#install-💾)
-  * [Vim and Neovim](#vim-and-neovim)
-  * [Iterm2](#iterm2)
-  * [Terminal.app MacOS](#terminalapp-macos)
-  * [Slack](#slack)
-- [Troubleshooting 🔧](#troubleshooting)
-  * [True color](#true-color)
-  * [Colors don't look right](#colors-don-t-look-right)
-- [Credits 💳](#credits-💳)
-- [Contribute 🙏](#contribute-🙏)
+
+* [Inspiration 💭](#inspiration-💭)
+* [TODO](#todo)
+* [Colors Palette 🎨](#colors-palette-🎨)
+    * [Base Colors](#base-colors)
+    * [Special Colors](#special-colors)
+    * [Coloration Colors](#coloration-colors)
+* [Install 💾](#install-💾)
+    * [Vim and Neovim](#vim-and-neovim)
+    * [Iterm2](#iterm2)
+    * [Terminal.app MacOS](#terminalapp-macos)
+    * [Slack](#slack)
+* [Troubleshooting 🔧](#troubleshooting-)
+    * [True color](#true-color)
+    * [Colors don't look right](#colors-dont-look-right)
+* [Screenshots 📸](#screenshots-📸)
+* [Credits 💳](#credits-💳)
+* [Contribute 🙏](#contribute-🙏)
+    * [Vim/Estilo Workflow](#vimestilo-workflow)
+
 
 # Inspiration 💭
 
@@ -41,7 +45,7 @@ If it looks ugly it's because I don't know what I'm doing pls help. If it's the 
 
 # TODO 
 
-- [ ] Screenshots gallery for colorscheme.
+- [x] Screenshots gallery for colorscheme.
 - [ ] Fix ugly VimDiff.
 - [ ] Better 256 color for older terminals.
 - [ ] Finalize proper coloring of syntax keywords.
@@ -143,7 +147,7 @@ Don't be afraid of the vim documentation either for more information, like for m
 ## Iterm2
 
 <center>
-  <img  src="./iTerm.png" alt="iTerm2 screenshot of terminal with neofetch program ran">
+  <img  src="./www/screenshots/iTerm.png" alt="iTerm2 screenshot of terminal with neofetch program ran">
 </center>
 
 To get the theme into Iterm, download the spaceduck.itermcolors file and [import it into your settings](https://iterm2colorschemes.com/).
@@ -157,7 +161,7 @@ You can curl it if you wanna be cool?
 ## Terminal.app MacOS
 
 <center>
-  <img  src="./terminal.png" alt="Terminal screenshot of terminal with neofetch program ran">
+  <img  src="./www/screenshots/terminal.png" alt="Terminal screenshot of terminal with neofetch program ran">
 </center>
 
 To get the theme into the Mac Terminal app, download the spaceduck.terminal file and import it into your settings.
@@ -199,6 +203,13 @@ And in your `.bash_profile or .zshrc`:
   export TERM="xterm-256color"
 ```
 
+# Screenshots 📸
+
+* Arch Desktop inspo: [Credit to u/addisonbean](https://imgur.com/a/n4azoPS)
+<center>
+  <img  src="./www/screenshots/arch.png" alt="Screenshot of spaceduck theme on Arch">
+</center>
+
 # Credits 💳
 
 * [Iceberg](https://cocopon.github.io/iceberg.vim/) - Gave me the blueprint for developing a [lovely colorscheme](https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme).
@@ -209,3 +220,39 @@ And in your `.bash_profile or .zshrc`:
 # Contribute 🙏
 
 If you'd like to contribute please reach out! I don't know what I'm doing.
+If you port it to whatever you're using, submit a PR so I can include it here!
+
+
+## Vim/Estilo Workflow 
+
+I use [estilo](https://github.com/jacoborus/estilo) to manage colors for Vim/Neovim, please install the dependencies to render colors on your local machine.
+
+```javascript
+    npm install -g estilo
+```
+
+* The color palette is specified in `./estilo/palettes/spaceduck.yml` 
+* UI elements specified in `./estilo/syntax/base.yml`
+* Other colorizations elements can be found in `./estilo/syntax/*`
+
+**To compile the colors from the YAML into the colors theme:**
+
+Once estilo is installed, run: `estilo render` in the root of this directory to compile the color theme into the colors directory. 
+
+Lightline and airline colors are defined in `./estilo/lightline/spaceduck.yml` and `./estilo/lightline/spaceduck.yml` respectively.
+
+Random aside: if you run into a [hexterm error when using estilo look at this PR that hasn't been merged yet.](https://github.com/jacoborus/estilo/pull/46/files) 
+
+To find the [current syntax element under the cursor](https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor), I use this mapping:
+
+```vimscript
+" Show syntax color highlighting groups for word under cursor
+    nmap <c-a> :call <SID>SynStack()<CR>
+    function! <SID>SynStack()
+      if !exists("*synstack")
+        return
+      endif
+      echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+    endfunction
+```
+This will show you the syntax ID to where we can then modify the color of that word.
