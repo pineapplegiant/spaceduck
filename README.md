@@ -17,24 +17,25 @@
 # Table of Contents
 
 * [Inspiration 💭](#inspiration-💭)
-* [TODO](#todo)
 * [Colors Palette 🎨](#colors-palette-🎨)
     * [Base Colors](#base-colors)
     * [Special Colors](#special-colors)
     * [Coloration Colors](#coloration-colors)
+    * [Current Tested Support](#current-tested-support)
 * [Install 💾](#install-💾)
     * [Vim and Neovim](#vim-and-neovim)
     * [Iterm2](#iterm2)
     * [Terminal.app MacOS](#terminalapp-macos)
     * [Slack](#slack)
-* [Troubleshooting 🔧](#troubleshooting-)
+* [Troubleshooting 🔧](#troubleshooting-🔧)
     * [True color](#true-color)
     * [Colors don't look right](#colors-dont-look-right)
 * [Screenshots 📸](#screenshots-📸)
 * [Credits 💳](#credits-💳)
 * [Contribute 🙏](#contribute-🙏)
-    * [Vim/Estilo Workflow](#vimestilo-workflow)
-
+    * [Vim Estilo](#vim-estilo)
+        * [Testing colors look good](#testing-colors-look-good)
+        * [TODO](#todo)
 
 # Inspiration 💭
 
@@ -43,57 +44,57 @@ This theme was inspired from my incessant desire to feel like I'm in space when 
 
 If it looks ugly it's because I don't know what I'm doing pls help. If it's the sexiest thing you've ever seen, well then uhm.. you're welcome 😎
 
-# TODO 
-
-- [x] Screenshots gallery for colorscheme.
-- [ ] Fix ugly VimDiff.
-- [ ] Better 256 color for older terminals.
-- [ ] Finalize proper coloring of syntax keywords.
-- [ ] Add TMUX color snippet.
-- [ ] Add Bash prompt color codes.
-- [ ] Test if Airline looks nice and works.
-- [ ] Add manual installation for vim/neovim.
-- [ ] Port it to VSCODE for the homies?
-- [ ] Make a pretty website landing page.
-
 
 # Colors Palette 🎨
 
 ## Base Colors
 
-![Color Picker Boxes](./www/img/eyedropper.png)   | Palette      | Hex       | HSV/HSB        | RGB             | cterm/256 | 
---------------------------------------------------| ------------ | --------- | -------------- | --------------- | --------- | 
-![Red Color](./www/img/red.png)                   | Red          | `#e33400` | `14,100,89`    | `227, 52, 0`    | `166`     | 
-![Orange Color](./www/img/orange.png)             | Orange       | `#e39400` | `39,100,89`    | `227, 148, 0`   | `172`     | 
-![Green Color](./www/img/green.png)               | Green        | `#5ccc96` | `151,55,80`    | `92, 204, 150`  | `78`      | 
-![Green2 Color](./www/img/green2.png)             | Green2       | `#67bf95` | `151,46,75`    | `103, 191, 149` | `72`      | 
-![Yellow Color](./www/img/yellow.png)             | Yellow       | `#f2ce00` | `51,100,95`    | `242, 206, 0`   | `220`     | 
-![Purple Color](./www/img/purple.png)             | Purple       | `#b3a1e6` | `256,30,90`    | `179, 161, 230` | `146`     | 
-![Purple2 Color](./www/img/purple2.png)           | Purple2      | `#7a5ccc` | `256,55,80`    | `122, 92, 204`  | `98`      | 
-![Dark Purple Color](./www/img/darkPurple.png)    | Dark Purple  | `#2e3459` | `232,48,35`    | `46, 52, 89`    | `236`     | 
-![Dark Purple2 Color](./www/img/darkPurple2.png)  | Dark Purple2 | `#686f9a` | `232,32,60`    | `104, 111, 154` | `60`      | 
-![Cyan Color](./www/img/cyan.png)                 | Cyan         | `#00a3cc` | `192,100,80`   | `0, 163, 204`   | `38`      | 
-![Magent Color](./www/img/magenta.png)            | Magenta      | `#ce6f8f` | `340,46,81`    | `206, 111, 143` | `168`     | 
-![Pick Color](./www/img/pink.png)                 | Pink         | `#e6a1a3` | `358,30,90`    | `230, 161, 163` | `181`     | 
+*Note: The Syn color ID's are not an exhaustive & complete list.*
+
+![Color Picker Boxes](./www/img/eyedropper.png)   | Palette      | Hex       | HSV/HSB        | RGB             | cterm/256 |             SYN ID                                      |
+--------------------------------------------------| ------------ | --------- | -------------- | --------------- | --------- | ------------------------------------------------------  |
+![Red Color](./www/img/red.png)                   | Red          | `#e33400` | `14,100,89`    | `227, 52, 0`    | `166`     |  Error, Ignore                                          |
+![Orange Color](./www/img/orange.png)             | Orange       | `#e39400` | `39,100,89`    | `227, 148, 0`   | `172`     |  Exception, Keyword, SpecialChar                        |
+![Green Color](./www/img/green.png)               | Green        | `#5ccc96` | `151,55,80`    | `92, 204, 150`  | `78`      |  Statement, Underlined, Function, Include, Label Repeat |
+![Green2 Color](./www/img/green2.png)             | Green2       | `#67bf95` | `151,46,75`    | `103, 191, 149` | `72`      |  Conditional                                            |
+![Yellow Color](./www/img/yellow.png)             | Yellow       | `#f2ce00` | `51,100,95`    | `242, 206, 0`   | `220`     |  Constant, Boolean, Character, Float, Number            |
+![Purple Color](./www/img/purple.png)             | Purple       | `#b3a1e6` | `256,30,90`    | `179, 161, 230` | `146`     |  PreProc, Special, Tag, Debug, StorageClass             |
+![Purple2 Color](./www/img/purple2.png)           | Purple2      | `#7a5ccc` | `256,55,80`    | `122, 92, 204`  | `98`      |  Title, Define, Macro, Define, Precondit                |
+![Dark Purple Color](./www/img/darkPurple.png)    | Dark Purple  | `#2e3459` | `232,48,35`    | `46, 52, 89`    | `236`     |  Comment                                                |
+![Dark Purple2 Color](./www/img/darkPurple2.png)  | Dark Purple2 | `#686f9a` | `232,32,60`    | `104, 111, 154` | `60`      |  Todo                                                   |
+![Cyan Color](./www/img/cyan.png)                 | Cyan         | `#00a3cc` | `192,100,80`   | `0, 163, 204`   | `38`      |  Identifier, String, Structure, Typedef                 |
+![Magenta Color](./www/img/magenta.png)           | Magenta      | `#ce6f8f` | `340,46,81`    | `206, 111, 143` | `168`     |  Type                                                   |
+![Pink Color](./www/img/pink.png)                 | Pink         | `#e6a1a3` | `358,30,90`    | `230, 161, 163` | `181`     |  Delimeter, Operator                                    |
 
 ## Special Colors
-| ![Color Picker Boxes](./www/img/eyedropper.png)          | Palette          | Hex       | HSV/HSB        | RGB             | cterm/256 |
-| ---------------------------------------------------------| ---------------- | --------- | -------------- | --------------- | ----------|
-| ![Background Color](./www/img/background.png)            | Background       | `#0f111b` | `230,44,11`    | `15, 17, 27`    | `233`     |
-| ![Foreground Color](./www/img/foreground.png)            | Foreground       | `#ecf0c1` | `65,20,94`     | `236, 240, 193` | `255`     |
-| ![Visual Selection Color](./www/img/visualSelection.png) | Visual Selection | `#272c42` | `229,41,26`    | `39, 44, 66`    | `236`     |
-| ![Cursor Line Color](./www/img/cursorLine.png)           | Cursor Line      | `#16172d` | `237,51,18`    | `22, 23, 45`    | `234`     |
-| ![Search Color](./www/img/search.png)                    | Search           | `#114fd6` | `221,92,84`    | `17, 79, 214`   | `26`      |
+| ![Color Picker Boxes](./www/img/eyedropper.png)          | Palette          | Hex       | HSV/HSB        | RGB             | cterm/256 |    SYN ID     | 
+| ---------------------------------------------------------| ---------------- | --------- | -------------- | --------------- | ----------| ------------- |
+| ![Background Color](./www/img/background.png)            | Background       | `#0f111b` | `230,44,11`    | `15, 17, 27`    | `233`     | Background    |
+| ![Foreground Color](./www/img/foreground.png)            | Foreground       | `#ecf0c1` | `65,20,94`     | `236, 240, 193` | `255`     | Foregrond     |
+| ![Visual Selection Color](./www/img/visualSelection.png) | Visual Selection | `#272c42` | `229,41,26`    | `39, 44, 66`    | `236`     | Visual        |
+| ![Cursor Line Color](./www/img/cursorLine.png)           | Cursor Line      | `#16172d` | `237,51,18`    | `22, 23, 45`    | `234`     | CursorLine    |
+| ![Search Color](./www/img/search.png)                    | Search           | `#114fd6` | `221,92,84`    | `17, 79, 214`   | `26`      | Search        |
 
 ## Coloration Colors                                                                                                                       
-| ![Color Picker Boxes](./www/img/eyedropper.png)          | Palette          | Hex       | HSV/HSB        | RGB             | cterm/256 |
-| ---------------------------------------------------------| ---------------- | --------- | -------------- | --------------- | ----------|
-| ![Grey Color](./www/img/grey.png)                        | Grey             | `#818596` | `229,14,59`    | `129, 133, 150` | `102`     |
-| ![Grey 2 Color](./www/img/grey2.png)                     | Grey 2           | `#c1c3cc` | `229,5,80`     | `193, 195, 204` | `251`     |
-| ![Pure White Color](./www/img/white.png)                 | Pure White       | `#ffffff` | `0,0,100`      | `255, 255, 255` | `15`      | 
-| ![Pure Black Color](./www/img/black.png)                 | Pure Black       | `#000000` | `0,0,0`        | `0, 0, 0`       | `0`       | 
+| ![Color Picker Boxes](./www/img/eyedropper.png)          | Palette          | Hex       | HSV/HSB        | RGB             | cterm/256 |       SYN ID       |
+| ---------------------------------------------------------| ---------------- | --------- | -------------- | --------------- | ----------| ------------------ |
+| ![Grey Color](./www/img/grey.png)                        | Grey             | `#818596` | `229,14,59`    | `129, 133, 150` | `102`     | Cursor, Tabline    |
+| ![Grey 2 Color](./www/img/grey2.png)                     | Grey 2           | `#c1c3cc` | `229,5,80`     | `193, 195, 204` | `251`     | TabLineSel         |
+| ![Pure White Color](./www/img/white.png)                 | Pure White       | `#ffffff` | `0,0,100`      | `255, 255, 255` | `15`      | Search, Todo       | 
+| ![Pure Black Color](./www/img/black.png)                 | Pure Black       | `#000000` | `0,0,0`        | `0, 0, 0`       | `0`       | VertSplit, TabLine | 
 
 
+## Current Tested Support
+
+**Languages:**
+
+*Note: if something looks off please submit an issue with a screenshot*
+
+* C, C++, fortran, haskell, html, java, javascript, markdown, php, python, ruby, sql, laTex, typescript
+
+**Plugins:**
+
+* Lightline
 
 # Install 💾
 
@@ -155,7 +156,7 @@ To get the theme into Iterm, download the spaceduck.itermcolors file and [import
 You can curl it if you wanna be cool?
 
 ```bash
-  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/spaceduck.itermcolors"
+  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/term/spaceduck.itermcolors"
 ```
 
 ## Terminal.app MacOS
@@ -169,7 +170,7 @@ To get the theme into the Mac Terminal app, download the spaceduck.terminal file
 You can curl it if you wanna be cool too!?
 
 ```bash
-  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/spaceduck.terminal"
+  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/term/spaceduck.terminal"
 ```
 **Side note**: (As of 2020-12-09) The MacOSX terminal app does not support true color in vim, so it's gonna be mad ugly.
 
@@ -193,9 +194,9 @@ If you are running `vim` within `tmux`, you may run into some `truecolor` issues
 
 To fix, add this to you `tmux.conf`:
 ```tmux
-set -g terminal-overrides ',xterm-256color:Tc'
-set -g default-terminal "tmux-256color"
-set -as terminal-overrides ',xterm*:sitm=\E[3m'
+    set -g terminal-overrides ',xterm-256color:Tc'
+    set -g default-terminal "tmux-256color"
+    set -as terminal-overrides ',xterm*:sitm=\E[3m'
 ```
 
 And in your `.bash_profile or .zshrc`:
@@ -215,35 +216,22 @@ And in your `.bash_profile or .zshrc`:
 * [Iceberg](https://cocopon.github.io/iceberg.vim/) - Gave me the blueprint for developing a [lovely colorscheme](https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme).
 * [Hallski's spacedust theme](https://github.com/hallski/spacedust-theme) - first theme to inspire me with space waaaay back when.
 * [Rigel](https://github.com/Rigellute/rigel) - Showed me the ways of using Estilo to manage colors & that sexy themes can exist.
+* Looking for other colorschemes? Check out [vim colors](http://vimcolors.com/) or [colorswat.ch](https://colorswat.ch/vim/)!
+
+
 
 
 # Contribute 🙏
 
 If you'd like to contribute please reach out! I don't know what I'm doing.
-If you port it to whatever you're using, submit a PR so I can include it here!
+If you port it to whatever you're using, fork it & submit a PR so I can include it here!...Or send me an email!
 
 
-## Vim/Estilo Workflow 
+## Vim Estilo
 
-I use [estilo](https://github.com/jacoborus/estilo) to manage colors for Vim/Neovim, please install the dependencies to render colors on your local machine.
+I currently use [estilo](https://github.com/jacoborus/estilo) to manage colors for Vim/Neovim, please install the dependencies to compile the colors specified in the YAML into the color scheme.
 
-```javascript
-    npm install -g estilo
-```
-
-* The color palette is specified in `./estilo/palettes/spaceduck.yml` 
-* UI elements specified in `./estilo/syntax/base.yml`
-* Other colorizations elements can be found in `./estilo/syntax/*`
-
-**To compile the colors from the YAML into the colors theme:**
-
-Once estilo is installed, run: `estilo render` in the root of this directory to compile the color theme into the colors directory. 
-
-Lightline and airline colors are defined in `./estilo/lightline/spaceduck.yml` and `./estilo/lightline/spaceduck.yml` respectively.
-
-Random aside: if you run into a [hexterm error when using estilo look at this PR that hasn't been merged yet.](https://github.com/jacoborus/estilo/pull/46/files) 
-
-To find the [current syntax element under the cursor](https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor), I use this mapping:
+To find the [current syntax element under the cursor](https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor), I use this mapping which maps Ctrl+a to find the id under the cursor:
 
 ```vimscript
 " Show syntax color highlighting groups for word under cursor
@@ -256,3 +244,24 @@ To find the [current syntax element under the cursor](https://vim.fandom.com/wik
     endfunction
 ```
 This will show you the syntax ID to where we can then modify the color of that word.
+
+### Testing colors look good
+
+* To test that colors look good, you can run: `:source $VIMRUNTIME/syntax/hitest.vim` this will open a buffer of all color groups defined!
+* Check current defined colors in buffer `:highlight` or `:hi` for short.
+* Looking for more syntax elements? Check out `$VIMRUNTIME/syntax/` for all of vim's language support.
+
+### TODO 
+
+- [x] Screenshots gallery for colorscheme.
+- [x] Finalize proper coloring of syntax keywords.
+- [ ] Ensure support various of popular plugins: easyMotion, ALE, COC, etc
+- [ ] Port it to Alacritty & Kitty
+- [ ] Fix ugly VimDiff.
+- [ ] Better 256 color for older terminals.
+- [ ] Add TMUX color snippet.
+- [ ] Add Bash prompt color codes.
+- [ ] Test if Airline looks nice and works.
+- [ ] Add manual installation for vim/neovim.
+- [ ] Port it to VSCODE for the homies?
+- [ ] Make a pretty website landing page.
