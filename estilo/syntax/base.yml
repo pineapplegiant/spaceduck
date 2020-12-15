@@ -1,9 +1,11 @@
-# BASE UI -> Foreground Background buri (bold, underlined, reverse ,italic)
-ColorColumn: '- background'
-Conceal: ''  # IDK what these are bro
-Cursor: 'background grey'
-CursorIM: '' # IDK what these are either...
+# COLORS: Foreground Background buri (bold, underlined, reverse ,italic)
+
+# UI ELEMENTS
+ColorColumn: '- cursorLine'
 CursorColumn: '- cursorLine'
+Conceal: 'darkPurp2'  # IDK what these is
+Cursor: 'background grey'
+CursorIM: '@Cursor' # IDK what this is
 CursorLine: '- cursorLine'
 CursorLineNr: 'grey2 cursorLine'
 Directory: 'cyan'
@@ -12,18 +14,24 @@ DiffChange: 'orange visualSel'
 DiffDelete: 'red visualSel'
 DiffText: 'yellow visualSel'
 EndOfBuffer: 'darkPurp background'
-ErrorMsg: 'red background'
+TermCursor: '@Cursor'
+#TermCursorNC: ''
+ErrorMsg: 'red'
 VertSplit: 'pureBlack pureBlack'
 Folded: 'darkPurp2 background'
 FoldColumn: 'darkPurp background'
 SignColumn: 'darkPurp background'
 IncSearch: 'pureWhite visualSel'
+#Substitute: ''
 LineNr: 'darkPurp background'
-MatchParen: 'grey darkPurp'
+MatchParen: 'pureWhite darkPurp'
 ModeMsg: 'purple'
+#MsgArea: ''
+#MsgSeparator: ''
 MoreMsg: 'purple'
 NonText: '@EndOfBuffer'
-Normal: 'foreground background'
+#NormalFloat: ''
+#NormalNC: ''
 PMenu: 'foreground darkPurp'
 PMenuSel: 'yellow visualSel'
 PmenuSbar: 'foreground darkPurp2'
@@ -43,47 +51,178 @@ StatusLineNC: '@StatusLineTermNC'
 TabLine: 'pureBlack grey'
 TabLineFill: 'grey pureBlack'
 TabLineSel: 'grey2 background'
-Title: 'orange'
 Visual: '- visualSel'
-VisualNOS: '' #TODO
+VisualNOS: '@Visual'
 WarningMsg: 'orange background'
 WildMenu: 'pureBlack grey2'
+#Whitespace: ''
 diffAdded: 'purple -'
 diffRemoved: 'red -'
 
+#Gui
+#Menu: ''
+#Scrollbar: ''
+#Tooltip: ''
+
 # BASE SYNTAX
-Comment: 'darkPurp'
-Constant: 'yellow'
-String: 'cyan'                      # Constant
-Character: '@Constant'              # Constant
-Boolean: '@Constant'                # Constant
-Number: '@Constant'                 # Constant
-Float: '@Constant'                  # Constant
-Identifier: 'foreground'
-Function: 'green'                   # Identifier
-Statement: 'green'
-Conditional: 'green2'               # Statement
-Repeat: '@Statement'                # Statement
-Label: '@Statement'                 # Statement
-Operator: 'orange'                  # Statement
-Keyword: '@Operator'                # Statement
-Exception: ''                       # Statement
-PreProc: 'purple'
-Include: 'green'                    # PreProc
-Define: '@PreProc'                  # PreProc
-Macro: '@PreProc'                   # PreProc
-PreCondit: '@PreProc'               # PreProc
-Type: 'yellow'
-StorageClass: 'green'               # Type
-Structure: 'cyan'                   # Type
-Typedef: 'cyan'                     # Type
-Special: 'purple'
-SpecialChar: 'red'                  # Special
-Tag: '@Special'                     # Special
-Delimiter: 'foreground'             # Special
-SpecialComment: ''                  # Special
-Debug: '@Special'                   # Special
-Underlined: 'green - u'
-Ignore: ''
-Error: '@ErrorMsg'
-Todo: 'pureWhite purple2 u'
+Normal: 'foreground background'
+Comment: 'darkPurp'     # 1
+Constant: 'yellow'      # 2
+Identifier: 'cyan'      # 3
+Statement: 'green'      # 4
+PreProc: 'purple'       # 5
+Type: 'magenta'         # 6
+Special: 'purple'       # 7
+Underlined: 'green - u' # 8
+Error: 'red'            # 9
+Ignore: 'red'
+Delimiter: 'pink'
+Operator: 'pink'
+Tag: 'purple'
+Debug: 'purple'
+StorageClass: 'purple'
+String: 'cyan'
+Structure: 'cyan'
+Typedef: 'cyan'
+Function: 'green'
+Include: 'green'
+Label: 'green'
+Exception: 'orange'
+Keyword: 'orange'
+SpecialChar: 'orange'
+Boolean: 'yellow'
+Character: 'yellow'
+Float: 'yellow'
+Number: 'yellow'
+Conditional: 'green2'
+Repeat: 'green2'
+Title: 'purple2'
+Define: 'purple2'
+Macro: 'purple2'
+PreCondit: 'purple2'
+SpecialComment: '@Comment'
+Todo: 'pureWhite darkPurp2 u'
+
+# LANGUAGE SPECIFICS
+# C
+cType: '@StorageClass'
+cCppOutIf2: '@Normal'
+cFormat: '@Type'
+cBracket: '@Operator'
+
+# C++
+
+# CSS
+cssBraces: '@Normal'
+
+# Fortran
+fortranType: '@Tag'
+fortranStructure: '@Structure'
+fortranStorageClass: '@StorageClass'
+fortranUnitHeader: '@Title'
+
+# Haskell
+haskellType: '@Tag'
+haskellKeyword: '@Boolean'
+haskellDecl: '@Boolean'
+
+# HTML
+htmlTagName: '@Function'
+htmlEndTag: '@Conditional'
+htmlArg: '@Tag'
+htmlSpecialTagName: '@Type'
+
+# Java
+javaClassDecl: '@Structure'
+javaType: '@Tag'
+javaTypeDef: '@Keyword'
+
+# Javascript
+jsStorageClass: '@Title'
+jsFunction: '@Function'
+jsFuncName: '@Special'
+jsOperator: '@Normal'
+jsGlobalObjects: '@Constant'
+jsFuncCall: '@Function'
+jsOperatorKeyword: '@Operator'
+jsExceptions: '@Error'
+jsObjectProp: '@Type'
+
+# lAtEx
+texTypeStyle: '@Special'
+
+# Markdown
+mkdDelimiter: '@Normal'
+
+# PHP
+phpInclude: '@Conditional'
+phpKeyword: '@StorageClass'
+
+# Ruby
+rubyConstant: '@Constant'
+rubyDefine: '@Define'
+rubyMethodName: '@Function'
+rubyInstanceVariable: '@Tag'
+rubyKeywordAsMethod: '@Tag'
+
+# Typescript
+typescriptVariable: '@Title'
+jsxOpenPunct: '@Delimiter'
+jsxCloseString: '@Delimiter'
+typescriptProp: '@Type'
+typescriptArrowFunc: '@Operator'
+typescriptNumberStaticMethod: '@Function'
+typescriptNumberMethod: '@Function'
+typescriptStringStaticMethod: '@Function'
+typescriptStringMethod: '@Function'
+typescriptArrayStaticMethod: '@Function'
+typescriptArrayMethod: '@Function'
+typescriptObjectStaticMethod: '@Function'
+typescriptObjectMethod: '@Function'
+typescriptSymbolStaticMethod: '@Function'
+typescriptFunctionMethod: '@Function'
+typescriptMathStaticMethod: '@Function'
+typescriptDateStaticMethod: '@Function'
+typescriptDateMethod: '@Function'
+typescriptJSONStaticMethod: '@Function'
+typescriptRegExpMethod: '@Function'
+typescriptES6MapMethod: '@Function'
+typescriptES6SetMethod: '@Function'
+typescriptPromiseStaticMethod: '@Function'
+typescriptPromiseMethod: '@Function'
+typescriptReflectMethod: '@Function'
+typescriptIntlMethod: '@Function'
+typescriptBOMNavigatorMethod: '@Function'
+typescriptServiceWorkerMethod: '@Function'
+typescriptBOMLocationMethod: '@Function'
+typescriptBOMHistoryMethod: '@Function'
+typescriptConsoleMethod: '@Function'
+typescriptXHRMethod: '@Function'
+typescriptFileMethod: '@Function'
+typescriptFileReaderMethod: '@Function'
+typescriptFileListMethod: '@Function'
+typescriptBlobMethod: '@Function'
+typescriptURLStaticMethod: '@Function'
+typescriptSubtleCryptoMethod: '@Function'
+typescriptCryptoMethod: '@Function'
+typescriptHeadersMethod: '@Function'
+typescriptRequestMethod: '@Function'
+typescriptResponseMethod: '@Function'
+typescriptCacheMethod: '@Function'
+typescriptEncodingMethod: '@Function'
+typescriptGeolocationMethod: '@Function'
+typescriptPaymentMethod: '@Function'
+typescriptPaymentResponseMethod: '@Function'
+typescriptDOMNodeMethod: '@Function'
+typescriptDOMDocMethod: '@Function'
+typescriptDOMEventTargetMethod: '@Function'
+typescriptDOMEventMethod: '@Function'
+typescriptDOMStorageMethod: '@Function'
+typescriptDOMFormMethod: '@Function'
+
+#Vim
+vimGroupName: '@Normal'
+
+# YAML
+yamlKeyValueDelimiter: '@Normal'
+yamlBlockMappingKey: '@Tag'

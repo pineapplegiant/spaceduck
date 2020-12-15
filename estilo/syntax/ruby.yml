@@ -1,7 +1,0 @@
-# Ruby
-rubyDefine: '@Statement'
-rubyKeywordAsMethod: 'pink'
-rubyFunction: '@Title'
-rubyInterpolationDelimiter: '@String'
-rubySharpBang: '@Comment'
-rubyStringDelimiter: '@String'
