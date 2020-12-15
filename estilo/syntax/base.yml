@@ -76,7 +76,7 @@ Special: 'purple'       # 7
 Underlined: 'green - u' # 8
 Error: 'red'            # 9
 Ignore: 'red'
-Delimiter: 'pink'
+Delimiter: 'foreground'
 Operator: 'pink'
 Tag: 'purple'
 Debug: 'purple'
@@ -125,6 +125,7 @@ fortranUnitHeader: '@Title'
 haskellType: '@Tag'
 haskellKeyword: '@Boolean'
 haskellDecl: '@Boolean'
+haskellDelimeter: '@Operator'
 
 # HTML
 htmlTagName: '@Function'
@@ -167,8 +168,8 @@ rubyKeywordAsMethod: '@Tag'
 
 # Typescript
 typescriptVariable: '@Title'
-jsxOpenPunct: '@Delimiter'
-jsxCloseString: '@Delimiter'
+jsxOpenPunct: '@Operator'
+jsxCloseString: '@Operator'
 typescriptProp: '@Type'
 typescriptArrowFunc: '@Operator'
 typescriptNumberStaticMethod: '@Function'
@@ -225,4 +226,4 @@ vimGroupName: '@Normal'
 
 # YAML
 yamlKeyValueDelimiter: '@Normal'
-yamlBlockMappingKey: '@Tag'
+yamlBlockMappingKey: '@Function'

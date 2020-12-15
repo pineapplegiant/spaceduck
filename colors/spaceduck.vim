@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/15 00:37
+" Last Change: 2020/12/15 01:48
 " ===============================================================
 
 set background=dark
@@ -88,7 +88,7 @@ hi Special guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Underlined guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi Error guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Ignore guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Delimiter guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Delimiter guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Operator guifg=#e6a1a3 ctermfg=181 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Tag guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Debug guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -126,6 +126,7 @@ hi link fortranUnitHeader Title
 hi link haskellType Tag
 hi link haskellKeyword Boolean
 hi link haskellDecl Boolean
+hi link haskellDelimeter Operator
 hi link htmlTagName Function
 hi link htmlEndTag Conditional
 hi link htmlArg Tag
@@ -152,8 +153,8 @@ hi link rubyMethodName Function
 hi link rubyInstanceVariable Tag
 hi link rubyKeywordAsMethod Tag
 hi link typescriptVariable Title
-hi link jsxOpenPunct Delimiter
-hi link jsxCloseString Delimiter
+hi link jsxOpenPunct Operator
+hi link jsxCloseString Operator
 hi link typescriptProp Type
 hi link typescriptArrowFunc Operator
 hi link typescriptNumberStaticMethod Function
@@ -206,7 +207,7 @@ hi link typescriptDOMStorageMethod Function
 hi link typescriptDOMFormMethod Function
 hi link vimGroupName Normal
 hi link yamlKeyValueDelimiter Normal
-hi link yamlBlockMappingKey Tag
+hi link yamlBlockMappingKey Function
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)
