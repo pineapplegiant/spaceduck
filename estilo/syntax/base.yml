@@ -171,6 +171,7 @@ typescriptVariable: '@Title'
 jsxOpenPunct: '@Operator'
 jsxCloseString: '@Operator'
 typescriptProp: '@Type'
+typescriptBraces: '@Normal'
 typescriptArrowFunc: '@Operator'
 typescriptNumberStaticMethod: '@Function'
 typescriptNumberMethod: '@Function'
@@ -220,6 +221,7 @@ typescriptDOMEventTargetMethod: '@Function'
 typescriptDOMEventMethod: '@Function'
 typescriptDOMStorageMethod: '@Function'
 typescriptDOMFormMethod: '@Function'
+
 
 #Vim
 vimGroupName: '@Normal'

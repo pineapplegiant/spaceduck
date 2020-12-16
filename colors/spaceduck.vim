@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2020/12/15 01:48
+" Last Change: 2020/12/15 17:01
 " ===============================================================
 
 set background=dark
@@ -156,6 +156,7 @@ hi link typescriptVariable Title
 hi link jsxOpenPunct Operator
 hi link jsxCloseString Operator
 hi link typescriptProp Type
+hi link typescriptBraces Normal
 hi link typescriptArrowFunc Operator
 hi link typescriptNumberStaticMethod Function
 hi link typescriptNumberMethod Function
