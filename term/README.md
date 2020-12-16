@@ -100,7 +100,7 @@ color15 #f0f1ce
 selection_foreground #ffffff
 ```
 
-## Kitty
+## Windows Terminal
 
 Color theme is in the `spaceduck_windowsterminal.json` file or you can copy it here! Put it in your Windows Terminal settings.json
 
