@@ -24,10 +24,9 @@
     * [Current Tested Support](#current-tested-support)
 * [Install 💾](#install-💾)
     * [Vim and Neovim](#vim-and-neovim)
-    * [Iterm2](#iterm2)
-    * [Terminal.app MacOS](#terminalapp-macos)
+    * [Terminal Install](#terminal-install)
     * [Slack](#slack)
-* [Troubleshooting 🔧](#troubleshooting-🔧)
+* [Troubleshooting 🔧](#troubleshooting-)
     * [True color](#true-color)
     * [Colors don't look right](#colors-dont-look-right)
 * [Screenshots 📸](#screenshots-📸)
@@ -144,35 +143,11 @@ Add this to your vimrc/init.vim configuration file:
 Don't be afraid of the vim documentation either for more information, like for manual installs! I know I am:
 `:h colorscheme`
 
+## Terminal Install
 
-## Iterm2
+[Link to terminal intall instructions.](./term/README.md)
 
-<center>
-  <img  src="./www/screenshots/iTerm.png" alt="iTerm2 screenshot of terminal with neofetch program ran">
-</center>
-
-To get the theme into Iterm, download the spaceduck.itermcolors file and [import it into your settings](https://iterm2colorschemes.com/).
-
-You can curl it if you wanna be cool?
-
-```bash
-  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/term/spaceduck.itermcolors"
-```
-
-## Terminal.app MacOS
-
-<center>
-  <img  src="./www/screenshots/terminal.png" alt="Terminal screenshot of terminal with neofetch program ran">
-</center>
-
-To get the theme into the Mac Terminal app, download the spaceduck.terminal file and import it into your settings.
-
-You can curl it if you wanna be cool too!?
-
-```bash
-  curl -O "https://raw.githubusercontent.com/pineapplegiant/spaceduck/main/term/spaceduck.terminal"
-```
-**Side note**: (As of 2020-12-09) The MacOSX terminal app does not support true color in vim, so it's gonna be mad ugly.
+All terminal themes are located in the `./term` directory!
 
 ## Slack
 
@@ -255,9 +230,9 @@ This will show you the syntax ID to where we can then modify the color of that w
 
 - [x] Screenshots gallery for colorscheme.
 - [x] Finalize proper coloring of syntax keywords.
+- [x] Port it to Alacritty & Kitty
 - [ ] Ensure support various of popular plugins: easyMotion, ALE, COC, etc
-- [ ] Port it to Alacritty & Kitty
-- [ ] Fix ugly VimDiff.
+- [ ] Fix ugly VimDiff?
 - [ ] Better 256 color for older terminals.
 - [ ] Add TMUX color snippet.
 - [ ] Add Bash prompt color codes.
