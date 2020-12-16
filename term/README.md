@@ -13,6 +13,7 @@
 * [Terminal.app MacOS](#terminalapp-macos)
 * [Alacritty](#alacritty)
 * [Kitty](#kitty)
+* [Windows Terminal](#windowsterminal)
 
 ## Iterm2
 
@@ -97,4 +98,33 @@ color14 #7a5ccc
 color7 #686f9a
 color15 #f0f1ce
 selection_foreground #ffffff
+```
+
+## Kitty
+
+Color theme is in the `spaceduck_windowsterminal.json` file or you can copy it here! Put it in your Windows Terminal settings.json
+
+```JSON
+"schemes": [
+        {
+            "name": "SpaceDuck",
+            "foreground": "#ecf0c1",
+            "background": "#0f111b",
+            "black": "#000000",
+            "red": "#e33400",
+            "green": "#5ccc96",
+            "yellow": "#b3a1e6",
+            "blue": "#00a3cc",
+            "purple": "#f2ce00",
+            "cyan": "#7a5ccc",
+            "white": "#686f9a",
+            "brightBlack": "#686f9a",
+            "brightRed": "#e33400",
+            "brightGreen": "#5ccc96",
+            "brightYellow": "#b3a1e6",
+            "brightBlue": "#00a3cc",
+            "brightPurple": "#f2ce00",
+            "brightCyan": "#7a5ccc",
+            "brightWhite": "#f0f1ce"
+        }
 ```
