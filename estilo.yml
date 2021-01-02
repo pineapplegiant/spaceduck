@@ -1,0 +1,18 @@
+name: 'spaceduck'
+version: '1.0.0'
+license: 'MIT'
+author: 'Guillermo Rodriguez'
+url: 'https://github.com/pineapplegiant/spaceduck'
+description: 'An intergalactic space theme for Vim, Terminal & more!'
+colorschemes:
+  - name: 'spaceduck'
+    background: 'dark'
+    palette: 'spaceduck'
+airline: 
+  - name: 'spaceduck' 
+    palette: 'spaceduck' 
+    style: 'spaceduck' 
+lightline: 
+  - name: 'spaceduck' 
+    palette: 'spaceduck' 
+    style: 'spaceduck' 

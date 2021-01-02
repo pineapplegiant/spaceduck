@@ -1,0 +1,51 @@
+# Special Colors
+background:     '#0f111b'
+foreground:     '#ecf0c1'
+visualSel:      '#1b1c36'
+cursorLine:     '#16172d'
+search:         '#114fd6'
+
+# Base Colors
+red:            '#e33400'
+orange:         '#e39400'
+green:          '#5ccc96'
+green2:         '#67bf95'
+yellow:         '#f2ce00'
+purple:         '#b3a1e6'
+purple2:        '#7a5ccc'
+darkPurp:       '#30365F'
+darkPurp2:      '#686f9a'
+cyan:           '#00a3cc'
+magenta:        '#ce6f8f'
+
+
+# Coloration
+pureWhite:      '#ffffff'
+pureBlack:      '#000000'
+grey:           '#818596'
+grey2:          '#c1c3cc'
+
+
+# Deprecated maybe
+#pink:           '#e6a1a3'
+#darkPurp:       '#2e3459'
+#darkPurp:       '#373E6C'
+#visualSel:      '#272c42'
+#visualSel:      '#222344'
+#diffAdd:        '#6bb391'
+#diffChange:     '#b39a6b'
+#diffDelete:     '#b37d6b'
+#diffText:       '#6b76b3'
+#white1:         '#656782' 
+#white2:         '#B6A8DD' 
+#cursorColor:    '#c1c3cc'
+#vertSplit:      '#0f1117'
+#folded:         '#686f9a'
+#matchParen:     '#3e445e'
+#pmenu:          '#3d425b'
+#quickFixLine:   '#272c42'
+# tabline:        '#818596'
+# TablineSel:     '#9a9ca5'
+#darkness:       '#17171b'
+#black1:         '#444b71'
+#black2:         '#1a1b35'
