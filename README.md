@@ -110,7 +110,7 @@ This repo hosts the Vim/Neovim color scheme.
 
 Install the plugin with whatever plugin manager you use:
 
-`Plug 'pineapplegiant/spaceduck'`
+`Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }`
 
 And add this to your vimrc/init.vim configuration file:
 
