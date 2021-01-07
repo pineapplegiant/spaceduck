@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2021/01/02 11:00
+" Last Change: 2021/01/06 19:28
 " ===============================================================
 
 set background=dark
@@ -162,6 +162,7 @@ hi link rubyKeywordAsMethod Tag
 hi link typescriptProp Tag
 hi link typescriptVariable Title
 hi link jsxTagName HTMLTagName
+hi link jsxComponentName Tag
 hi link jsxOpenPunct jsxTagName
 hi link jsxClosePunct jsxOpenPunct
 hi link jsxCloseString jsxClosePunct
