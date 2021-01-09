@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2021/01/08 22:43
+" Last Change: 2021/01/09 00:46
 " ============================================================
 
 let s:p = {"normal": {}, "inactive": {}, "insert": {}, "replace": {}, "visual": {}, "tabline": {} }
@@ -32,7 +32,7 @@ let s:p.visual.middle = [[["#686f9a", 60], ["#1b1c36", 234]]]
 let s:p.visual.right = [[["#0f111b", 233], ["#f2ce00", 220]], [["#686f9a", 60], ["#1b1c36", 234]]]
 
 let s:p.tabline.left = [[["#0f111b", 233], ["#30365F", 237]]]
-let s:p.tabline.tabsel = [[["#30365F", 237], ["#686f9a", 60]]]
+let s:p.tabline.tabsel = [[["#0f111b", 233], ["#686f9a", 60]]]
 let s:p.tabline.middle = [[["#686f9a", 60], ["#1b1c36", 234]]]
 let s:p.tabline.right = [[["#0f111b", 233], ["#30365F", 237]]]
 
