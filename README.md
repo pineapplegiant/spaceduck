@@ -29,6 +29,7 @@
   - [VSCode](#vscode)
   - [Emacs](#emacs)
   - [Slack](#slack)
+  - [Tmux](#tmux)
 - [Troubleshooting 🔧](#troubleshooting-)
   - [True color](#true-color)
   - [Colors don't look right](#colors-dont-look-right)
@@ -176,6 +177,34 @@ Emacs theme can be found at this repo:
 - Copy and paste the values below:
   - `#0f111b,#7A5CCC,#7A5CCC,#ffffff,#16172D,#ecf0c1,#5CCC96,#00A3CC,#0f111b,#ecf0c1`
 
+## Tmux
+
+Checkout some tmux config inspiration here at [the terminal repo](https://github.com/pineapplegiant/spaceduck-terminal/tree/main/tmux). Or if you're in a rush you can use this basic one:
+
+```tmux
+  # Basic color support setting
+  set-option -g default-terminal "screen-256color"
+
+  # Default bar color
+  set-option -g status-style bg='#1b1c36',fg='#ecf0c1'
+
+  # Active Pane
+  set -g pane-active-border-style "fg=#5ccc96"
+
+  # Inactive Pane
+  set -g pane-border-style "fg=#686f9a"
+
+  # Active window
+  set-option -g window-status-current-style bg='#686f9a',fg='#ffffff'
+
+  # Message
+  set-option -g message-style bg='#686f9a',fg='#ecf0c1'
+  set-option -g message-command-style bg='#686f9a',fg='#ecf0c1'
+
+  # When Commands are run
+  set -g message-style "fg=#0f111b,bg=#686f9a"
+```
+
 # Troubleshooting 🔧
 
 ## True color
@@ -265,10 +294,10 @@ This will show you the syntax ID to where we can then modify the color of that w
 - [x] Screenshots gallery for colorscheme.
 - [x] Finalize proper coloring of syntax keywords.
 - [x] Port it to Alacritty & Kitty
+- [x] Add TMUX color snippet.
 - [ ] Ensure support various of popular plugins: easyMotion, ALE, COC, etc
 - [ ] Fix ugly VimDiff?
 - [ ] Better 256 color for older terminals.
-- [ ] Add TMUX color snippet.
 - [ ] Add Bash prompt color codes.
 - [ ] Test if Airline looks nice and works.
 - [ ] Add manual installation for vim/neovim.
