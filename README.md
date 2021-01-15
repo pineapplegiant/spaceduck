@@ -55,18 +55,18 @@ If it looks ugly it's because I don't know what I'm doing pls help. If it's the 
 
 _Note: The Syn color ID's are not an exhaustive & complete list._
 
-| ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/eyedropper.png?raw=true)  | Palette      | Hex       | HSV/HSB       | RGB             | cterm/256 | SYN ID                                               |
-| ------------------------------------------------------------------------------------------------------------------ | ------------ | --------- | ------------- | --------------- | --------- | ---------------------------------------------------- |
-| ![Red Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/red.png?raw=true)                  | Red          | `#e33400` | `14,100,89`   | `227, 52, 0`    | `166`     | Error, Ignore                                        |
-| ![Orange Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/orange.png?raw=true)            | Orange       | `#e39400` | `39,100,89`   | `227, 148, 0`   | `172`     | Exception, Keyword, SpecialChar                      |
-| ![Green Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/green.png?raw=true)              | Green        | `#5ccc96` | `151,55,80`   | `92, 204, 150`  | `78`      | Statement, Underlined, Function, Include, Conditonal |
-| ![Yellow Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/yellow.png?raw=true)            | Yellow       | `#f2ce00` | `51,100,95`   | `242, 206, 0`   | `220`     | Constant, Boolean, Character, Float, Number          |
-| ![Purple Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/purple.png?raw=true)            | Purple       | `#b3a1e6` | `256,30,90`   | `179, 161, 230` | `146`     | PreProc, Special, Tag, Debug, StorageClass           |
-| ![Purple2 Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/purple2.png?raw=true)          | Purple2      | `#7a5ccc` | `256,55,80`   | `122, 92, 204`  | `98`      | Title, Define, Macro, Define, Precondit, (Operator)  |
-| ![Dark Purple Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/darkPurple.png?raw=true)   | Dark Purple  | `#30365F` | `232, 49, 37` | `48, 54, 95`    | `237`     | Comment, LineNR, MatchParen, EndOfBuffer, PMenu      |
-| ![Dark Purple2 Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/darkPurple2.png?raw=true) | Dark Purple2 | `#686f9a` | `232,32,60`   | `104, 111, 154` | `60`      | Todo, PMenuSbar, Conceal                             |
-| ![Cyan Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cyan.png?raw=true)                | Cyan         | `#00a3cc` | `192,100,80`  | `0, 163, 204`   | `38`      | Identifier, String, Structure, Typedef               |
-| ![Magenta Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/magenta.png?raw=true)          | Magenta      | `#ce6f8f` | `340,46,81`   | `206, 111, 143` | `168`     | Type, Delimeter, Operator                            |
+| ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/eyedropper.png?raw=true)  | Palette      | Hex       | HSV/HSB       | RGB             | cterm/256 | SYN ID                                                     |
+| ------------------------------------------------------------------------------------------------------------------ | ------------ | --------- | ------------- | --------------- | --------- | ---------------------------------------------------------- |
+| ![Red Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/red.png?raw=true)                  | Red          | `#e33400` | `14,100,89`   | `227, 52, 0`    | `166`     | Error, Ignore                                              |
+| ![Orange Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/orange.png?raw=true)            | Orange       | `#e39400` | `39,100,89`   | `227, 148, 0`   | `172`     | Exception, Keyword, SpecialChar                            |
+| ![Green Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/green.png?raw=true)              | Green        | `#5ccc96` | `151,55,80`   | `92, 204, 150`  | `78`      | Statement, Underlined, Function, Include, Conditonal       |
+| ![Yellow Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/yellow.png?raw=true)            | Yellow       | `#f2ce00` | `51,100,95`   | `242, 206, 0`   | `220`     | Constant, Boolean, Character, Float, Number                |
+| ![Purple Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/purple.png?raw=true)            | Purple       | `#b3a1e6` | `256,30,90`   | `179, 161, 230` | `146`     | PreProc, Special, Tag, Debug, StorageClass                 |
+| ![Purple2 Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/purple2.png?raw=true)          | Purple2      | `#7a5ccc` | `256,55,80`   | `122, 92, 204`  | `98`      | Title, Define, Macro, Define, Precondit, (Operator)        |
+| ![Dark Purple Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/darkPurple.png?raw=true)   | Dark Purple  | `#30365F` | `232, 49, 37` | `48, 54, 95`    | `237`     | Comment, LineNR, MatchParen, EndOfBuffer, Pmenu, IncSearch |
+| ![Dark Purple2 Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/darkPurple2.png?raw=true) | Dark Purple2 | `#686f9a` | `232,32,60`   | `104, 111, 154` | `60`      | Todo, PmenuSbar, Conceal, Search                           |
+| ![Cyan Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cyan.png?raw=true)                | Cyan         | `#00a3cc` | `192,100,80`  | `0, 163, 204`   | `38`      | Identifier, String, Structure, Typedef                     |
+| ![Magenta Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/magenta.png?raw=true)          | Magenta      | `#ce6f8f` | `340,46,81`   | `206, 111, 143` | `168`     | Type, Delimeter, Operator                                  |
 
 ## Special Colors
 
@@ -76,7 +76,6 @@ _Note: The Syn color ID's are not an exhaustive & complete list._
 | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/foreground.png?raw=true)            | Foreground       | `#ecf0c1` | `65,20,94`    | `236, 240, 193` | `255`     | Foregrond, Delimiter |
 | ![Visual Selection Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visualSelection.png?raw=true) | Visual Selection | `#1b1c36` | `238, 50, 21` | `27, 28, 54`    | `234`     | Visual               |
 | ![Cursor Line Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cursorLine.png?raw=true)           | Cursor Line      | `#16172d` | `237,51,18`   | `22, 23, 45`    | `234`     | CursorLine           |
-| ![Search Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/search.png?raw=true)                    | Search           | `#114fd6` | `221,92,84`   | `17, 79, 214`   | `26`      | Search               |
 
 ## Coloration Colors
 
