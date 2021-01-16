@@ -3,7 +3,6 @@ background:     '#0f111b'
 foreground:     '#ecf0c1'
 visualSel:      '#1b1c36'
 cursorLine:     '#16172d'
-search:         '#114fd6'
 
 # Base Colors
 red:            '#e33400'
@@ -27,6 +26,7 @@ grey2:          '#c1c3cc'
 
 
 # Deprecated maybe
+#search:         '#114fd6'
 #pink:           '#e6a1a3'
 #darkPurp:       '#2e3459'
 #darkPurp:       '#373E6C'
