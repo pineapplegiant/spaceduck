@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+/*********************************************************************
+** Global
+*********************************************************************/
+
+:root {
+  --foreground: #ecf0c1;
+  --background: #0f111b;
+  --foreground-opacity: rgba(236, 240, 193, 0.2);
+  --red: #e33400;
+  --orange: #e39400;
+  --yellow: #f2ce00;
+  --cyan: #00a3cc;
+  --green: #5ccc96;
+  --purple: #b3a1e6;
+  --purple2: #7a5ccc;
+  --magenta: #ce6f8f;
+  --darkPurple: #2e3459;
+  --darkPurple2: #686f9a;
+  --pureWhite: #ffffff;
+  --grey: #818596;
+}
+
+::selection {
+  color: var(--pureWhite);
+  background-color: var(--darkPurple2);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+}
+
+code {
+  background-color: var(--darkPurple);
+  color: var(--green);
+  border-radius: 0.3em;
+  padding: 4px 5px 6px;
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.foreground {
+  color: var(--foreground);
+}
+
+.padding {
+  padding: 1.5rem;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+/********************************************************************* 
+** Type
+*********************************************************************/
+
+.h1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.h3 {
+  font-size: 1.65rem;
+  margin: 0.825rem 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding: 0.5rem 0;
+}
+
+/********************************************************************* 
+** Header
+*********************************************************************/
+.hero-header {
+  background-color: var(--background);
+  width: 100%;
+  color: var(--foreground);
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+}
+
+.hero-header__title {
+  flex: 2;
+}
+
+.hero-header__logo {
+  max-width: 400px;
+}
+
+.logo {
+  min-width: 80px;
+  max-width: 100%;
+}
+
+.colors {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.color {
+  min-width: 35px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.cyan {
+  background-color: var(--cyan);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+.purple2 {
+  background-color: var(--purple2);
+}
+.magenta {
+  background-color: var(--magenta);
+}
+.darkPurple {
+  background-color: var(--darkPurple);
+}
+.darkPurple2 {
+  background-color: var(--darkPurple2);
+}
+
+/********************************************************************* 
+** Inspiration
+*********************************************************************/
+
+.inspiration {
+  margin-bottom: 2rem;
+  background-color: var(--foreground-opacity);
+}
+
+.inspiration .container {
+  justify-content: space-around;
+}
+
+.inspiration__text {
+  max-width: 65ch;
+}
+
+.inspiration__images {
+  min-width: 258px;
+  flex: 1;
+}
+
+.big-colors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.big-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75px;
+  height: 115px;
+  border-radius: 22px;
+  margin: 1px;
+}
+
+.big-color p {
+  text-transform: uppercase;
+  color: var(--pureWhite);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/********************************************************************* 
+** Installation
+*********************************************************************/
+
+.installation {
+  background-color: var(--background);
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+}
+
+.vim,
+.etc {
+  margin-bottom: 3rem;
+}
+
+.installation .container {
+  justify-content: normal;
+  flex-direction: column;
+}
+
+.installation h1,
+.installation h2,
+.installation h3 {
+  color: var(--foreground);
+}
+
+/********************************************************************* 
+** Footer
+*********************************************************************/
+
+footer {
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--grey);
+  background-color: var(--darkPurple);
+}
+
+footer p {
+  font-size: 0.75rem;
+  padding: 0;
+}
+
+/********************************************************************* 
+** MEDIA QUERY
+*********************************************************************/
+
+@media screen and (min-width: 900px) {
+  .inspiration__images {
+    margin-left: 115px;
+  }
+}
