@@ -169,8 +169,9 @@ p {
 *********************************************************************/
 
 .inspiration {
-  margin-bottom: 2rem;
   background-color: var(--foreground-opacity);
+  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .inspiration .container {
