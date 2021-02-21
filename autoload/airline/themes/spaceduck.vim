@@ -4,7 +4,7 @@
 " URL:https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2021/01/15 16:53
+" Last Change: 2021/02/21 11:23
 " ============================================================
 
 let g:airline#themes#spaceduck#palette = {}

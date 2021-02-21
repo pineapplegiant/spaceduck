@@ -55,7 +55,7 @@ Visual: '- visualSel'
 VisualNOS: '@Visual'
 WarningMsg: 'orange background'
 WildMenu: 'pureBlack grey2'
-#Whitespace: ''
+Whitespace: '@EndOfBuffer'
 diffAdded: 'purple -'
 diffRemoved: 'red -'
 
