@@ -53,7 +53,7 @@ If it looks ugly it's because I don't know what I'm doing pls help. If it's the 
 
 ## Base Colors
 
-_Note: The Syn color ID's are not an exhaustive & complete list._
+_Note: The Syntax color ID's are not an exhaustive & complete list._
 
 | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/eyedropper.png?raw=true)  | Palette      | Hex       | HSV/HSB       | RGB             | cterm/256 | SYN ID                                                     |
 | ------------------------------------------------------------------------------------------------------------------ | ------------ | --------- | ------------- | --------------- | --------- | ---------------------------------------------------------- |
@@ -208,7 +208,9 @@ Checkout some tmux config inspiration here at [the terminal repo](https://github
 
 ## True color
 
-Make sure you are using a terminal emulator that supports `truecolor`. [Read more about truecolor support here](https://gist.github.com/XVilka/8346728).
+Make sure you are using a terminal emulator that supports `truecolor`.
+
+[Read more about truecolor support here](https://gist.github.com/XVilka/8346728).
 
 ## Colors don't look right
 
@@ -294,6 +296,7 @@ This will show you the syntax ID to where we can then modify the color of that w
 - [x] Finalize proper coloring of syntax keywords.
 - [x] Port it to Alacritty & Kitty
 - [x] Add TMUX color snippet.
+- [x] Make a pretty website landing page.
 - [ ] Ensure support various of popular plugins: easyMotion, ALE, COC, etc
 - [ ] Fix ugly VimDiff?
 - [ ] Better 256 color for older terminals.
@@ -301,4 +304,3 @@ This will show you the syntax ID to where we can then modify the color of that w
 - [ ] Test if Airline looks nice and works.
 - [ ] Add manual installation for vim/neovim.
 - [ ] Port it to VSCODE for the homies?
-- [ ] Make a pretty website landing page.
