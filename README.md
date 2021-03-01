@@ -96,7 +96,10 @@ _Note: if something looks off please submit an issue with a screenshot_
 
 **Plugins:**
 
-- [Lightline](https://github.com/itchyny/lightline.vim), [Airline](https://github.com/vim-airline/vim-airline), [Vista](https://github.com/liuchengxu/vista.vim)
+- [Lightline](https://github.com/itchyny/lightline.vim),
+  [Airline](https://github.com/vim-airline/vim-airline),
+  [Vista](https://github.com/liuchengxu/vista.vim),
+  [BarBar](https://github.com/romgrk/barbar.nvim)
 
 # Install 💾
 

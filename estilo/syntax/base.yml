@@ -255,3 +255,25 @@ vistaKind: '@Conditional'
 
 # Sneak
 Sneak: 'pureBlack yellow'
+
+# romgrk/barbar support :')
+BufferCurrent: 'grey2 background'
+BufferVisible: 'darkPurp background'
+BufferInactive: 'darkPurp background'
+BufferTabpageFill: 'background background'
+#INDEX
+BufferCurrentIndex: 'green background'
+BufferVisibleIndex: 'darkPurp background'
+BufferInactiveIndex: 'darkPurp background'
+#MOD
+BufferCurrentMod: 'orange background'
+BufferVisibleMod: 'orange background'
+BufferInactiveMod: 'orange background'
+#SIGN (Separator between buffers)
+BufferCurrentSign: 'grey2 background'
+BufferVisibleSign: 'darkPurp background'
+BufferInactiveSign: 'darkPurp background'
+#TARGET (Letter in bufferpicking mode)
+BufferCurrentTarget: 'magenta background'
+BufferVisibleTarget: 'magenta background'
+BufferInactiveTarget: 'magenta background'
