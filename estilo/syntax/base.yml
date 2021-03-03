@@ -270,7 +270,7 @@ BufferCurrentMod: 'orange background'
 BufferVisibleMod: 'orange background'
 BufferInactiveMod: 'orange background'
 #SIGN (Separator between buffers)
-BufferCurrentSign: 'grey2 background'
+BufferCurrentSign: 'green background'
 BufferVisibleSign: 'darkPurp background'
 BufferInactiveSign: 'darkPurp background'
 #TARGET (Letter in bufferpicking mode)
