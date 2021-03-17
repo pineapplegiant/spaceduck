@@ -4,7 +4,7 @@
 " URL: https://github.com/pineapplegiant/spaceduck
 " Author: Guillermo Rodriguez
 " License: MIT
-" Last Change: 2021/03/02 23:37
+" Last Change: 2021/03/16 22:28
 " ===============================================================
 
 set background=dark
@@ -150,10 +150,12 @@ hi link jsTemplateBraces Title
 hi link jsTemplateExpression String
 hi link texTypeStyle Special
 hi link mkdDelimiter Normal
-hi link phpInclude Conditional
-hi link phpKeyword StorageClass
-hi link phpMemberSelector Title
-hi link phpVarSelector Title
+hi link phpFunction Function
+hi link phpMethod Function
+hi link phpType Constant
+hi link phpIdentifier Type
+hi link phpStringSingle String
+hi link phpStringDouble String
 hi pythonOperator guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link rubyConstant Constant
 hi link rubyDefine Define

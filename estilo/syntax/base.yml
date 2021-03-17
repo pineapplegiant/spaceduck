@@ -163,10 +163,16 @@ texTypeStyle: '@Special'
 mkdDelimiter: '@Normal'
 
 # PHP
-phpInclude: '@Conditional'
-phpKeyword: '@StorageClass'
-phpMemberSelector: '@Title'
-phpVarSelector: '@Title'
+#phpInclude: '@Conditional'
+phpFunction: '@Function'
+phpMethod: '@Function'
+phpType: '@Constant'
+#phpKeyword: '@Constant'
+#phpMemberSelector: '@Title'
+#phpVarSelector: '@String'
+#phpIdentifier: '@String'
+phpStringSingle: '@String'
+phpStringDouble: '@String'
 
 # Python 
 pythonOperator: 'magenta'
