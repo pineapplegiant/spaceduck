@@ -99,7 +99,8 @@ _Note: if something looks off please submit an issue with a screenshot_
 - [Lightline](https://github.com/itchyny/lightline.vim),
   [Airline](https://github.com/vim-airline/vim-airline),
   [Vista](https://github.com/liuchengxu/vista.vim),
-  [BarBar](https://github.com/romgrk/barbar.nvim)
+  [BarBar](https://github.com/romgrk/barbar.nvim),
+  [Lualine](https://github.com/hoob3rt/lualine.nvim)
 
 # Install 💾
 
@@ -141,8 +142,8 @@ Or manually add the color theme to your 'runtimepath' for the file.
 
 <center>
   <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/normal.png?raw=true" alt="lightline normal mode screenshot">
-  <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visual.png?raw=true" alt="lightline visual mode screenshot">
   <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/insert.png?raw=true" alt="lightline insert mode screenshot">
+  <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visual.png?raw=true" alt="lightline visual mode screenshot">
   <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/replace.png?raw=true" alt="lightline replace mode screenshot">
 </center>
 
@@ -154,6 +155,48 @@ Or manually add the color theme to your 'runtimepath' for the file.
 
 Don't be afraid of the vim documentation either for more information, like for manual installs!
 `:h colorscheme`
+
+- [Lualine](https://github.com/hoob3rt/lualine.nvim)
+
+<center>
+  <img  src="https://user-images.githubusercontent.com/32819563/111934957-16f0d780-8a88-11eb-9f33-f02c9ba364c1.png" alt="lualine normal mode screenshot">
+  <img  src="https://user-images.githubusercontent.com/32819563/111934981-21ab6c80-8a88-11eb-8118-dfbc2dc3bddf.png" alt="lualine insert mode screenshot">
+  <img  src="https://user-images.githubusercontent.com/32819563/111935019-325be280-8a88-11eb-9846-a2d7bfec226c.png" alt="lualine visual mode screenshot">
+  <img  src="https://user-images.githubusercontent.com/32819563/111935037-3ab41d80-8a88-11eb-8797-2b6db14cbff8.png" alt="lualine replace mode screenshot">
+</center>
+
+You only really need `'theme': 'spaceduck'`, but this is what I have in my vimrc:
+
+```viml
+  let g:lualine = {
+      \'options' : {
+      \  'theme' : 'spaceduck',
+      \  'section_separators' : ['', ''],
+      \  'component_separators' : ['', ''],
+      \  'icons_enabled' : v:true,
+      \},
+      \'sections' : {
+      \  'lualine_a' : [ ['mode', {'upper': v:true,},], ],
+      \  'lualine_b' : [ ['branch', {'icon': '',}, ], ],
+      \  'lualine_c' : [ ['filename', {'file_status': v:true,},], ],
+      \  'lualine_x' : [ 'encoding', 'fileformat', 'filetype' ],
+      \  'lualine_y' : [ 'progress' ],
+      \  'lualine_z' : [ 'location'  ],
+      \},
+      \'inactive_sections' : {
+      \  'lualine_a' : [  ],
+      \  'lualine_b' : [  ],
+      \  'lualine_c' : [ 'filename' ],
+      \  'lualine_x' : [ 'location' ],
+      \  'lualine_y' : [  ],
+      \  'lualine_z' : [  ],
+      \},
+      \'extensions' : [ 'fzf' ],
+      \}
+
+  lua require("lualine").setup()
+```
+
 
 # Other Spaceduck Ports
 
