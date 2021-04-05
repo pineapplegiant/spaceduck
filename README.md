@@ -14,32 +14,6 @@
   <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/screenshot.png?raw=true" alt="Screenshot of terminal with vim spaceduck theme installed">
 </center>
 
-# Table of Contents
-
-- [Inspiration 💭](#inspiration-💭)
-- [Colors Palette 🎨](#colors-palette-🎨)
-  - [Base Colors](#base-colors)
-  - [Special Colors](#special-colors)
-  - [Coloration Colors](#coloration-colors)
-  - [Current Language Support](#current-language-support)
-- [Install 💾](#install-💾)
-- [Vim and Neovim](#vim-and-neovim)
-- [Other Spaceduck Ports](#other-spaceduck-ports)
-  - [Terminal](#terminal)
-  - [VSCode](#vscode)
-  - [Emacs](#emacs)
-  - [Slack](#slack)
-  - [Tmux](#tmux)
-- [Troubleshooting 🔧](#troubleshooting-)
-  - [True color](#true-color)
-  - [Colors don't look right](#colors-dont-look-right)
-- [Screenshots 📸](#screenshots-📸)
-- [Credits 💳](#credits-💳)
-- [Contribute 🙏](#contribute-🙏)
-  - [Vim Estilo](#vim-estilo)
-    - [Testing colors look good](#testing-colors-look-good)
-    - [TODO](#todo)
-
 # Inspiration 💭
 
 This theme was inspired from my incessant desire to feel like I'm in space when I stare at a computer.
@@ -87,6 +61,8 @@ _Note: The Syntax color ID's are not an exhaustive & complete list._
 | ![Pure Black Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/black.png?raw=true)        | Pure Black | `#000000` | `0,0,0`     | `0, 0, 0`       | `0`       | VertSplit, TabLine |
 
 ## Current Language Support
+
+Basically languages I looked at with my eyes to make sure they didn't look like poop.
 
 **Languages:**
 
@@ -308,7 +284,7 @@ And in your `.bash_profile or .zshrc`:
 
 # Contribute 🙏
 
-If you'd like to contribute please reach out! I don't know what I'm doing.
+If you'd like to contribute please reach out! I don't know what I'm doing. Try to send a screenshot when posting issues as well.
 If you port it to whatever you're using, send me a link so I can link it here!
 
 ## Vim Estilo
@@ -338,15 +314,4 @@ This will show you the syntax ID to where we can then modify the color of that w
 
 ### TODO
 
-- [x] Screenshots gallery for colorscheme.
-- [x] Finalize proper coloring of syntax keywords.
-- [x] Port it to Alacritty & Kitty
-- [x] Add TMUX color snippet.
-- [x] Make a pretty website landing page.
-- [ ] Ensure support various of popular plugins: easyMotion, ALE, COC, etc
-- [ ] Fix ugly VimDiff?
-- [ ] Better 256 color for older terminals.
-- [ ] Add Bash prompt color codes.
-- [ ] Test if Airline looks nice and works.
-- [ ] Add manual installation for vim/neovim.
-- [ ] Port it to VSCODE for the homies?
+Check out my [Todo list](https://github.com/pineapplegiant/spaceduck/projects/1)
