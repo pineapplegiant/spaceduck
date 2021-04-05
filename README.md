@@ -92,7 +92,7 @@ _Note: The Syntax color ID's are not an exhaustive & complete list._
 
 _Note: if something looks off please submit an issue with a screenshot_
 
-- C, C++, fortran, haskell, html, java, javascript, markdown, php, python, ruby, sql, laTex, typescript
+- C, C++, fortran, haskell, html, java, javascript, markdown, php, python, ruby, sql, LaTeX, typescript
 
 **Plugins:**
 
