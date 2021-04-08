@@ -148,6 +148,7 @@ hi link jsObjectProp Tag
 hi link jsTernaryIfOperator Title
 hi link jsTemplateBraces Title
 hi link jsTemplateExpression String
+hi link jsonQuote Label
 hi link texTypeStyle Special
 hi link mkdDelimiter Normal
 hi link phpFunction Function
