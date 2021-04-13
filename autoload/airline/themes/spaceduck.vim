@@ -34,6 +34,29 @@ let s:inactive2 = [ "#1b1c36", "#16172d", 234, 234 ]
 let s:inactive3 = [ "#1b1c36", "#16172d", 234, 234 ]
 let g:airline#themes#spaceduck#palette.inactive = airline#themes#generate_color_map(s:inactive1, s:inactive2, s:inactive3)
 
+" tabline colors
+let s:tab_fill = [ "#ecf0c1", "#0f111b", 255, 233]
+let s:selected_tab = [ "#b3a1e6", "#0f111b", 146, 233 ]
+let s:modified_tab = [ "#5ccc96", "#0f111b", 78, 233 ]
+let s:background_tab = [ "#686f9a", "#0f111b", 60, 233 ]
+
+" reference airline-tabline-hlgroups for more information
+let g:airline#themes#spaceduck#palette.tabline = {
+  \ "airline_tab": s:background_tab,
+  \ "airline_tab_right": s:background_tab,
+  \ "airline_tabsel": s:selected_tab,
+  \ "airline_tabsel_right": s:selected_tab,
+  \ "airline_tabmod": s:modified_tab,
+  \ "airline_tabmod_right": s:modified_tab,
+  \ "airline_tabmod_unsel": s:modified_tab,
+  \ "airline_tabmod_unsel_right": s:modified_tab,
+  \ "airline_tabfill": s:tab_fill,
+  \ "airline_tablabel": s:background_tab,
+  \ "airline_tablabel_right": s:background_tab,
+  \ "airline_tabhid": s:background_tab,
+  \ "airline_tabhid_right": s:background_tab
+  \ }
+
 if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
