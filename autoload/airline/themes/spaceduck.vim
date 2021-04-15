@@ -9,14 +9,14 @@
 
 let g:airline#themes#spaceduck#palette = {}
 
-let s:normal1 = [ "#000000", "#30365F", 0, 237 ]
-let s:normal2 = [ "#30365F", "#686f9a", 237, 60 ]
-let s:normal3 = [ "#30365F", "#686f9a", 237, 60 ]
+let s:normal1 = [ "#1b1c36", "#686f9a", 0, 237 ]
+let s:normal2 = [ "#686f9a", "#1b1c36", 60, 234 ]
+let s:normal3 = [ "#686f9a", "#1b1c36", 60, 234 ]
 let g:airline#themes#spaceduck#palette.normal = airline#themes#generate_color_map(s:normal1, s:normal2, s:normal3)
 
 let s:insert1 = [ "#000000", "#5ccc96", 0, 78 ]
-let s:insert2 = [ "#30365F", "#686f9a", 237, 60 ]
-let s:insert3 = [ "#30365F", "#686f9a", 237, 60 ]
+let s:insert2 = [ "#5ccc96", "#1b1c36", 60, 234 ]
+let s:insert3 = [ "#5ccc96", "#1b1c36", 60, 234 ]
 let g:airline#themes#spaceduck#palette.insert = airline#themes#generate_color_map(s:insert1, s:insert2, s:insert3)
 
 let s:replace1 = [ "#000000", "#7a5ccc", 0, 98 ]
@@ -24,15 +24,27 @@ let s:replace2 = [ "#30365F", "#686f9a", 237, 60 ]
 let s:replace3 = [ "#30365F", "#686f9a", 237, 60 ]
 let g:airline#themes#spaceduck#palette.replace = airline#themes#generate_color_map(s:replace1, s:replace2, s:replace3)
 
-let s:visual1 = [ "#000000", "#f2ce00", 0, 220 ]
-let s:visual2 = [ "#30365F", "#686f9a", 237, 60 ]
-let s:visual3 = [ "#30365F", "#686f9a", 237, 60 ]
+let s:visual1 = [ "#000000", "#b3a1e6", 0, 220 ]
+let s:visual2 = [ "#b3a1e6", "#1b1c36", 146, 234 ]
+let s:visual3 = [ "#b3a1e6", "#1b1c36", 146, 234 ]
 let g:airline#themes#spaceduck#palette.visual = airline#themes#generate_color_map(s:visual1, s:visual2, s:visual3)
 
 let s:inactive1 = [ "#1b1c36", "#16172d", 234, 234 ]
 let s:inactive2 = [ "#1b1c36", "#16172d", 234, 234 ]
 let s:inactive3 = [ "#1b1c36", "#16172d", 234, 234 ]
 let g:airline#themes#spaceduck#palette.inactive = airline#themes#generate_color_map(s:inactive1, s:inactive2, s:inactive3)
+
+" statusline warnings ( the [3]trailing block at the right end of your status bar)
+let s:warning_color = [ "#686f9a", "#30365F", 0, 237 ]
+let g:airline#themes#spaceduck#palette.normal.airline_warning = s:warning_color
+let g:airline#themes#spaceduck#palette.insert.airline_warning = s:warning_color
+let g:airline#themes#spaceduck#palette.visual.airline_warning = s:warning_color
+
+" statusline errors
+let s:error_color = [ "#ce6f8f", "#1b1c36", 0, 237 ]
+let g:airline#themes#spaceduck#palette.normal.airline_error = s:error_color
+let g:airline#themes#spaceduck#palette.insert.airline_error = s:error_color
+let g:airline#themes#spaceduck#palette.visual.airline_error = s:error_color
 
 " tabline colors
 let s:tab_fill = [ "#ecf0c1", "#0f111b", 255, 233]
@@ -57,6 +69,7 @@ let g:airline#themes#spaceduck#palette.tabline = {
   \ "airline_tabhid_right": s:background_tab
   \ }
 
+" ctrlp extension
 if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
