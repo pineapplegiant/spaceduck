@@ -148,6 +148,10 @@ hi link jsObjectProp Tag
 hi link jsTernaryIfOperator Title
 hi link jsTemplateBraces Title
 hi link jsTemplateExpression String
+hi jsArrowFunction guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsFuncParens guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsObjectBraces guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi jsTemplateExpression guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi link jsonQuote Label
 hi link texTypeStyle Special
 hi link mkdDelimiter Normal
