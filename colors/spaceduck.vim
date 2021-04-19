@@ -12,8 +12,6 @@
 " Modified: 2021/03/16 22:28
 " License: MIT
 
-set background=dark
-
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -21,86 +19,125 @@ endif
 
 let g:colors_name="spaceduck"
 
+"////////////////////////////
+"
+"    Spaceduck Colors
+"
+"////////////////////////////
+
+" dark theme and light theme settings
+" TODO light theme isn't done yet
+if &background == 'dark'
+  hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  " DarkPurple TODO
+  hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckCyan guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+  hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+elseif &background == 'light'
+  hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  " DarkPurple TODO
+  hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckCyan guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+  hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+endif
+
+"
+"    Syntax Highlighting
+"
 hi Normal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Boolean guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Character guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Boolean SpaceduckYellow
+hi! link Character SpaceduckYellow
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-hi Comment guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Conceal guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Conditional guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Constant guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Comment SpaceduckPurple
+hi! link Conceal SpaceduckDarkPurple2
+hi! link Conditional SpaceduckGreen
+hi! link Constant SpaceduckYellow
 hi Cursor guifg=#0f111b ctermfg=233 guibg=#818596 ctermbg=102 gui=NONE cterm=NONE
 hi CursorLine guifg=NONE ctermfg=NONE guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
 hi CursorLineNr guifg=#c1c3cc ctermfg=251 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-hi Debug guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Define guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Delimiter guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Debug SpaceduckPurple
+hi! link Define SpaceduckPurple2
+hi! link Delimiter SpaceduckForeground
 hi DiffAdd guifg=#5ccc96 ctermfg=78 guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
 hi DiffChange guifg=#e39400 ctermfg=172 guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
 hi DiffDelete guifg=#e33400 ctermfg=166 guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
 hi DiffText guifg=#f2ce00 ctermfg=220 guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
-hi Directory guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Directory SpaceduckCyan
 hi EndOfBuffer guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Error guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi ErrorMsg guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Exception guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Float guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Error SpaceduckRed
+hi! link ErrorMsg SpaceduckRed
+hi! link Exception SpaceduckOrange
+hi! link Float SpaceduckYellow
 hi FoldColumn guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi Folded guifg=#686f9a ctermfg=60 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Function guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Identifier guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Ignore guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Function SpaceduckGreen
+hi! link Identifier SpaceduckCyan
+hi! link Ignore SpaceduckRed
 hi IncSearch guifg=#ffffff ctermfg=15 guibg=#30365F ctermbg=237 gui=NONE cterm=NONE
-hi Include guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Keyword guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Label guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Include SpaceduckGreen
+hi! link Keyword SpaceduckOrange
+hi! link Label SpaceduckGreen
 hi LineNr guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Macro guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Macro SpaceduckPurple2
 hi MatchParen guifg=#ffffff ctermfg=15 guibg=#30365F ctermbg=237 gui=NONE cterm=NONE
-hi ModeMsg guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi MoreMsg guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Number guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Operator guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link ModeMsg SpaceduckPurple
+hi! link MoreMsg SpaceduckPurple
+hi! link Number SpaceduckYellow
+hi! link Operator SpaceduckMagenta
 hi Pmenu guifg=#ecf0c1 ctermfg=255 guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE ctermfg=NONE guibg=#30365F ctermbg=237 gui=NONE cterm=NONE
 hi PmenuSel guifg=#ffffff ctermfg=15 guibg=#30365F ctermbg=237 gui=NONE cterm=NONE
 hi PmenuThumb guifg=NONE ctermfg=NONE guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
-hi PreCondit guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi PreProc guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Question guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link PreCondit SpaceduckPurple2
+hi! link PreProc SpaceduckPurple
+hi! link Question SpaceduckPurple
 hi QuickFixLine guifg=#ecf0c1 ctermfg=255 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-hi Repeat guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Repeat SpaceduckGreen
 hi Search guifg=#ffffff ctermfg=15 guibg=#686f9a ctermbg=60 gui=NONE cterm=NONE
 hi SignColumn guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Special guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpecialChar guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Special SpaceduckPurple
+hi! link SpecialChar SpaceduckOrange
 hi SpecialKey guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi SpellBad guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi SpellCap guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi SpellLocal guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi SpellRare guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=underline cterm=underline
-hi Statement guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Statement SpaceduckGreen
 hi StatusLine guifg=#0f111b ctermfg=255 guibg=#0f111b ctermbg=233 gui=reverse cterm=reverse
 hi StatusLineNC guifg=#0f111b
 hi StatusLineTermNC guifg=#000000 ctermfg=0 guibg=#30365F ctermbg=237 gui=reverse cterm=reverse
-hi StorageClass guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi String guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Structure guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link StorageClass SpaceduckPurple
+hi! link String SpaceduckCyan
+hi! link Structure SpaceduckCyan
 hi TabLine guifg=#000000 ctermfg=0 guibg=#818596 ctermbg=102 gui=NONE cterm=NONE
 hi TabLineFill guifg=#818596 ctermfg=102 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
 hi TabLineSel guifg=#c1c3cc ctermfg=251 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Tag guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Title guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Tag SpaceduckPurple
+hi! link Title SpaceduckPurple2
 hi Todo guifg=#ffffff ctermfg=15 guibg=#686f9a ctermbg=60 gui=underline cterm=underline
-hi Type guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Typedef guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link Type SpaceduckMagenta
+hi! link Typedef SpaceduckCyan
 hi Underlined guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi VertSplit guifg=#000000 ctermfg=0 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
 hi Visual guifg=NONE ctermfg=NONE guibg=#30365F ctermbg=237 gui=NONE cterm=NONE
 hi WarningMsg guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi WildMenu guifg=#000000 ctermfg=0 guibg=#c1c3cc ctermbg=251 gui=NONE cterm=NONE
-hi diffAdded guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi diffRemoved guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link diffAdded SpaceduckPurple
+hi! link diffRemoved SpaceduckRed
 
 "Link
 hi link Whitespace EndOfBuffer
@@ -114,7 +151,7 @@ hi link cCppOutIf1 Normal
 hi link cCppOutIf2 Normal
 hi link cBracket Title
 hi link cssBraces Normal
-hi cssSelectorOp guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link cssSelectorOp SpaceduckMagenta
 hi link fortranType Tag
 hi link fortranStructure Structure
 hi link fortranStorageClass StorageClass
@@ -129,6 +166,8 @@ hi link htmlArg Tag
 hi link htmlSpecialTagName Type
 hi link javaClassDecl Structure
 hi link javaTypeDef Keyword
+
+" JavaScript
 hi link jsStorageClass Title
 hi link jsFunction Function
 hi link jsFuncName Special
@@ -142,11 +181,12 @@ hi link jsObjectProp Tag
 hi link jsTernaryIfOperator Title
 hi link jsTemplateBraces Title
 hi link jsTemplateExpression String
-hi jsArrowFunction guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsFuncParens guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsObjectBraces guifg=#b3a1e6 ctermfg=146 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi jsTemplateExpression guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link jsArrowFunction SpaceduckYellow
+hi! link jsFuncParens SpaceduckPurple
+hi! link jsObjectBraces SpaceduckPurple
+hi! link jsTemplateExpression SpaceduckMagenta
 hi link jsonQuote Label
+
 hi link texTypeStyle Special
 hi link mkdDelimiter Normal
 hi link phpFunction Function
@@ -155,7 +195,7 @@ hi link phpType Constant
 hi link phpIdentifier Type
 hi link phpStringSingle String
 hi link phpStringDouble String
-hi pythonOperator guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link pythonOperator SpaceduckMagenta
 hi link rubyConstant Constant
 hi link rubyDefine Define
 hi link rubyMethodName Function
@@ -169,7 +209,7 @@ hi link jsxOpenPunct jsxTagName
 hi link jsxClosePunct jsxOpenPunct
 hi link jsxCloseString jsxClosePunct
 hi link typescriptBraces Normal
-hi typescriptArrowFunc guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi! link typescriptArrowFunc SpaceduckMagenta
 hi link typescriptNumberStaticMethod Function
 hi link typescriptNumberMethod Function
 hi link typescriptStringStaticMethod Function
@@ -221,7 +261,8 @@ hi link typescriptDOMFormMethod Function
 hi link vimGroupName Normal
 hi link yamlKeyValueDelimiter Normal
 hi link yamlBlockMappingKey Function
-"Plugin
+
+" Plugins
 hi link vistaTag Conditional
 hi link vistaIcon Identifier
 hi link vistaColon Normal
