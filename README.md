@@ -87,7 +87,6 @@ If using Vim/Neovim I recommend installing the [vim-polyglot](https://github.com
 # Vim and Neovim
 
 This repo hosts the Vim/Neovim color scheme.
-
 Install the plugin with whatever plugin manager you use:
 
 `Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }`
@@ -104,9 +103,7 @@ And add this to your vimrc/init.vim configuration file:
    colorscheme spaceduck
 ```
 
-Or manually add the color theme to your 'runtimepath' for the file.
-
-`:h colors`
+## Plugins
 
 - [Airline](https://github.com/vim-airline/vim-airline)
 
@@ -287,10 +284,6 @@ And in your `.bash_profile or .zshrc`:
 If you'd like to contribute please reach out! I don't know what I'm doing. Try to send a screenshot when posting issues as well.
 If you port it to whatever you're using, send me a link so I can link it here!
 
-## Vim Estilo
-
-I currently use [estilo](https://github.com/jacoborus/estilo) to manage colors for Vim/Neovim, please install the dependencies to compile the colors specified in the YAML into the color scheme.
-
 To find the [current syntax element under the cursor](https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor), I use this mapping which maps Ctrl+a to find the id under the cursor:
 
 ```viml
@@ -308,10 +301,11 @@ This will show you the syntax ID to where we can then modify the color of that w
 
 ### Testing colors look good
 
-- To test that colors look good, you can run: `:source $VIMRUNTIME/syntax/hitest.vim` this will open a buffer of all color groups defined!
+- Edit the colors/spaceduck.vim. When finished run `:source %` to source the buffer and see changes live.
+- To test that colors look good, you can also run: `:source $VIMRUNTIME/syntax/hitest.vim` this will open a buffer of all color groups defined!
 - Check current defined colors in buffer `:highlight` or `:hi` for short.
 - Looking for more syntax elements? Check out `$VIMRUNTIME/syntax/` for all of vim's language support.
 
-### TODO
+### TODO/WIP
 
 Check out my [Todo list](https://github.com/pineapplegiant/spaceduck/projects/1)
