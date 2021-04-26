@@ -48,8 +48,8 @@ _Note: The Syntax color ID's are not an exhaustive & complete list._
 | -------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------- | ------------- | --------------- | --------- | -------------------- |
 | ![Background Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/background.png?raw=true)            | Background       | `#0f111b` | `230,44,11`   | `15, 17, 27`    | `233`     | Background           |
 | ![Foreground Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/foreground.png?raw=true)            | Foreground       | `#ecf0c1` | `65,20,94`    | `236, 240, 193` | `255`     | Foregrond, Delimiter |
-| ![Visual Selection Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visualSelection.png?raw=true) | Visual Selection | `#1b1c36` | `238, 50, 21` | `27, 28, 54`    | `234`     | Visual               |
-| ![Cursor Line Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cursorLine.png?raw=true)           | Cursor Line      | `#16172d` | `237,51,18`   | `22, 23, 45`    | `234`     | CursorLine           |
+| ![Visual Selection Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visualSelection.png?raw=true) | Visual Selection | `#30365F` | `232, 49, 37` | `48, 54, 95`    | `237`     | Visual               |
+| ![Cursor Line Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cursorLine.png?raw=true)           | Cursor Line      | `#1b1c36` | `238, 50, 21`   | `27, 28, 54`    | `234`     | CursorLine           |
 
 ## Coloration Colors
 
