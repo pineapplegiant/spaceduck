@@ -51,6 +51,14 @@ _Note: The Syntax color ID's are not an exhaustive & complete list._
 | ![Visual Selection Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visualSelection.png?raw=true) | Visual Selection | `#30365F` | `232, 49, 37` | `48, 54, 95`    | `237`     | Visual               |
 | ![Cursor Line Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cursorLine.png?raw=true)           | Cursor Line      | `#1b1c36` | `238, 50, 21`   | `27, 28, 54`    | `234`     | CursorLine           |
 
+<details><summary>Old Special Colors</summary>
+
+  | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/eyedropper.png?raw=true)          | Palette          | Hex       | HSV/HSB       | RGB             | cterm/256 | SYN ID               |
+| -------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------- | ------------- | --------------- | --------- | -------------------- |
+  | ![Visual Selection Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/visualSelection.png?raw=true) | Visual Selection | `#1b1c36` | `238, 50, 21` | `27, 28, 54`    | `234`     | Visual               |
+| ![Cursor Line Color](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/cursorLine.png?raw=true)           | Cursor Line      | `#16172d` | `237,51,18`   | `22, 23, 45`    | `234`     | CursorLine           |
+</details>
+
 ## Coloration Colors
 
 | ![Color Picker Boxes](https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/eyedropper.png?raw=true) | Palette    | Hex       | HSV/HSB     | RGB             | cterm/256 | SYN ID             |
