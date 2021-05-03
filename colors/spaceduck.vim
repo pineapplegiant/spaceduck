@@ -9,22 +9,19 @@
 "
 " URL: https://github.com/pineapplegiant/spaceduck
 " Maintainer: Guillermo Rodriguez
-" Modified: 2021/03/16 22:28
+" Modified: 2022/03/16 22:28
 " License: MIT
 
+" Initalization {{{
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 
 let g:colors_name="spaceduck"
+" }}}
 
-"////////////////////////////
-"
-"    Spaceduck Colors
-"
-"////////////////////////////
-
+" Spaceduck Color Variables {{{
 " dark theme and light theme settings
 " TODO light theme isn't done yet
 if &background == 'dark'
@@ -34,30 +31,16 @@ if &background == 'dark'
   hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
   hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
   hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  " DarkPurple TODO
+  hi SpaceduckDarkPurple guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
   hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckCyan guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-
-  hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-elseif &background == 'light'
-  hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  " DarkPurple TODO
-  hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckCyan guifg=#00a3cc ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckCyan guifg=#59c2ff ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
   hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
   hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 endif
+" }}}
 
-"
-"    Syntax Highlighting
-"
+" Syntax Highlighting {{{
 hi Normal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi! link Boolean SpaceduckYellow
 hi! link Character SpaceduckYellow
@@ -83,7 +66,7 @@ hi! link ErrorMsg SpaceduckRed
 hi! link Exception SpaceduckOrange
 hi! link Float SpaceduckYellow
 hi FoldColumn guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi Folded guifg=#686f9a ctermfg=60 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi Folded guifg=#686f9a ctermfg=60 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
 hi! link Function SpaceduckGreen
 hi! link Identifier SpaceduckCyan
 hi! link Ignore SpaceduckRed
@@ -132,14 +115,12 @@ hi Todo guifg=#ffffff ctermfg=15 guibg=#686f9a ctermbg=60 gui=underline cterm=un
 hi! link Type SpaceduckMagenta
 hi! link Typedef SpaceduckCyan
 hi Underlined guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=underline cterm=underline
-hi VertSplit guifg=#000000 ctermfg=0 guibg=#000000 ctermbg=0 gui=NONE cterm=NONE
+hi VertSplit guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Visual guifg=NONE ctermfg=NONE guibg=#30365F ctermbg=237 gui=NONE cterm=NONE
 hi WarningMsg guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi WildMenu guifg=#000000 ctermfg=0 guibg=#c1c3cc ctermbg=251 gui=NONE cterm=NONE
 hi! link diffAdded SpaceduckPurple
 hi! link diffRemoved SpaceduckRed
-
-"Link
 hi link Whitespace EndOfBuffer
 hi link VisualNOS Visual
 hi link StatusLineTerm StatusLine
@@ -167,7 +148,7 @@ hi link htmlSpecialTagName Type
 hi link javaClassDecl Structure
 hi link javaTypeDef Keyword
 
-" JavaScript
+" JavaScript {{{
 hi link jsStorageClass Title
 hi link jsFunction Function
 hi link jsFuncName Special
@@ -182,10 +163,21 @@ hi link jsTernaryIfOperator Title
 hi link jsTemplateBraces Title
 hi link jsTemplateExpression String
 hi! link jsArrowFunction SpaceduckYellow
-hi! link jsFuncParens SpaceduckPurple
-hi! link jsObjectBraces SpaceduckPurple
+hi! link jsFuncArgs SpaceduckMagenta
+hi! link jsFuncParens SpaceduckDarkPurple2
+hi! link jsDestructuringBraces SpaceduckDarkPurple2
+hi! link jsObjectBraces SpaceduckDarkPurple2
+hi! link jsModuleBraces SpaceduckDarkPurple2
 hi! link jsTemplateExpression SpaceduckMagenta
+
+hi link jsxTagName HTMLTagName
+hi link jsxComponentName Tag
+hi link jsxClosePunct jsxOpenPunct
+hi link jsxCloseString jsxClosePunct
+hi! link jsxOpenPunct SpaceduckDarkPurple2
+
 hi link jsonQuote Label
+" }}}
 
 hi link texTypeStyle Special
 hi link mkdDelimiter Normal
@@ -201,13 +193,10 @@ hi link rubyDefine Define
 hi link rubyMethodName Function
 hi link rubyInstanceVariable Tag
 hi link rubyKeywordAsMethod Tag
+
+" Typescript
 hi link typescriptProp Tag
 hi link typescriptVariable Title
-hi link jsxTagName HTMLTagName
-hi link jsxComponentName Tag
-hi link jsxOpenPunct jsxTagName
-hi link jsxClosePunct jsxOpenPunct
-hi link jsxCloseString jsxClosePunct
 hi link typescriptBraces Normal
 hi! link typescriptArrowFunc SpaceduckMagenta
 hi link typescriptNumberStaticMethod Function
@@ -311,27 +300,27 @@ hi! link nerdtreeExactMatchLabel_.gitignore SpaceduckDarkPurple2
 " }}}
 
 " Neovim uses different terminal colors apart from Vim
-  if has('nvim')
-    let g:terminal_color_foreground = "#ecf0c1"
-    let g:terminal_color_background = "#0f111b"
-    let g:terminal_color_0 = "#000000"
-    let g:terminal_color_1 = "#e33400"
-    let g:terminal_color_2 = "#5ccc96"
-    let g:terminal_color_3 = "#b3a1e6"
-    let g:terminal_color_4 = "#00a3cc"
-    let g:terminal_color_5 = "#ce6f8f"
-    let g:terminal_color_6 = "#7a5ccc"
-    let g:terminal_color_7 = "#686f9a"
-    let g:terminal_color_8 = "#686f9a"
-    let g:terminal_color_9 = "#e33400"
-    let g:terminal_color_10 = "#5ccc96"
-    let g:terminal_color_11 = "#b3a1e6"
-    let g:terminal_color_12 = "#00a3cc"
-    let g:terminal_color_13 = "#ce6f8f"
-    let g:terminal_color_14 = "#7a5ccc"
-    let g:terminal_color_15 = "#ecf0c1"
-  else
-    let g:terminal_ansi_colors = [
-        \ '#000000', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#686f9a',
-        \ '#686f9a', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#ecf0c1']
+if has('nvim')
+  let g:terminal_color_foreground = "#ecf0c1"
+  let g:terminal_color_background = "#0f111b"
+  let g:terminal_color_0 = "#000000"
+  let g:terminal_color_1 = "#e33400"
+  let g:terminal_color_2 = "#5ccc96"
+  let g:terminal_color_3 = "#b3a1e6"
+  let g:terminal_color_4 = "#00a3cc"
+  let g:terminal_color_5 = "#ce6f8f"
+  let g:terminal_color_6 = "#7a5ccc"
+  let g:terminal_color_7 = "#686f9a"
+  let g:terminal_color_8 = "#686f9a"
+  let g:terminal_color_9 = "#e33400"
+  let g:terminal_color_10 = "#5ccc96"
+  let g:terminal_color_11 = "#b3a1e6"
+  let g:terminal_color_12 = "#00a3cc"
+  let g:terminal_color_13 = "#ce6f8f"
+  let g:terminal_color_14 = "#7a5ccc"
+  let g:terminal_color_15 = "#ecf0c1"
+else
+  let g:terminal_ansi_colors = [
+      \ '#000000', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#686f9a',
+      \ '#686f9a', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#ecf0c1']
 endif
