@@ -258,7 +258,18 @@ hi link typescriptDOMEventTargetMethod Function
 hi link typescriptDOMEventMethod Function
 hi link typescriptDOMStorageMethod Function
 hi link typescriptDOMFormMethod Function
+
+hi! link graphqlType Type
+hi! link graphqlName SpaceduckGreen
+hi! link graphqlVariable String
+hi! link graphqlFold SpaceduckPurple
+hi! link graphqlTemplateString SpaceduckForeground
+hi! link graphqlStructure Define
+
 hi link vimGroupName Normal
+hi! link vimLet SpaceduckPurple2
+hi! link vimVar SpaceduckForeground
+
 hi link yamlKeyValueDelimiter Normal
 hi link yamlBlockMappingKey Function
 
@@ -269,6 +280,8 @@ hi link vistaColon Normal
 hi link vistaScope Constant
 hi link vistaKind Conditional
 hi Sneak guifg=#000000 ctermfg=0 guibg=#f2ce00 ctermbg=220 gui=NONE cterm=NONE
+
+" Barbar
 hi BufferCurrent guifg=#c1c3cc ctermfg=251 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferVisible guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferInactive guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
@@ -286,6 +299,16 @@ hi BufferCurrentTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=N
 hi BufferVisibleTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferInactiveTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 
+" NERDTree
+hi! link nerdtreeFileExtensionLabel_js SpaceduckYellow
+hi! link nerdtreeFileExtensionIcon_js SpaceduckForeground
+hi! link nerdtreeFileExtensionLabel_css SpaceduckMagenta
+hi! link nerdtreeFileExtensionLabel_json SpaceduckPurple
+hi! link nerdtreeFileExtensionIcon_json SpaceduckPurple2
+hi! link nerdtreeExactMatchFolder_node_modules SpaceduckDarkPurple2
+hi! link nerdtreeExactMatchLabel_.gitignore SpaceduckDarkPurple2
+
+" }}}
 
 " Neovim uses different terminal colors apart from Vim
   if has('nvim')
