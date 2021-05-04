@@ -45,7 +45,7 @@ hi Normal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NON
 hi! link Boolean SpaceduckYellow
 hi! link Character SpaceduckYellow
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-hi! link Comment SpaceduckPurple
+hi! Comment guifg=#535F97 guibg=NONE ctermfg=236 ctermbg=NONE
 hi! link Conceal SpaceduckDarkPurple2
 hi! link Conditional SpaceduckGreen
 hi! link Constant SpaceduckYellow
@@ -295,7 +295,6 @@ hi! link nerdtreeFileExtensionLabel_css SpaceduckMagenta
 hi! link nerdtreeFileExtensionLabel_json SpaceduckPurple
 hi! link nerdtreeFileExtensionIcon_json SpaceduckPurple2
 hi! link nerdtreeExactMatchFolder_node_modules SpaceduckDarkPurple2
-hi! link nerdtreeExactMatchLabel_.gitignore SpaceduckDarkPurple2
 
 " }}}
 
