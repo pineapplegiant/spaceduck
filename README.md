@@ -179,57 +179,9 @@ You only really need `'theme': 'spaceduck'`, but this is what I have in my vimrc
 ```
 
 
-# Other Spaceduck Ports
+# Other Spaceduck Ports 🚆
 
-## Terminal
-
-Terminal install can be found at this repo:
-[https://github.com/pineapplegiant/spaceduck-terminal](https://github.com/pineapplegiant/spaceduck-terminal)
-
-## VSCode
-
-Vscode theme can be found at this repo:
-[https://github.com/tathran/spaceduck-vscode](https://github.com/tathran/spaceduck-vscode)
-
-## Emacs
-
-Emacs theme can be found at this repo:
-[https://github.com/tathran/spaceduck-emacs](https://github.com/tathran/spaceduck-emacs)
-
-## Slack
-
-- Go to User Menu > Preferences > Sidebar Theme
-- In the bottom of the window, look for a "customize your theme and share it with others" link
-- Copy and paste the values below:
-  - `#0f111b,#7A5CCC,#7A5CCC,#ffffff,#16172D,#ecf0c1,#5CCC96,#00A3CC,#0f111b,#ecf0c1`
-
-## Tmux
-
-Checkout some tmux config inspiration here at [the terminal repo](https://github.com/pineapplegiant/spaceduck-terminal/tree/main/tmux). Or if you're in a rush you can use this basic one:
-
-```tmux
-  # Basic color support setting
-  set-option -g default-terminal "screen-256color"
-
-  # Default bar color
-  set-option -g status-style bg='#1b1c36',fg='#ecf0c1'
-
-  # Active Pane
-  set -g pane-active-border-style "fg=#5ccc96"
-
-  # Inactive Pane
-  set -g pane-border-style "fg=#686f9a"
-
-  # Active window
-  set-option -g window-status-current-style bg='#686f9a',fg='#ffffff'
-
-  # Message
-  set-option -g message-style bg='#686f9a',fg='#ecf0c1'
-  set-option -g message-command-style bg='#686f9a',fg='#ecf0c1'
-
-  # When Commands are run
-  set -g message-style "fg=#0f111b,bg=#686f9a"
-```
+You can find all of the spaceduck ports and instructions on how to install them in [this repo](https://github.com/YoussefBouzekri/spaceduck-ports)
 
 # Troubleshooting 🔧
 
