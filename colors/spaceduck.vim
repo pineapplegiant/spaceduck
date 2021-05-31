@@ -22,22 +22,21 @@ let g:colors_name="spaceduck"
 " }}}
 
 " Spaceduck Color Variables {{{
-" dark theme and light theme settings
-" TODO light theme isn't done yet
-if &background == 'dark'
-  hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckDarkPurple guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckCyan guifg=#59c2ff ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-  hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckDarkPurple guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckCyan guifg=#59c2ff ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
-  hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-endif
+"hi SpaceduckMint guifg=#ffee52 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SpaceduckMint guifg=#ffe042 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 " }}}
 
 " Syntax Highlighting {{{
@@ -100,7 +99,7 @@ hi SpellCap guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=underline cterm
 hi SpellLocal guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi SpellRare guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 hi! link Statement SpaceduckGreen
-hi StatusLine guifg=#0f111b ctermfg=255 guibg=#0f111b ctermbg=233 gui=reverse cterm=reverse
+hi StatusLine guifg=#0f111b ctermfg=255 guibg=#ecf0c1 ctermbg=233 gui=reverse cterm=reverse
 hi StatusLineNC guifg=#0f111b
 hi StatusLineTermNC guifg=#000000 ctermfg=0 guibg=#30365F ctermbg=237 gui=reverse cterm=reverse
 hi! link StorageClass SpaceduckPurple
@@ -127,26 +126,45 @@ hi link StatusLineTerm StatusLine
 hi link NonText EndOfBuffer
 hi link SpecialComment Comment
 hi link TermCursor Cursor
+
+" C / C++ {{{
 hi link cFormat Title
 hi link cCppOutIf1 Normal
 hi link cCppOutIf2 Normal
 hi link cBracket Title
-hi link cssBraces Normal
-hi! link cssSelectorOp SpaceduckMagenta
+" }}}
+
+" Fortran {{{
 hi link fortranType Tag
 hi link fortranStructure Structure
 hi link fortranStorageClass StorageClass
 hi link fortranUnitHeader Title
+" }}}
+
+" Haskell {{{
 hi link haskellType Tag
 hi link haskellIdentifier Label
 hi link haskellKeyword Boolean
 hi link haskellDecl Boolean
+" }}}
+
+" Java {{{
+hi link javaClassDecl Structure
+hi link javaTypeDef Keyword
+" }}}
+
+" HTML {{{
 hi link htmlTagName Function
 hi link htmlEndTag Conditional
 hi link htmlArg Tag
 hi link htmlSpecialTagName Type
-hi link javaClassDecl Structure
-hi link javaTypeDef Keyword
+" }}}
+
+" CSS {{{
+hi link cssBraces Normal
+hi! link cssSelectorOp SpaceduckMagenta
+" }}}
+
 
 " JavaScript {{{
 hi link jsStorageClass Title
@@ -164,35 +182,46 @@ hi link jsTemplateBraces Title
 hi link jsTemplateExpression String
 hi! link jsArrowFunction SpaceduckYellow
 hi! link jsFuncArgs SpaceduckMagenta
-hi! link jsFuncParens SpaceduckDarkPurple2
+hi! link jsFuncParens SpaceduckPurple
 hi! link jsDestructuringBraces SpaceduckDarkPurple2
 hi! link jsObjectBraces SpaceduckDarkPurple2
 hi! link jsModuleBraces SpaceduckDarkPurple2
+hi! link jsBrackets SpaceduckDarkPurple2
 hi! link jsTemplateExpression SpaceduckMagenta
 
 hi link jsxTagName HTMLTagName
-hi link jsxComponentName Tag
 hi link jsxClosePunct jsxOpenPunct
 hi link jsxCloseString jsxClosePunct
 hi! link jsxOpenPunct SpaceduckDarkPurple2
+hi! link jsxComponentName SpaceduckPurple
+
+hi link jsClassKeyword SpaceduckPurple2
+hi link jsClassDefinition SpaceduckYellow
+hi link jsClassFuncName SpaceduckGreen
+hi link jsObjectProp SpaceduckMagenta
+hi link jsThis SpaceduckYellow
+hi link jsFunction SpaceduckPurple2
+hi link jsFuncName SpaceduckGreen
 
 hi link jsonQuote Label
 " }}}
 
+" Others {{{
 hi link texTypeStyle Special
 hi link mkdDelimiter Normal
-hi link phpFunction Function
-hi link phpMethod Function
-hi link phpType Constant
-hi link phpIdentifier Type
-hi link phpStringSingle String
-hi link phpStringDouble String
+" }}}
+
+" Python TODO {{{
 hi! link pythonOperator SpaceduckMagenta
+" }}}
+
+" Ruby {{{
 hi link rubyConstant Constant
 hi link rubyDefine Define
 hi link rubyMethodName Function
 hi link rubyInstanceVariable Tag
 hi link rubyKeywordAsMethod Tag
+" }}}
 
 " Typescript
 hi link typescriptProp Tag
@@ -248,21 +277,27 @@ hi link typescriptDOMEventMethod Function
 hi link typescriptDOMStorageMethod Function
 hi link typescriptDOMFormMethod Function
 
+" GraphQL {{{
 hi! link graphqlType Type
 hi! link graphqlName SpaceduckGreen
 hi! link graphqlVariable String
 hi! link graphqlFold SpaceduckPurple
 hi! link graphqlTemplateString SpaceduckForeground
 hi! link graphqlStructure Define
+" }}}
 
+" YAML {{{
+hi link yamlKeyValueDelimiter Normal
+hi link yamlBlockMappingKey Function
+" }}}
+"
+" VIM {{{
 hi link vimGroupName Normal
 hi! link vimLet SpaceduckPurple2
 hi! link vimVar SpaceduckForeground
+" }}}
 
-hi link yamlKeyValueDelimiter Normal
-hi link yamlBlockMappingKey Function
-
-" Plugins
+" Plugins {{{
 hi link vistaTag Conditional
 hi link vistaIcon Identifier
 hi link vistaColon Normal
@@ -271,9 +306,9 @@ hi link vistaKind Conditional
 hi Sneak guifg=#000000 ctermfg=0 guibg=#f2ce00 ctermbg=220 gui=NONE cterm=NONE
 
 " Barbar
-hi BufferCurrent guifg=#c1c3cc ctermfg=251 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferVisible guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferInactive guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi BufferCurrent guifg=#ecf0c1 ctermfg=251 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi BufferVisible guifg=#535F97 ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi BufferInactive guifg=#535F97 ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferTabpageFill guifg=#0f111b ctermfg=233 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferCurrentIndex guifg=#5ccc96 ctermfg=78 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferVisibleIndex guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
@@ -289,15 +324,23 @@ hi BufferVisibleTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=N
 hi BufferInactiveTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 
 " NERDTree
-hi! link nerdtreeFileExtensionLabel_js SpaceduckYellow
-hi! link nerdtreeFileExtensionIcon_js SpaceduckForeground
-hi! link nerdtreeFileExtensionLabel_css SpaceduckMagenta
-hi! link nerdtreeFileExtensionLabel_json SpaceduckPurple
-hi! link nerdtreeFileExtensionIcon_json SpaceduckPurple2
-hi! link nerdtreeExactMatchFolder_node_modules SpaceduckDarkPurple2
+" hi! link nerdtreeFileExtensionLabel_json SpaceduckPurple
+" hi! link nerdtreeFileExtensionIcon_json SpaceduckPurple2
+" hi! link nerdtreeFileExtensionLabel_css SpaceduckMagenta
+" hi! link nerdtreeFileExtensionLabel_js SpaceduckGreen
+" hi! link nerdtreeFileExtensionIcon_js SpaceduckGreen
+" hi! link nerdtreeExactMatchFolder_node_modules SpaceduckDarkPurple2
+hi! link NERDTreeFlags SpaceduckCyan
+
+hi! link FernRootText SpaceduckPurple
+
+highlight default CocHighlightText  guibg=#1b1c36
 
 " }}}
 
+" }}}
+
+" Terminal colors VIM / NeoVIM {{{
 " Neovim uses different terminal colors apart from Vim
 if has('nvim')
   let g:terminal_color_foreground = "#ecf0c1"
@@ -323,3 +366,4 @@ else
       \ '#000000', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#686f9a',
       \ '#686f9a', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#ecf0c1']
 endif
+" }}}
