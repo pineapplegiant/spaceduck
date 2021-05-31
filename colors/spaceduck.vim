@@ -237,7 +237,7 @@ hi link rubyInstanceVariable Tag
 hi link rubyKeywordAsMethod Tag
 " }}}
 
-" Typescript
+" Typescript {{{
 hi link typescriptProp Tag
 hi link typescriptVariable Title
 hi link typescriptBraces Normal
@@ -290,6 +290,28 @@ hi link typescriptDOMEventTargetMethod Function
 hi link typescriptDOMEventMethod Function
 hi link typescriptDOMStorageMethod Function
 hi link typescriptDOMFormMethod Function
+
+hi link typescriptPredefinedType SpaceduckYellow
+hi link typescriptAliasKeyword Define
+hi link typescriptBinaryOp Operator
+hi link typescriptOperator Operator
+hi link typescriptGlobal Constant
+hi link typescriptExceptions Statement
+hi link typescriptIdentifierName SpaceduckGreen
+hi link typescriptAssign Operator
+hi link typescriptFuncComma SpaceduckForeground
+hi link typescriptFuncKeyword Define
+hi link typescriptInterfaceKeyword Define
+
+hi link typescriptCall SpaceduckMagenta
+hi link typescriptAliasDeclaration SpaceduckPurple
+hi link typescriptTypeReference SpaceduckPurple
+hi link typescriptInterfaceName SpaceduckPurple
+
+hi link typescriptDOMFormProp SpaceduckMagenta
+hi link typescriptNodeGlobal SpaceduckYellow
+hi link typescriptProp SpaceduckMagenta
+" }}}
 
 " GraphQL {{{
 hi! link graphqlType Type
