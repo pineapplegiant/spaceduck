@@ -22,25 +22,90 @@ let g:colors_name="spaceduck"
 " }}}
 
 " Spaceduck Color Variables {{{
-hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckDarkPurple guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckCyan guifg=#59c2ff ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+" dark theme and light theme settings
+let s:palette = {
+      \ 'red':          ['#e33400', '166'],
+      \ 'orange':       ['#e39400', '172'],
+      \ 'green':        ['#5ccc96', '78'],
+      \ 'yellow':       ['#f2ce00', '220'],
+      \ 'lavender':     ['#b3a1e6', '146'],
+      \ 'grape':        ['#7a5ccc', '98'],
+      \ 'space':        ['#30365F', '237'],
+      \ 'blueberry':    ['#686f9a', '60'],
+      \ 'cyan':         ['#00a3cc', '38'],
+      \ 'magenta':      ['#ce6f8f', '168'],
+      \
+      \ 'deep_space':   ['#0f111b', '233'],
+      \ 'cream':        ['#ecf0c1', '255'],
+      \ 'selection':    ['#30365F', '237'],
+      \ 'cursor':       ['#1b1c36', '234'],
+      \
+      \ 'grey':         ['#818596', '102'],
+      \ 'light_grey':   ['#818596', '102'],
+      \ 'white':        ['#ffffff', '15'],
+      \ 'black':        ['#000000', '0'],
+      \
+      \ 'none':         ['NONE',    'NONE']
+      \ }
 
-"hi SpaceduckMint guifg=#ffee52 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SpaceduckMint guifg=#ffe042 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+if &background == 'dark'
+  hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckDarkPurple guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckCyan guifg=#59c2ff ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
-hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+  let s:palette.bg = s:palette.deep_space
+  let s:palette.fg = s:palette.cream
+endif
+
+" I don't want anyone accidentally stumbling on this just yet
+if exists('g:spaceduck_dev_light_theme')
+  hi SpaceduckRed guifg=#e33400 ctermfg=166 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckOrange guifg=#e39400 ctermfg=172 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckGreen guifg=#5ccc96 ctermfg=78 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckYellow guifg=#f2ce00 ctermfg=220 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple guifg=#b3a1e6 ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckPurple2 guifg=#7a5ccc ctermfg=98 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckDarkPurple guifg=#30365F ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckDarkPurple2 guifg=#686f9a ctermfg=60 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckCyan guifg=#59c2ff ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  hi SpaceduckMagenta guifg=#ce6f8f ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+  hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+  let s:palette.bg = s:palette.white
+  let s:palette.fg = s:palette.deep_space
+
+endif
+" }}}
+
+" Highlight function {{{
+function! s:hi(group, fg, bg, ...)
+  let hl_string = [
+      \ 'highlight', a:group,
+      \ 'guifg=' . a:fg[0],
+      \ 'guibg=' . a:bg[0],
+      \ 'ctermfg=' . a:fg[1],
+      \ 'ctermbg=' . a:bg[1],
+      \ 'gui=' . (a:0 >= 1 ? a:1 : 'NONE'),
+      \ 'cterm=' . (a:0 >= 1 ? a:1 : 'NONE')
+      \ ]
+
+  execute join(hl_string, ' ')
+endfunction
 " }}}
 
 " Syntax Highlighting {{{
-hi Normal guifg=#ecf0c1 ctermfg=255 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+call s:hi('Normal', s:palette.fg, s:palette.bg)
+
 hi! link Boolean SpaceduckYellow
 hi! link Character SpaceduckYellow
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
@@ -49,7 +114,7 @@ hi! link Conceal SpaceduckDarkPurple2
 hi! link Conditional SpaceduckGreen
 hi! link Constant SpaceduckYellow
 hi Cursor guifg=#0f111b ctermfg=233 guibg=#818596 ctermbg=102 gui=NONE cterm=NONE
-hi CursorLine guifg=NONE ctermfg=NONE guibg=#1b1c36 ctermbg=234 gui=NONE cterm=NONE
+call s:hi('CursorLine', s:palette.none, s:palette.cursor)
 hi CursorLineNr guifg=#c1c3cc ctermfg=251 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
 hi! link Debug SpaceduckPurple
 hi! link Define SpaceduckPurple2
