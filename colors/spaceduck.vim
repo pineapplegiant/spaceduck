@@ -81,7 +81,7 @@ if exists('g:spaceduck_dev_light_theme')
 
   hi SpaceduckForeground guifg=#ecf0c1 ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
-  let s:palette.bg = s:palette.white
+  let s:palette.bg = s:palette.cream
   let s:palette.fg = s:palette.deep_space
 
 endif
