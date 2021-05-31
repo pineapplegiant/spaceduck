@@ -165,6 +165,20 @@ hi link cssBraces Normal
 hi! link cssSelectorOp SpaceduckMagenta
 " }}}
 
+" php {{{
+hi link phpFunction Function
+hi link phpKeyword Function
+hi link phpMethod Function
+hi link phpClass SpaceduckYellow
+hi link phpType SpaceduckPurple2
+hi link phpIdentifier SpaceduckForeground
+hi link phpVarSelector SpaceduckDarkPurple2
+hi link phpParent SpaceduckForeground
+hi link phpSuperglobals SpaceduckMagenta
+hi link Delimiter SpaceduckPurple
+hi link phpStringSingle String
+hi link phpStringDouble String
+" }}}
 
 " JavaScript {{{
 hi link jsStorageClass Title
