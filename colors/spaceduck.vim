@@ -296,16 +296,19 @@ hi link jsxClosePunct jsxOpenPunct
 hi link jsxCloseString jsxClosePunct
 hi! link jsxOpenPunct SpaceduckDarkPurple2
 hi! link jsxComponentName SpaceduckPurple
+hi! link jsxTag SpaceduckPurple
 
 hi link jsClassKeyword SpaceduckPurple2
 hi link jsClassDefinition SpaceduckYellow
 hi link jsClassFuncName SpaceduckGreen
 hi link jsObjectProp SpaceduckMagenta
+hi link jsObjectKey SpaceduckGreen
 hi link jsThis SpaceduckYellow
 hi link jsFunction SpaceduckPurple2
 hi link jsFuncName SpaceduckGreen
 
 hi link jsonQuote Label
+hi link jsoncBraces SpaceduckDarkPurple2
 " }}}
 
 " Others {{{
@@ -326,9 +329,8 @@ hi link rubyKeywordAsMethod Tag
 " }}}
 
 " Typescript {{{
-hi link typescriptProp Tag
 hi link typescriptVariable Title
-hi link typescriptBraces Normal
+hi link typescriptBraces SpaceduckDarkPurple2
 hi! link typescriptArrowFunc SpaceduckMagenta
 hi link typescriptNumberStaticMethod Function
 hi link typescriptNumberMethod Function
@@ -385,20 +387,30 @@ hi link typescriptBinaryOp Operator
 hi link typescriptOperator Operator
 hi link typescriptGlobal Constant
 hi link typescriptExceptions Statement
-hi link typescriptIdentifierName SpaceduckGreen
 hi link typescriptAssign Operator
 hi link typescriptFuncComma SpaceduckForeground
 hi link typescriptFuncKeyword Define
 hi link typescriptInterfaceKeyword Define
 
-hi link typescriptCall SpaceduckMagenta
+hi link typescriptCall SpaceduckForeground
 hi link typescriptAliasDeclaration SpaceduckPurple
 hi link typescriptTypeReference SpaceduckPurple
 hi link typescriptInterfaceName SpaceduckPurple
 
 hi link typescriptDOMFormProp SpaceduckMagenta
 hi link typescriptNodeGlobal SpaceduckYellow
-hi link typescriptProp SpaceduckMagenta
+hi! link typescriptProp SpaceduckMagenta
+hi! link typescriptIdentifierName SpaceduckForeground
+
+hi link typescriptImport SpaceduckGreen
+hi link typescriptBOM SpaceduckMagenta
+hi link typescriptFuncTypeArrow SpaceduckMagenta
+
+hi link tsxTagName SpaceduckPurple
+hi link tsxTag SpaceduckDarkPurple2
+hi link tsxCloseTag SpaceduckDarkPurple2
+hi link tsxCloseString SpaceduckDarkPurple2
+hi link tsxBraces SpaceduckGrey
 " }}}
 
 " GraphQL {{{
