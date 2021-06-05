@@ -443,6 +443,7 @@ hi link yamlBlockMappingKey Function
 hi link vimGroupName Normal
 hi! link vimLet SpaceduckPurple2
 hi! link vimVar SpaceduckForeground
+hi link vimScriptDelim SpaceduckMagenta
 " }}}
 
 " Plugins {{{
