@@ -318,6 +318,18 @@ hi link mkdDelimiter Normal
 
 " Python TODO {{{
 hi! link pythonOperator SpaceduckMagenta
+hi! link pythonBuiltinFunc SpaceduckGreen
+hi! link pythonBuiltinType SpaceduckYellow
+hi! link pythonClassVar SpaceduckPurple
+hi! link pythonImport SpaceduckGreen
+hi! link pythonFunction SpaceduckGreen
+hi! link pythonRepeat SpaceduckMagenta
+hi! link pythonExClass SpaceduckYellow
+hi! link pythonConditional SpaceduckMagenta
+hi! link pythonStatement SpaceduckPurple2
+hi! link pythonRaise SpaceduckGreen
+hi! link pythonClass SpaceduckYellow
+hi! link pythonReturn SpaceduckGreen
 " }}}
 
 " Ruby {{{
