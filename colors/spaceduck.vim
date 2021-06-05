@@ -473,12 +473,6 @@ hi BufferVisibleTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=N
 hi BufferInactiveTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 
 " NERDTree
-" hi! link nerdtreeFileExtensionLabel_json SpaceduckPurple
-" hi! link nerdtreeFileExtensionIcon_json SpaceduckPurple2
-" hi! link nerdtreeFileExtensionLabel_css SpaceduckMagenta
-" hi! link nerdtreeFileExtensionLabel_js SpaceduckGreen
-" hi! link nerdtreeFileExtensionIcon_js SpaceduckGreen
-" hi! link nerdtreeExactMatchFolder_node_modules SpaceduckDarkPurple2
 hi! link NERDTreeFlags SpaceduckCyan
 
 hi! link FernRootText SpaceduckPurple
