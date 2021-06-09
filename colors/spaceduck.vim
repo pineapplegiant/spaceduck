@@ -147,8 +147,8 @@ call s:hi('SpellBad',         s:palette.red,         s:palette.none,       'unde
 call s:hi('SpellLocal',       s:palette.green,       s:palette.none,       'underline')
 call s:hi('SpellRare',        s:palette.yellow,      s:palette.none,       'underline')
 
-call s:hi('StatusLine',       s:palette.selection,   s:palette.fg,         'reverse'  )
-call s:hi('StatusLineNC',     s:palette.bg,          s:palette.fg,         'reverse'  )
+call s:hi('StatusLine',       s:palette.bg,          s:palette.fg,         'reverse'  )
+call s:hi('StatusLineNC',     s:palette.bg,          s:palette.grey,       'reverse'  )
 call s:hi('StatusLineTermNC', s:palette.black,       s:palette.darkpurple, 'reverse'  )
 call s:hi('TabLine',          s:palette.black,       s:palette.grey                   )
 call s:hi('TabLineFill',      s:palette.grey,        s:palette.black                  )
