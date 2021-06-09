@@ -34,6 +34,9 @@ let s:palette = {
       \ 'cyan':         ['#59c2ff', '38'],
       \ 'magenta':      ['#ce6f8f', '168'],
       \
+      \ 'turquoise':    ['#00d1b2', '78'],
+      \ 'light_blue':   ['#14CFFB', '38'],
+      \
       \ 'deep_space':   ['#0f111b', '233'],
       \ 'cream':        ['#ecf0c1', '255'],
       \ 'selection':    ['#30365F', '237'],
@@ -83,6 +86,9 @@ if &background == 'dark'
   call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
 
   call s:hi('SpaceduckGrey',        s:palette.grey,        s:palette.none)
+
+  call s:hi('SpaceduckTurquoise',        s:palette.turquoise,        s:palette.none)
+  call s:hi('SpaceduckLightBlue',        s:palette.light_blue,        s:palette.none)
 
   let s:palette.bg = s:palette.deep_space
   let s:palette.fg = s:palette.cream
@@ -141,7 +147,7 @@ call s:hi('SpellBad',         s:palette.red,         s:palette.none,       'unde
 call s:hi('SpellLocal',       s:palette.green,       s:palette.none,       'underline')
 call s:hi('SpellRare',        s:palette.yellow,      s:palette.none,       'underline')
 
-call s:hi('StatusLine',       s:palette.bg,          s:palette.fg,         'reverse'  )
+call s:hi('StatusLine',       s:palette.selection,   s:palette.fg,         'reverse'  )
 call s:hi('StatusLineNC',     s:palette.bg,          s:palette.fg,         'reverse'  )
 call s:hi('StatusLineTermNC', s:palette.black,       s:palette.darkpurple, 'reverse'  )
 call s:hi('TabLine',          s:palette.black,       s:palette.grey                   )
@@ -244,13 +250,24 @@ hi link javaTypeDef Keyword
 " HTML {{{
 hi link htmlTagName Function
 hi link htmlEndTag Conditional
-hi link htmlArg Tag
+hi link htmlArg SpaceduckMagenta
 hi link htmlSpecialTagName Type
+hi! link htmlTag SpaceduckDarkPurple2
+hi! link htmlEndTag SpaceduckDarkPurple2
+hi! link htmlTitle SpaceduckPurple
+hi! link htmlH1 SpaceduckPurple
 " }}}
 
 " CSS {{{
 hi link cssBraces Normal
 hi! link cssSelectorOp SpaceduckMagenta
+hi link cssAtKeyword SpaceduckPurple
+hi link cssBoxProp SpaceduckTurquoise
+hi link cssBackgroundProp SpaceduckMagenta
+hi link cssTextProp SpaceduckMagenta
+hi link cssTagName SpaceduckGreen
+hi link cssPseudoClassId SpaceduckMagenta
+hi link cssClassName SpaceduckTurquoise
 " }}}
 
 " php {{{
@@ -280,7 +297,7 @@ hi link jsOperatorKeyword Operator
 hi link jsExceptions Error
 hi link jsObjectProp Tag
 hi link jsTernaryIfOperator Title
-hi link jsTemplateBraces Title
+hi! link jsTemplateBraces SpaceduckPurple
 hi link jsTemplateExpression String
 hi! link jsArrowFunction SpaceduckYellow
 hi! link jsFuncArgs SpaceduckMagenta
@@ -298,14 +315,20 @@ hi! link jsxOpenPunct SpaceduckDarkPurple2
 hi! link jsxComponentName SpaceduckPurple
 hi! link jsxTag SpaceduckPurple
 
+hi link jsAsyncKeyword SpaceduckOrange
+hi link jsForAwait SpaceduckOrange
+
 hi link jsClassKeyword SpaceduckPurple2
 hi link jsClassDefinition SpaceduckYellow
 hi link jsClassFuncName SpaceduckGreen
 hi link jsObjectProp SpaceduckMagenta
-hi link jsObjectKey SpaceduckGreen
+hi link jsObjectKey SpaceduckTurquoise
 hi link jsThis SpaceduckYellow
 hi link jsFunction SpaceduckPurple2
 hi link jsFuncName SpaceduckGreen
+
+hi link jsParensCatch SpaceduckPurple
+hi link jsParenCatch SpaceduckMagenta
 
 hi link jsonQuote Label
 hi link jsoncBraces SpaceduckDarkPurple2
