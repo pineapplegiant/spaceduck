@@ -38,15 +38,15 @@ let s:palette = {
       \ 'red':          ['#f25244', '203'],
       \ 'orange':       ['#f2ac49', '215'],
       \ 'green':        ['#5ccc96', '78'],
-      \ 'yellow':       ['#f0e573', '221'],
+      \ 'yellow':       ['#f2e661', '221'],
       \ 'lightpurple':  ['#b3a1e6', '146'],
       \ 'purple':       ['#936ad9', '98'],
       \ 'darkpurple':   ['#626999', '60'],
       \ 'cyan':         ['#59c2ff', '75'],
       \ 'magenta':      ['#cc7893', '174'],
       \
-      \ 'violet':       ['#606ebf', '61'],
-      \ 'lightorange':  ['#f09873', '209'],
+      \ 'violet':       ['#5c6dcc', '62'],
+      \ 'lightorange':  ['#f29d61', '215'],
       \
       \ 'background':   ['#0f111b', '233'],
       \ 'foreground':   ['#ecf0c1', '255'],
@@ -139,9 +139,9 @@ call s:hi('DiffChange',       s:palette.orange,      s:palette.cursor           
 call s:hi('DiffDelete',       s:palette.red,         s:palette.cursor                 )
 call s:hi('DiffText',         s:palette.yellow,      s:palette.cursor                 )
 
-call s:hi('EndOfBuffer',      s:palette.selection,   s:palette.background             )
-call s:hi('FoldColumn',       s:palette.selection,   s:palette.background             )
-call s:hi('Folded',           s:palette.darkpurple,  s:palette.cursor                 )
+call s:hi('EndOfBuffer',      s:palette.selection,   s:palette.none                   )
+call s:hi('FoldColumn',       s:palette.selection,   s:palette.none                   )
+call s:hi('Folded',           s:palette.darkpurple,  s:palette.none                   )
 " TODO: better incsearch & Search
 call s:hi('IncSearch',        s:palette.black,       s:palette.darkpurple, 'underline')
 call s:hi('LineNr',           s:palette.selection,   s:palette.background             )
@@ -160,7 +160,7 @@ call s:hi('SpellBad',         s:palette.red,         s:palette.none,       'unde
 call s:hi('SpellLocal',       s:palette.green,       s:palette.none,       'underline')
 call s:hi('SpellRare',        s:palette.yellow,      s:palette.none,       'underline')
 
-call s:hi('StatusLine',       s:palette.cursor,      s:palette.lightgrey,  'reverse'  )
+call s:hi('StatusLine',       s:palette.cursor,      s:palette.foreground, 'reverse'  )
 call s:hi('StatusLineNC',     s:palette.bg,          s:palette.grey,       'reverse'  )
 call s:hi('StatusLineTermNC', s:palette.bg,          s:palette.darkpurple, 'reverse'  )
 call s:hi('TabLine',          s:palette.bg,          s:palette.grey                   )
