@@ -9,7 +9,8 @@
 "
 " URL: https://github.com/pineapplegiant/spaceduck
 " Maintainer: Guillermo Rodriguez
-" Modified: 2022/03/16 22:28
+" Modified: 2021/06/20 13:06
+" Version: 0.1.0
 " License: MIT
 
 " Initalization {{{
@@ -21,31 +22,41 @@ endif
 let g:colors_name="spaceduck"
 " }}}
 
+"lavender is now light purple
+"purple2 is now purple
+"darkpurple is now selection
+"darkpurple2 is now darkpurple
+"turquoise is now violet
+"light_blue got removed
+"deep_space is now background
+"cream is now fg
+"comment is using darkpurple
+"oldcomment is using newColor? Violet?
+
 " PALETTE: {{{
 let s:palette = {
-      \ 'red':          ['#e33400', '166'],
-      \ 'orange':       ['#e39400', '172'],
+      \ 'red':          ['#f25244', '203'],
+      \ 'orange':       ['#f2ac49', '215'],
       \ 'green':        ['#5ccc96', '78'],
-      \ 'yellow':       ['#f2ce00', '220'],
-      \ 'lavender':     ['#b3a1e6', '146'],
-      \ 'purple2':      ['#7a5ccc', '98'],
-      \ 'darkpurple':   ['#30365F', '237'],
-      \ 'darkpurple2':  ['#686f9a', '60'],
-      \ 'cyan':         ['#59c2ff', '38'],
-      \ 'magenta':      ['#ce6f8f', '168'],
+      \ 'yellow':       ['#f0e573', '221'],
+      \ 'lightpurple':  ['#b3a1e6', '146'],
+      \ 'purple':       ['#936ad9', '98'],
+      \ 'darkpurple':   ['#626999', '60'],
+      \ 'cyan':         ['#59c2ff', '75'],
+      \ 'magenta':      ['#cc7893', '174'],
       \
-      \ 'turquoise':    ['#00d1b2', '78'],
-      \ 'light_blue':   ['#14CFFB', '38'],
+      \ 'violet':       ['#606ebf', '61'],
+      \ 'lightorange':  ['#f09873', '209'],
       \
-      \ 'deep_space':   ['#0f111b', '233'],
-      \ 'cream':        ['#ecf0c1', '255'],
-      \ 'selection':    ['#30365F', '237'],
+      \ 'background':   ['#0f111b', '233'],
+      \ 'foreground':   ['#ecf0c1', '255'],
+      \ 'selection':    ['#30365f', '237'],
       \ 'cursor':       ['#1b1c36', '234'],
       \ 'comment':      ['#535f97', '236'],
       \
       \ 'grey':         ['#818596', '102'],
-      \ 'light_grey':   ['#c1c3cc', '102'],
-      \ 'white':        ['#ffffff', '15'],
+      \ 'lightgrey':    ['#c1c3cc', '102'],
+      \ 'white':        ['#edeef2', '255'],
       \ 'black':        ['#000000', '0'],
       \
       \ 'none':         ['NONE',    'NONE']
@@ -75,23 +86,24 @@ if &background == 'dark'
   call s:hi('SpaceduckOrange',      s:palette.orange,      s:palette.none)
   call s:hi('SpaceduckGreen',       s:palette.green,       s:palette.none)
   call s:hi('SpaceduckYellow',      s:palette.yellow,      s:palette.none)
-  call s:hi('SpaceduckPurple',      s:palette.lavender,    s:palette.none)
-  call s:hi('SpaceduckPurple2',     s:palette.purple2,     s:palette.none)
+  call s:hi('SpaceduckLightPurple', s:palette.lightpurple, s:palette.none)
+  call s:hi('SpaceduckPurple',      s:palette.purple,      s:palette.none)
   call s:hi('SpaceduckDarkPurple',  s:palette.darkpurple,  s:palette.none)
-  call s:hi('SpaceduckDarkPurple2', s:palette.darkpurple2, s:palette.none)
+  call s:hi('SpaceduckSelection',   s:palette.selection,   s:palette.none)
   call s:hi('SpaceduckCyan',        s:palette.cyan,        s:palette.none)
   call s:hi('SpaceduckMagenta',     s:palette.magenta,     s:palette.none)
+  call s:hi('SpaceduckViolet',      s:palette.violet,      s:palette.none)
+  call s:hi('SpaceduckLightOrange', s:palette.lightorange, s:palette.none)
 
-  call s:hi('SpaceduckForeground',  s:palette.cream,       s:palette.none)
+  call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
   call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
 
   call s:hi('SpaceduckGrey',        s:palette.grey,        s:palette.none)
+  call s:hi('SpaceduckLightGrey',   s:palette.lightgrey,   s:palette.none)
 
-  call s:hi('SpaceduckTurquoise',        s:palette.turquoise,        s:palette.none)
-  call s:hi('SpaceduckLightBlue',        s:palette.light_blue,        s:palette.none)
 
-  let s:palette.bg = s:palette.deep_space
-  let s:palette.fg = s:palette.cream
+  let s:palette.bg = s:palette.background
+  let s:palette.fg = s:palette.foreground
 endif
 
 " I don't want anyone accidentally stumbling on this just yet
@@ -100,70 +112,64 @@ if exists('g:spaceduck_dev_light_theme')
   call s:hi('SpaceduckOrange',      s:palette.orange,      s:palette.none)
   call s:hi('SpaceduckGreen',       s:palette.green,       s:palette.none)
   call s:hi('SpaceduckYellow',      s:palette.yellow,      s:palette.none)
-  call s:hi('SpaceduckPurple',      s:palette.lavender,    s:palette.none)
-  call s:hi('SpaceduckPurple2',     s:palette.purple2,     s:palette.none)
+  call s:hi('SpaceduckLightPurple', s:palette.lightpurple, s:palette.none)
+  call s:hi('SpaceduckPurple',      s:palette.purple,      s:palette.none)
   call s:hi('SpaceduckDarkPurple',  s:palette.darkpurple,  s:palette.none)
-  call s:hi('SpaceduckDarkPurple2', s:palette.darkpurple2, s:palette.none)
+  call s:hi('SpaceduckSelection',   s:palette.selection,   s:palette.none)
   call s:hi('SpaceduckCyan',        s:palette.cyan,        s:palette.none)
   call s:hi('SpaceduckMagenta',     s:palette.magenta,     s:palette.none)
 
-  call s:hi('SpaceduckForeground',  s:palette.cream,       s:palette.none)
+  call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
   call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
 
-  let s:palette.bg = s:palette.cream
-  let s:palette.fg = s:palette.deep_space
+  let s:palette.bg = s:palette.foreground
+  let s:palette.fg = s:palette.background
 endif
 " }}}
 
 " Syntax Highlighting {{{
-call s:hi('Normal',           s:palette.fg,          s:palette.bg                     )
+call s:hi('Normal',           s:palette.fg,          s:palette.background             )
 call s:hi('ColorColumn',      s:palette.none,        s:palette.cursor                 )
 call s:hi('CursorLine',       s:palette.none,        s:palette.cursor                 )
-call s:hi('Cursor',           s:palette.deep_space,  s:palette.grey                   )
-call s:hi('CursorLineNr',     s:palette.light_grey,  s:palette.cursor                 )
+call s:hi('Cursor',           s:palette.background,  s:palette.grey                   )
+call s:hi('CursorLineNr',     s:palette.lightgrey,   s:palette.cursor                 )
 
 call s:hi('DiffAdd',          s:palette.green,       s:palette.cursor                 )
 call s:hi('DiffChange',       s:palette.orange,      s:palette.cursor                 )
 call s:hi('DiffDelete',       s:palette.red,         s:palette.cursor                 )
 call s:hi('DiffText',         s:palette.yellow,      s:palette.cursor                 )
 
-call s:hi('EndOfBuffer',      s:palette.selection,   s:palette.deep_space             )
-call s:hi('FoldColumn',       s:palette.selection,   s:palette.deep_space             )
-call s:hi('Folded',           s:palette.darkpurple2, s:palette.cursor                 )
-call s:hi('IncSearch',        s:palette.white,       s:palette.selection              )
-call s:hi('LineNr',           s:palette.selection,   s:palette.deep_space             )
+call s:hi('EndOfBuffer',      s:palette.selection,   s:palette.background             )
+call s:hi('FoldColumn',       s:palette.selection,   s:palette.background             )
+call s:hi('Folded',           s:palette.darkpurple,  s:palette.cursor                 )
+" TODO: better incsearch & Search
+call s:hi('IncSearch',        s:palette.black,       s:palette.darkpurple, 'underline')
+call s:hi('LineNr',           s:palette.selection,   s:palette.background             )
 call s:hi('MatchParen',       s:palette.white,       s:palette.darkpurple             )
 
 call s:hi('Pmenu',            s:palette.fg,          s:palette.cursor                 )
-call s:hi('PmenuSbar',        s:palette.none,        s:palette.darkpurple             )
-call s:hi('PmenuSel',         s:palette.white,       s:palette.darkpurple             )
-call s:hi('PmenuThumb',       s:palette.none,        s:palette.darkpurple2            )
+call s:hi('PmenuSbar',        s:palette.none,        s:palette.selection              )
+call s:hi('PmenuSel',         s:palette.lightgrey,   s:palette.selection              )
+call s:hi('PmenuThumb',       s:palette.none,        s:palette.darkpurple             )
 
 call s:hi('QuickFixLine',     s:palette.fg,          s:palette.cursor                 )
-call s:hi('Search',           s:palette.white,       s:palette.darkpurple2            )
+call s:hi('Search',           s:palette.black,       s:palette.violet                 )
 call s:hi('SignColumn',       s:palette.orange,      s:palette.bg                     )
 call s:hi('SpecialKey',       s:palette.orange,      s:palette.bg                     )
 call s:hi('SpellBad',         s:palette.red,         s:palette.none,       'underline')
 call s:hi('SpellLocal',       s:palette.green,       s:palette.none,       'underline')
 call s:hi('SpellRare',        s:palette.yellow,      s:palette.none,       'underline')
 
-call s:hi('StatusLine',       s:palette.bg,          s:palette.fg,         'reverse'  )
+call s:hi('StatusLine',       s:palette.cursor,      s:palette.lightgrey,  'reverse'  )
 call s:hi('StatusLineNC',     s:palette.bg,          s:palette.grey,       'reverse'  )
-call s:hi('StatusLineTermNC', s:palette.black,       s:palette.darkpurple, 'reverse'  )
-call s:hi('TabLine',          s:palette.black,       s:palette.grey                   )
+call s:hi('StatusLineTermNC', s:palette.bg,          s:palette.darkpurple, 'reverse'  )
+call s:hi('TabLine',          s:palette.bg,          s:palette.grey                   )
 call s:hi('TabLineFill',      s:palette.grey,        s:palette.black                  )
-call s:hi('TabLineSel',       s:palette.light_grey,  s:palette.deep_space             )
+call s:hi('TabLineSel',       s:palette.lightgrey,   s:palette.background             )
 call s:hi('VertSplit',        s:palette.darkpurple,  s:palette.none                   )
-call s:hi('Visual',           s:palette.none,        s:palette.darkpurple             )
-call s:hi('WarningMsg',       s:palette.orange,      s:palette.deep_space             )
-call s:hi('WildMenu',         s:palette.black,       s:palette.light_grey             )
-
-" These groups seem to use the old cursorline color
-"
-" hi CursorLineNr guifg=#c1c3cc ctermfg=251 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-" hi ColorColumn guifg=NONE ctermfg=NONE guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-" hi Folded guifg=#686f9a ctermfg=60 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
-" hi QuickFixLine guifg=#ecf0c1 ctermfg=255 guibg=#16172d ctermbg=234 gui=NONE cterm=NONE
+call s:hi('Visual',           s:palette.none,        s:palette.selection              )
+call s:hi('WarningMsg',       s:palette.orange,      s:palette.background             )
+call s:hi('WildMenu',         s:palette.black,       s:palette.lightgrey              )
 
 " SYNTAX: Predefined syntax groups {{{
 hi! link Comment        SpaceduckComment
@@ -171,10 +177,10 @@ hi! link Boolean        SpaceduckYellow
 hi! link Character      SpaceduckYellow
 hi! link Conditional    SpaceduckGreen
 hi! link Constant       SpaceduckYellow
-hi! link Debug          SpaceduckPurple
-hi! link Define         SpaceduckPurple2
+hi! link Debug          SpaceduckLightPurple
+hi! link Define         SpaceduckLightPurple
 hi! link Delimiter      SpaceduckForeground
-hi! link Error          SpaceduckRed
+hi! link Error          SpaceduckOrange
 hi! link Exception      SpaceduckOrange
 hi! link Float          SpaceduckYellow
 hi! link Function       SpaceduckGreen
@@ -183,37 +189,37 @@ hi! link Ignore         SpaceduckRed
 hi! link Include        SpaceduckGreen
 hi! link Keyword        SpaceduckOrange
 hi! link Label          SpaceduckGreen
-hi! link Macro          SpaceduckPurple2
+hi! link Macro          SpaceduckPurple
 hi! link Number         SpaceduckYellow
-hi! link Operator       SpaceduckMagenta
-hi! link PreCondit      SpaceduckPurple2
-hi! link PreProc        SpaceduckPurple
+hi! link Operator       SpaceduckForeground
+hi! link PreCondit      SpaceduckPurple
+hi! link PreProc        SpaceduckLightPurple
 hi! link Repeat         SpaceduckGreen
-hi! link Special        SpaceduckPurple
+hi! link Special        SpaceduckLightPurple
 hi! link SpecialChar    SpaceduckOrange
 hi! link Statement      SpaceduckGreen
 hi! link StorageClass   SpaceduckPurple
 hi! link String         SpaceduckCyan
 hi! link Structure      SpaceduckCyan
 hi! link SpecialComment Comment
-hi! link Tag            SpaceduckPurple
+hi! link Tag            SpaceduckLightPurple
 hi! link Type           SpaceduckMagenta
 hi! link Typedef        SpaceduckCyan
 
-" TODO: better todo
-call s:hi('Todo',         s:palette.white,       s:palette.cursor,      'underline')
+" TODO: better todo?
+call s:hi('Todo',         s:palette.violet,      s:palette.cursor,      'underline')
 call s:hi('Underlined',   s:palette.green,       s:palette.none,        'underline')
 " }}}
 
-hi! link Conceal        SpaceduckDarkPurple2
+hi! link Conceal        SpaceduckDarkPurple
 hi! link Directory      SpaceduckCyan
 hi! link ErrorMsg       SpaceduckRed
-hi! link ModeMsg        SpaceduckPurple
-hi! link MoreMsg        SpaceduckPurple
-hi! link Question       SpaceduckPurple
-hi! link Title          SpaceduckPurple2
+hi! link ModeMsg        SpaceduckLightPurple
+hi! link MoreMsg        SpaceduckLightPurple
+hi! link Question       SpaceduckLightPurple
+hi! link Title          SpaceduckPurple
 
-hi! link diffAdded      SpaceduckPurple
+hi! link diffAdded      SpaceduckLightPurple
 hi! link diffRemoved    SpaceduckRed
 hi! link Whitespace     EndOfBuffer
 hi! link VisualNOS      Visual
@@ -252,22 +258,23 @@ hi link htmlTagName Function
 hi link htmlEndTag Conditional
 hi link htmlArg SpaceduckMagenta
 hi link htmlSpecialTagName Type
-hi! link htmlTag SpaceduckDarkPurple2
-hi! link htmlEndTag SpaceduckDarkPurple2
+hi! link htmlTag SpaceduckDarkPurple
+hi! link htmlEndTag SpaceduckDarkPurple
 hi! link htmlTitle SpaceduckPurple
 hi! link htmlH1 SpaceduckPurple
 " }}}
 
 " CSS {{{
 hi link cssBraces Normal
-hi! link cssSelectorOp SpaceduckMagenta
-hi link cssAtKeyword SpaceduckPurple
-hi link cssBoxProp SpaceduckTurquoise
+"hi! link cssSelectorOp SpaceduckMagenta
+hi! link cssSelectorOp SpaceduckViolet
+"hi link cssAtKeyword SpaceduckPurple
+hi link cssBoxProp SpaceduckViolet
 hi link cssBackgroundProp SpaceduckMagenta
 hi link cssTextProp SpaceduckMagenta
 hi link cssTagName SpaceduckGreen
 hi link cssPseudoClassId SpaceduckMagenta
-hi link cssClassName SpaceduckTurquoise
+hi link cssClassName SpaceduckViolet
 " }}}
 
 " php {{{
@@ -275,12 +282,12 @@ hi link phpFunction Function
 hi link phpKeyword Function
 hi link phpMethod Function
 hi link phpClass SpaceduckYellow
-hi link phpType SpaceduckPurple2
+hi link phpType SpaceduckPurple
 hi link phpIdentifier SpaceduckForeground
-hi link phpVarSelector SpaceduckDarkPurple2
+hi link phpVarSelector SpaceduckDarkPurple
 hi link phpParent SpaceduckForeground
 hi link phpSuperglobals SpaceduckMagenta
-hi link Delimiter SpaceduckPurple
+hi link Delimiter SpaceduckLightPurple
 hi link phpStringSingle String
 hi link phpStringDouble String
 " }}}
@@ -296,42 +303,48 @@ hi link jsFuncCall Function
 hi link jsOperatorKeyword Operator
 hi link jsExceptions Error
 hi link jsObjectProp Tag
-hi link jsTernaryIfOperator Title
-hi! link jsTemplateBraces SpaceduckPurple
+"hi link jsTernaryIfOperator Title
+hi link jsTernaryIfOperator SpaceduckTurquoise
+" Parentheses ugly bro
+"hi! link jsTemplateBraces SpaceduckPurple
 hi link jsTemplateExpression String
 hi! link jsArrowFunction SpaceduckYellow
-hi! link jsFuncArgs SpaceduckMagenta
-hi! link jsFuncParens SpaceduckPurple
-hi! link jsDestructuringBraces SpaceduckDarkPurple2
-hi! link jsObjectBraces SpaceduckDarkPurple2
-hi! link jsModuleBraces SpaceduckDarkPurple2
-hi! link jsBrackets SpaceduckDarkPurple2
+"hi! link jsFuncArgs SpaceduckMagenta
+" Parentheses ugly bro
+"hi! link jsFuncParens SpaceduckPurple
+hi! link jsDestructuringBraces SpaceduckDarkPurple
+hi! link jsObjectBraces SpaceduckDarkPurple
+hi! link jsModuleBraces SpaceduckDarkPurpl2
+hi! link jsBrackets SpaceduckDarkPurple
 hi! link jsTemplateExpression SpaceduckMagenta
 
 hi link jsxTagName HTMLTagName
 hi link jsxClosePunct jsxOpenPunct
 hi link jsxCloseString jsxClosePunct
-hi! link jsxOpenPunct SpaceduckDarkPurple2
+hi! link jsxOpenPunct SpaceduckDarkPurple
 hi! link jsxComponentName SpaceduckPurple
-hi! link jsxTag SpaceduckPurple
+hi! link jsxTag SpaceduckLightPurple
 
-hi link jsAsyncKeyword SpaceduckOrange
-hi link jsForAwait SpaceduckOrange
+hi link jsAsyncKeyword SpaceduckLightPurple
+hi link jsForAwait SpaceduckLightPurple
+"hi link jsAsyncKeyword SpaceduckOrange
+"hi link jsForAwait SpaceduckOrange
 
-hi link jsClassKeyword SpaceduckPurple2
-hi link jsClassDefinition SpaceduckYellow
+hi link jsClassKeyword SpaceduckPurple
+"hi link jsClassDefinition SpaceduckYellow
+hi link jsClassDefinition SpaceduckLightPurple
 hi link jsClassFuncName SpaceduckGreen
 hi link jsObjectProp SpaceduckMagenta
-hi link jsObjectKey SpaceduckTurquoise
+hi link jsObjectKey SpaceduckViolet
 hi link jsThis SpaceduckYellow
-hi link jsFunction SpaceduckPurple2
+hi link jsFunction SpaceduckPurple
 hi link jsFuncName SpaceduckGreen
 
-hi link jsParensCatch SpaceduckPurple
+hi link jsParensCatch SpaceduckLightPurple
 hi link jsParenCatch SpaceduckMagenta
 
 hi link jsonQuote Label
-hi link jsoncBraces SpaceduckDarkPurple2
+hi link jsoncBraces SpaceduckDarkPurple
 " }}}
 
 " Others {{{
@@ -343,13 +356,13 @@ hi link mkdDelimiter Normal
 hi! link pythonOperator SpaceduckMagenta
 hi! link pythonBuiltinFunc SpaceduckGreen
 hi! link pythonBuiltinType SpaceduckYellow
-hi! link pythonClassVar SpaceduckPurple
+hi! link pythonClassVar SpaceduckLightPurple
 hi! link pythonImport SpaceduckGreen
 hi! link pythonFunction SpaceduckGreen
 hi! link pythonRepeat SpaceduckMagenta
 hi! link pythonExClass SpaceduckYellow
 hi! link pythonConditional SpaceduckMagenta
-hi! link pythonStatement SpaceduckPurple2
+hi! link pythonStatement SpaceduckPurple
 hi! link pythonRaise SpaceduckGreen
 hi! link pythonClass SpaceduckYellow
 hi! link pythonReturn SpaceduckGreen
@@ -365,7 +378,7 @@ hi link rubyKeywordAsMethod Tag
 
 " Typescript {{{
 hi link typescriptVariable Title
-hi link typescriptBraces SpaceduckDarkPurple2
+hi link typescriptBraces SpaceduckDarkPurple
 hi! link typescriptArrowFunc SpaceduckMagenta
 hi link typescriptNumberStaticMethod Function
 hi link typescriptNumberMethod Function
@@ -497,24 +510,28 @@ hi BufferInactiveTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=
 
 " NERDTree
 hi! link NERDTreeFlags SpaceduckCyan
-
 hi! link FernRootText SpaceduckPurple
 
+" COC
 highlight default CocHighlightText  guibg=#1b1c36
+hi! link CocErrorSign SpaceduckRed
+hi! link CocInfoSign SpaceduckYellow
+hi! link CocWarningSign SpaceduckOrange
 
 " }}}
 
 " }}}
 
+" TODO: Need to update this with colors from above
 " Terminal colors VIM / NeoVIM {{{
 " Neovim uses different terminal colors apart from Vim
 if has('nvim')
   let g:terminal_color_foreground = "#ecf0c1"
   let g:terminal_color_background = "#0f111b"
   let g:terminal_color_0 = "#000000"
-  let g:terminal_color_1 = "#e33400"
-  let g:terminal_color_2 = "#5ccc96"
-  let g:terminal_color_3 = "#b3a1e6"
+  let g:terminal_color_1 = "#e33400" "red
+  let g:terminal_color_2 = "#5ccc96" "green
+  let g:terminal_color_3 = "#b3a1e6" "light purple
   let g:terminal_color_4 = "#00a3cc"
   let g:terminal_color_5 = "#ce6f8f"
   let g:terminal_color_6 = "#7a5ccc"
