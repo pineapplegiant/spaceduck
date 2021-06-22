@@ -36,12 +36,12 @@ let g:colors_name="spaceduck"
 " PALETTE: {{{
 let s:palette = {
       \ 'red':          ['#f25244', '203'],
-      \ 'orange':       ['#f2ac49', '215'],
+      \ 'orange':       ['#e6ac5c', '179'],
       \ 'green':        ['#5ccc96', '78'],
       \ 'yellow':       ['#f2e661', '221'],
       \ 'lightpurple':  ['#b3a1e6', '146'],
       \ 'purple':       ['#936ad9', '98'],
-      \ 'darkpurple':   ['#626999', '60'],
+      \ 'darkpurple':   ['#535f97', '236'],
       \ 'cyan':         ['#59c2ff', '75'],
       \ 'magenta':      ['#cc7893', '174'],
       \
@@ -128,7 +128,7 @@ endif
 " }}}
 
 " Syntax Highlighting {{{
-call s:hi('Normal',           s:palette.fg,          s:palette.background             )
+call s:hi('Normal',           s:palette.fg,          s:palette.none                   )
 call s:hi('ColorColumn',      s:palette.none,        s:palette.cursor                 )
 call s:hi('CursorLine',       s:palette.none,        s:palette.cursor                 )
 call s:hi('Cursor',           s:palette.background,  s:palette.grey                   )
@@ -198,7 +198,7 @@ hi! link Repeat         SpaceduckGreen
 hi! link Special        SpaceduckLightPurple
 hi! link SpecialChar    SpaceduckOrange
 hi! link Statement      SpaceduckGreen
-hi! link StorageClass   SpaceduckPurple
+hi! link StorageClass   SpaceduckLightPurple
 hi! link String         SpaceduckCyan
 hi! link Structure      SpaceduckCyan
 hi! link SpecialComment Comment
@@ -217,7 +217,7 @@ hi! link ErrorMsg       SpaceduckRed
 hi! link ModeMsg        SpaceduckLightPurple
 hi! link MoreMsg        SpaceduckLightPurple
 hi! link Question       SpaceduckLightPurple
-hi! link Title          SpaceduckPurple
+hi! link Title          SpaceduckLightPurple
 
 hi! link diffAdded      SpaceduckLightPurple
 hi! link diffRemoved    SpaceduckRed
@@ -266,9 +266,9 @@ hi! link htmlH1 SpaceduckPurple
 
 " CSS {{{
 hi link cssBraces Normal
-"hi! link cssSelectorOp SpaceduckMagenta
+hi! link cssSelectorOp SpaceduckMagenta
 hi! link cssSelectorOp SpaceduckViolet
-"hi link cssAtKeyword SpaceduckPurple
+hi link cssAtKeyword SpaceduckLightPurple
 hi link cssBoxProp SpaceduckViolet
 hi link cssBackgroundProp SpaceduckMagenta
 hi link cssTextProp SpaceduckMagenta
@@ -303,15 +303,12 @@ hi link jsFuncCall Function
 hi link jsOperatorKeyword Operator
 hi link jsExceptions Error
 hi link jsObjectProp Tag
-"hi link jsTernaryIfOperator Title
-hi link jsTernaryIfOperator SpaceduckTurquoise
-" Parentheses ugly bro
-"hi! link jsTemplateBraces SpaceduckPurple
+hi link jsTernaryIfOperator Title
+hi! link jsTemplateBraces SpaceduckPurple
 hi link jsTemplateExpression String
 hi! link jsArrowFunction SpaceduckYellow
-"hi! link jsFuncArgs SpaceduckMagenta
-" Parentheses ugly bro
-"hi! link jsFuncParens SpaceduckPurple
+hi! link jsFuncArgs SpaceduckMagenta
+hi! link jsFuncParens SpaceduckPurple
 hi! link jsDestructuringBraces SpaceduckDarkPurple
 hi! link jsObjectBraces SpaceduckDarkPurple
 hi! link jsModuleBraces SpaceduckDarkPurpl2
@@ -327,17 +324,17 @@ hi! link jsxTag SpaceduckLightPurple
 
 hi link jsAsyncKeyword SpaceduckLightPurple
 hi link jsForAwait SpaceduckLightPurple
-"hi link jsAsyncKeyword SpaceduckOrange
-"hi link jsForAwait SpaceduckOrange
+hi link jsAsyncKeyword SpaceduckOrange
+hi link jsForAwait SpaceduckOrange
 
 hi link jsClassKeyword SpaceduckPurple
-"hi link jsClassDefinition SpaceduckYellow
+hi link jsClassDefinition SpaceduckYellow
 hi link jsClassDefinition SpaceduckLightPurple
 hi link jsClassFuncName SpaceduckGreen
 hi link jsObjectProp SpaceduckMagenta
 hi link jsObjectKey SpaceduckViolet
 hi link jsThis SpaceduckYellow
-hi link jsFunction SpaceduckPurple
+hi link jsFunction SpaceduckLightPurple
 hi link jsFuncName SpaceduckGreen
 
 hi link jsParensCatch SpaceduckLightPurple
