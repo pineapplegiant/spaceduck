@@ -128,7 +128,7 @@ endif
 " }}}
 
 " Syntax Highlighting {{{
-call s:hi('Normal',           s:palette.fg,          s:palette.none                   )
+call s:hi('Normal',           s:palette.fg,          s:palette.bg                   )
 call s:hi('ColorColumn',      s:palette.none,        s:palette.cursor                 )
 call s:hi('CursorLine',       s:palette.none,        s:palette.cursor                 )
 call s:hi('Cursor',           s:palette.background,  s:palette.grey                   )
