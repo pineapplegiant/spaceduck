@@ -22,6 +22,14 @@ endif
 let g:colors_name="spaceduck"
 " }}}
 
+"TODO:  0.1 release
+" Clean up syntax groups locations
+" Barbar color groups
+" Fix readme
+" Testing...
+" Treesitter cleanup
+
+" TODO: Add to changelog {{
 "lavender is now light purple
 "purple2 is now purple
 "darkpurple is now selection
@@ -32,6 +40,7 @@ let g:colors_name="spaceduck"
 "cream is now fg
 "comment is using darkpurple
 "oldcomment is using newColor? Violet?
+" }}
 
 " PALETTE: {{{
 let s:palette = {
@@ -266,7 +275,6 @@ hi! link htmlH1 SpaceduckPurple
 
 " CSS {{{
 hi link cssBraces Normal
-hi! link cssSelectorOp SpaceduckMagenta
 hi! link cssSelectorOp SpaceduckViolet
 hi link cssAtKeyword SpaceduckLightPurple
 hi link cssBoxProp SpaceduckViolet
@@ -487,7 +495,7 @@ hi link vistaScope Constant
 hi link vistaKind Conditional
 hi Sneak guifg=#000000 ctermfg=0 guibg=#f2ce00 ctermbg=220 gui=NONE cterm=NONE
 
-" Barbar
+" TODO: Update this with variables
 hi BufferCurrent guifg=#ecf0c1 ctermfg=251 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferVisible guifg=#535F97 ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferInactive guifg=#535F97 ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
@@ -505,12 +513,12 @@ hi BufferCurrentTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=N
 hi BufferVisibleTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 hi BufferInactiveTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
 
-" NERDTree
+" NERDTree:
 hi! link NERDTreeFlags SpaceduckCyan
 hi! link FernRootText SpaceduckPurple
 
-" COC
-highlight default CocHighlightText  guibg=#1b1c36
+" COC:
+highlight default CocHighlightText  guibg=s:palette.cursor[0]
 hi! link CocErrorSign SpaceduckRed
 hi! link CocInfoSign SpaceduckYellow
 hi! link CocWarningSign SpaceduckOrange
@@ -519,43 +527,31 @@ hi! link CocWarningSign SpaceduckOrange
 "hi SDComment guifg=#5F6799
 hi SDYellow guifg=#fccc5d
 hi SDPink guifg=#c586c0
-
 hi SDStolen guifg=#936ad9
 hi SDTeal guifg=#1abc9c
 hi SDLight guifg=#9cdcfe
-
 hi SDComment guifg=#677AE6
 hi SDComment2 guifg=#455199
-
 hi SDRed guifg=#F25244
 
-hi link TSKeyword SDStolen
+hi link TSKeyword SpaceduckOrange
 hi link TSProperty SpaceduckMagenta
 hi link TSConstructor SpaceduckPurple
 hi link TSParameter SpaceduckForeground
 hi link TSTypeBuiltIn SpaceduckYellow
-
-hi link CocErrorHighlight SDRed
-
-hi link TSComment SDComment
-
+hi link CocErrorHighlight SpaceduckRed
+hi link TSComment SpaceduckDarkPurple
 hi link TSTag SpaceduckPurple
-
 hi link TSType SpaceduckMagenta
-
-hi link TSPunctBracket SpaceduckDarkPurple2
+hi link TSPunctBracket SpaceduckDarkPurple
 hi link TSPunctDelimiter SpaceduckForeground
-hi link TSPunctSpecial SpaceduckDarkPurple2
-hi link TSTagDelimiter SpaceduckDarkPurple2
-
+hi link TSPunctSpecial SpaceduckDarkPurple
+hi link TSTagDelimiter SpaceduckDarkPurple
 hi link TSConstBuiltin SpaceduckYellow
 hi link TSVariableBuiltin SpaceduckYellow
-
 hi link TSString SpaceduckCyan
-hi link TSBoolean SDYellow
-
+hi link TSBoolean SpaceduckYellow
 hi link TSConstant SpaceduckMagenta
-
 hi link TSNone SpaceduckForeground
 hi link TSTitle SpaceduckForeground
 
@@ -563,31 +559,45 @@ hi link TSTitle SpaceduckForeground
 
 " }}}
 
-" TODO: Need to update this with colors from above
+" TODO: Check to see if this works correctly?
 " Terminal colors VIM / NeoVIM {{{
 " Neovim uses different terminal colors apart from Vim
 if has('nvim')
-  let g:terminal_color_foreground = "#ecf0c1"
-  let g:terminal_color_background = "#0f111b"
-  let g:terminal_color_0 = "#000000"
-  let g:terminal_color_1 = "#e33400" "red
-  let g:terminal_color_2 = "#5ccc96" "green
-  let g:terminal_color_3 = "#b3a1e6" "light purple
-  let g:terminal_color_4 = "#00a3cc"
-  let g:terminal_color_5 = "#ce6f8f"
-  let g:terminal_color_6 = "#7a5ccc"
-  let g:terminal_color_7 = "#686f9a"
-  let g:terminal_color_8 = "#686f9a"
-  let g:terminal_color_9 = "#e33400"
-  let g:terminal_color_10 = "#5ccc96"
-  let g:terminal_color_11 = "#b3a1e6"
-  let g:terminal_color_12 = "#00a3cc"
-  let g:terminal_color_13 = "#ce6f8f"
-  let g:terminal_color_14 = "#7a5ccc"
-  let g:terminal_color_15 = "#ecf0c1"
+  let g:terminal_color_foreground = s:palette['foreground'][0]
+  let g:terminal_color_background = s:palette['background'][0]
+  let g:terminal_color_0          = s:palette['black'][0]
+  let g:terminal_color_1          = s:palette['red'][0]
+  let g:terminal_color_2          = s:palette['green'][0]
+  let g:terminal_color_3          = s:palette['lightpurple'][0]
+  let g:terminal_color_4          = s:palette['cyan'][0]
+  let g:terminal_color_5          = s:palette['magenta'][0]
+  let g:terminal_color_6          = s:palette['purple'][0]
+  let g:terminal_color_7          = s:palette['darkpurple'][0]
+  let g:terminal_color_8          = s:palette['darkpurple'][0]
+  let g:terminal_color_9          = s:palette['red'][0]
+  let g:terminal_color_10         = s:palette['green'][0]
+  let g:terminal_color_11         = s:palette['lightpurple'][0]
+  let g:terminal_color_12         = s:palette['cyan'][0]
+  let g:terminal_color_13         = s:palette['magenta'][0]
+  let g:terminal_color_14         = s:palette['purple'][0]
+  let g:terminal_color_15         = s:palette['foreground'][0]
 else
   let g:terminal_ansi_colors = [
-      \ '#000000', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#686f9a',
-      \ '#686f9a', '#e33400', '#5ccc96', '#b3a1e6', '#00a3cc', '#ce6f8f', '#7a5ccc', '#ecf0c1']
+      \ s:palette['black'][0],
+      \ s:palette['red'][0],
+      \ s:palette['green'][0],
+      \ s:palette['lightpurple'][0],
+      \ s:palette['cyan'][0],
+      \ s:palette['magenta'][0],
+      \ s:palette['purple'][0],
+      \ s:palette['darkpurple'],
+      \ s:palette['darkpurple'][0],
+      \ s:palette['red'][0],
+      \ s:palette['green'][0],
+      \ s:palette['lightpurple'][0],
+      \ s:palette['cyan'][0],
+      \ s:palette['magenta'][0],
+      \ s:palette['purple'][0],
+      \ s:palette.['foreground'][0] ]
 endif
 " }}}
