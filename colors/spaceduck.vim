@@ -23,18 +23,18 @@ let g:colors_name="spaceduck"
 
 " PALETTE: {{{
 let s:palette = {
-      \ 'red':          ['#e33400', '166'],
-      \ 'orange':       ['#e39400', '172'],
+      \ 'red':          ['#F25244', '166'],
+      \ 'orange':       ['#f2ac49', '172'],
       \ 'green':        ['#5ccc96', '78'],
-      \ 'yellow':       ['#f2ce00', '220'],
+      \ 'yellow':       ['#f2d73d', '220'],
       \ 'lavender':     ['#b3a1e6', '146'],
       \ 'purple2':      ['#7a5ccc', '98'],
       \ 'darkpurple':   ['#30365F', '237'],
       \ 'darkpurple2':  ['#686f9a', '60'],
       \ 'cyan':         ['#59c2ff', '38'],
-      \ 'magenta':      ['#ce6f8f', '168'],
+      \ 'magenta':      ['#cc859c', '168'],
       \
-      \ 'turquoise':    ['#00d1b2', '78'],
+      \ 'turquoise':    ['#ffd57f', '78'],
       \ 'light_blue':   ['#14CFFB', '38'],
       \
       \ 'deep_space':   ['#0f111b', '233'],
@@ -501,6 +501,50 @@ hi! link NERDTreeFlags SpaceduckCyan
 hi! link FernRootText SpaceduckPurple
 
 highlight default CocHighlightText  guibg=#1b1c36
+
+" TreeSitter:
+"hi SDComment guifg=#5F6799
+hi SDYellow guifg=#fccc5d
+hi SDPink guifg=#c586c0
+
+hi SDStolen guifg=#936ad9
+hi SDTeal guifg=#1abc9c
+hi SDLight guifg=#9cdcfe
+
+hi SDComment guifg=#677AE6
+hi SDComment2 guifg=#455199
+
+hi SDRed guifg=#F25244
+
+hi link TSKeyword SDStolen
+hi link TSProperty SpaceduckMagenta
+hi link TSConstructor SpaceduckPurple
+hi link TSParameter SpaceduckForeground
+hi link TSTypeBuiltIn SpaceduckYellow
+
+hi link CocErrorHighlight SDRed
+
+hi link TSComment SDComment
+
+hi link TSTag SpaceduckPurple
+
+hi link TSType SpaceduckMagenta
+
+hi link TSPunctBracket SpaceduckDarkPurple2
+hi link TSPunctDelimiter SpaceduckForeground
+hi link TSPunctSpecial SpaceduckDarkPurple2
+hi link TSTagDelimiter SpaceduckDarkPurple2
+
+hi link TSConstBuiltin SpaceduckYellow
+hi link TSVariableBuiltin SpaceduckYellow
+
+hi link TSString SpaceduckCyan
+hi link TSBoolean SDYellow
+
+hi link TSConstant SpaceduckMagenta
+
+hi link TSNone SpaceduckForeground
+hi link TSTitle SpaceduckForeground
 
 " }}}
 
