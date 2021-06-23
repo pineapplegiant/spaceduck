@@ -36,9 +36,9 @@ let g:colors_name="spaceduck"
 " PALETTE: {{{
 let s:palette = {
       \ 'red':          ['#f25244', '203'],
-      \ 'orange':       ['#e6ac5c', '179'],
+      \ 'orange':       ['#f2b45c', '215'],
       \ 'green':        ['#5ccc96', '78'],
-      \ 'yellow':       ['#f2e661', '221'],
+      \ 'yellow':       ['#f2e15c', '221'],
       \ 'lightpurple':  ['#b3a1e6', '146'],
       \ 'purple':       ['#936ad9', '98'],
       \ 'darkpurple':   ['#535f97', '236'],
@@ -128,7 +128,7 @@ endif
 " }}}
 
 " Syntax Highlighting {{{
-call s:hi('Normal',           s:palette.fg,          s:palette.bg                   )
+call s:hi('Normal',           s:palette.fg,          s:palette.bg                     )
 call s:hi('ColorColumn',      s:palette.none,        s:palette.cursor                 )
 call s:hi('CursorLine',       s:palette.none,        s:palette.cursor                 )
 call s:hi('Cursor',           s:palette.background,  s:palette.grey                   )
@@ -304,11 +304,11 @@ hi link jsOperatorKeyword Operator
 hi link jsExceptions Error
 hi link jsObjectProp Tag
 hi link jsTernaryIfOperator Title
-hi! link jsTemplateBraces SpaceduckPurple
+"hi! link jsTemplateBraces SpaceduckPurple
 hi link jsTemplateExpression String
 hi! link jsArrowFunction SpaceduckYellow
 hi! link jsFuncArgs SpaceduckMagenta
-hi! link jsFuncParens SpaceduckPurple
+"hi! link jsFuncParens SpaceduckPurple
 hi! link jsDestructuringBraces SpaceduckDarkPurple
 hi! link jsObjectBraces SpaceduckDarkPurple
 hi! link jsModuleBraces SpaceduckDarkPurpl2
