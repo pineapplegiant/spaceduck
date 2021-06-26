@@ -518,7 +518,7 @@ hi! link NERDTreeFlags SpaceduckCyan
 hi! link FernRootText SpaceduckPurple
 
 " COC:
-highlight default CocHighlightText  guibg=s:palette.cursor[0]
+call s:hi('CocHighlightText', s:palette.none, s:palette.cursor)
 hi! link CocErrorSign SpaceduckRed
 hi! link CocInfoSign SpaceduckYellow
 hi! link CocWarningSign SpaceduckOrange
@@ -598,6 +598,7 @@ else
       \ s:palette['cyan'][0],
       \ s:palette['magenta'][0],
       \ s:palette['purple'][0],
-      \ s:palette.['foreground'][0] ]
+      \ s:palette['foreground'][0] 
+      \ ]
 endif
 " }}}
