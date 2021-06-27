@@ -87,7 +87,6 @@ if &background == 'dark'
   call s:hi('SpaceduckCyan',        s:palette.cyan,        s:palette.none)
   call s:hi('SpaceduckMagenta',     s:palette.magenta,     s:palette.none)
   call s:hi('SpaceduckViolet',      s:palette.violet,      s:palette.none)
-  call s:hi('SpaceduckLightOrange', s:palette.lightorange, s:palette.none)
 
   call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
   call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
