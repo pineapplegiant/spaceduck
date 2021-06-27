@@ -1,47 +1,47 @@
 local spaceduck = {}
 
 local colors = {
-  black = '#0f111b',
-  white = '#ecf0c1',
-  red = '#e33400',
-  green = '#5ccc96',
-  blue = '#00a3cc',
-  purple = '#7a5ccc',
-  yellow = '#f2ce00',
-  gray = '#686f9a',
-  darkgray = '#30365F',
-  lightgray = '#c1c3cc'
+  background  = '#0f111b',
+  foreground  = '#ecf0c1',
+  red         = '#f25244',
+  green       = '#5ccc96',
+  cyan        = '#59c2ff',
+  purple      = '#936ad9',
+  yellow      = '#f2e15c',
+  darkpurple  = '#535f97',
+  selection   = '#30365F',
+  lightgrey   = '#c1c3cc'
 }
 
 spaceduck.normal = {
   -- gui parameter is optional and behaves the same way as in vim's highlight command
-  a = {bg = colors.gray, fg = colors.black, gui = 'bold'},
-  b = {bg = colors.darkgray, fg = colors.lightgray},
-  c = {bg = colors.black, fg = colors.lightgray}
+  a = {bg = colors.darkpurple, fg = colors.background, gui = 'bold'},
+  b = {bg = colors.selection, fg = colors.lightgrey},
+  c = {bg = colors.background, fg = colors.lightgrey}
 }
 
 spaceduck.insert = {
-  a = {bg = colors.green, fg = colors.black, gui = 'bold'},
-  b = {bg = colors.darkgray, fg = colors.lightgray},
-  c = {bg = colors.black, fg = colors.lightgray}
+  a = {bg = colors.green, fg = colors.background, gui = 'bold'},
+  b = {bg = colors.selection, fg = colors.lightgrey},
+  c = {bg = colors.background, fg = colors.lightgrey}
 }
 
 spaceduck.visual = {
-  a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
-  b = {bg = colors.darkgray, fg = colors.lightgray},
-  c = {bg = colors.black, fg = colors.lightgray}
+  a = {bg = colors.yellow, fg = colors.background, gui = 'bold'},
+  b = {bg = colors.selection, fg = colors.lightgrey},
+  c = {bg = colors.background, fg = colors.lightgrey}
 }
 
 spaceduck.replace = {
-  a = {bg = colors.purple, fg = colors.black, gui = 'bold'},
-  b = {bg = colors.darkgray, fg = colors.lightgray},
-  c = {bg = colors.black, fg = colors.lightgray}
+  a = {bg = colors.purple, fg = colors.background, gui = 'bold'},
+  b = {bg = colors.selection, fg = colors.lightgrey},
+  c = {bg = colors.background, fg = colors.lightgrey}
 }
 
 spaceduck.command = {
-  a = {bg = colors.blue, fg = colors.black, gui = 'bold'},
-  b = {bg = colors.darkgray, fg = colors.lightgray},
-  c = {bg = colors.black, fg = colors.lightgray}
+  a = {bg = colors.cyan, fg = colors.background, gui = 'bold'},
+  b = {bg = colors.selection, fg = colors.lightgrey},
+  c = {bg = colors.background, fg = colors.lightgrey}
 }
 
 -- you can assign one colorscheme to another, if a colorscheme is
@@ -49,9 +49,9 @@ spaceduck.command = {
 spaceduck.terminal = spaceduck.normal
 
 spaceduck.inactive = {
-  a = {bg = colors.black, fg = colors.lightgray, gui = 'bold'},
-  b = {bg = colors.black, fg = colors.lightgray},
-  c = {bg = colors.black, fg = colors.lightgray}
+  a = {bg = colors.background, fg = colors.lightgrey, gui = 'bold'},
+  b = {bg = colors.background, fg = colors.lightgrey},
+  c = {bg = colors.background, fg = colors.lightgrey}
 }
 
 -- lualine.theme = spaceduck
