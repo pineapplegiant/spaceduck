@@ -29,19 +29,6 @@ let g:colors_name="spaceduck"
 " Testing...
 " Treesitter cleanup
 
-" TODO: Add to changelog {{
-"lavender is now light purple
-"purple2 is now purple
-"darkpurple is now selection
-"darkpurple2 is now darkpurple
-"turquoise is now violet
-"light_blue got removed
-"deep_space is now background
-"cream is now fg
-"comment is using darkpurple
-"oldcomment is using newColor? Violet?
-" }}
-
 " PALETTE: {{{
 let s:palette = {
       \ 'red':          ['#f25244', '203'],
@@ -53,9 +40,7 @@ let s:palette = {
       \ 'darkpurple':   ['#535f97', '236'],
       \ 'cyan':         ['#59c2ff', '75'],
       \ 'magenta':      ['#cc7893', '174'],
-      \
       \ 'violet':       ['#5c6dcc', '62'],
-      \ 'lightorange':  ['#f29d61', '215'],
       \
       \ 'background':   ['#0f111b', '233'],
       \ 'foreground':   ['#ecf0c1', '255'],
