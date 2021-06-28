@@ -515,6 +515,10 @@ hi! link CocErrorSign SpaceduckRed
 hi! link CocInfoSign SpaceduckYellow
 hi! link CocWarningSign SpaceduckOrange
 
+" }}}
+
+" }}}
+
 " TreeSitter:
 "hi SDComment guifg=#5F6799
 hi SDYellow guifg=#fccc5d
@@ -531,9 +535,10 @@ hi SDRed guifg=#F25244
 
 hi link TSKeyword SDStolen
 hi link TSProperty SpaceduckMagenta
-hi link TSConstructor SpaceduckPurple
+hi link TSConstructor SpaceduckLightPurple
 hi link TSParameter SpaceduckForeground
 hi link TSTypeBuiltIn SpaceduckYellow
+hi link TSOperator SpaceduckMagenta
 
 hi link CocErrorHighlight SDRed
 
@@ -541,12 +546,12 @@ hi link TSComment SDComment
 
 hi link TSTag SpaceduckPurple
 
-hi link TSType SpaceduckMagenta
+hi link TSType SpaceduckLightPurple
 
-hi link TSPunctBracket SpaceduckDarkPurple2
+hi link TSPunctBracket SpaceduckForeground
 hi link TSPunctDelimiter SpaceduckForeground
-hi link TSPunctSpecial SpaceduckDarkPurple2
-hi link TSTagDelimiter SpaceduckDarkPurple2
+hi link TSPunctSpecial SpaceduckForeground
+hi link TSTagDelimiter SpaceduckDarkPurple
 
 hi link TSConstBuiltin SpaceduckYellow
 hi link TSVariableBuiltin SpaceduckYellow
@@ -559,11 +564,8 @@ hi link TSConstant SpaceduckMagenta
 hi link TSNone SpaceduckForeground
 hi link TSTitle SpaceduckForeground
 
-" }}}
-
-" }}}
-
 " TODO: Need to update this with colors from above
+
 " Terminal colors VIM / NeoVIM {{{
 " Neovim uses different terminal colors apart from Vim
 if has('nvim')
