@@ -24,29 +24,26 @@ let g:colors_name="spaceduck"
 
 "TODO:  0.1 release
 " Clean up syntax groups locations
-" Barbar color groups
 " Fix readme
 " Testing...
-" Treesitter cleanup
 
 " PALETTE: {{{
 let s:palette = {
-      \ 'red':          ['#f25244', '203'],
+      \ 'red':          ['#f54f40', '203'],
       \ 'orange':       ['#f2b45c', '215'],
       \ 'green':        ['#5ccc96', '78'],
       \ 'yellow':       ['#f2e15c', '221'],
       \ 'lightpurple':  ['#b3a1e6', '146'],
       \ 'purple':       ['#936ad9', '98'],
-      \ 'darkpurple':   ['#535f97', '236'],
+      \ 'darkpurple':   ['#5966a1', '61'],
       \ 'cyan':         ['#59c2ff', '75'],
       \ 'magenta':      ['#cc7893', '174'],
-      \ 'violet':       ['#5c6dcc', '62'],
+      \ 'violet':       ['#5c67e6', '62'],
       \
       \ 'background':   ['#0f111b', '233'],
       \ 'foreground':   ['#ecf0c1', '255'],
       \ 'selection':    ['#30365f', '237'],
       \ 'cursor':       ['#1b1c36', '234'],
-      \ 'comment':      ['#535f97', '236'],
       \
       \ 'grey':         ['#818596', '102'],
       \ 'lightgrey':    ['#c1c3cc', '102'],
@@ -83,17 +80,16 @@ if &background == 'dark'
   call s:hi('SpaceduckLightPurple', s:palette.lightpurple, s:palette.none)
   call s:hi('SpaceduckPurple',      s:palette.purple,      s:palette.none)
   call s:hi('SpaceduckDarkPurple',  s:palette.darkpurple,  s:palette.none)
-  call s:hi('SpaceduckSelection',   s:palette.selection,   s:palette.none)
   call s:hi('SpaceduckCyan',        s:palette.cyan,        s:palette.none)
   call s:hi('SpaceduckMagenta',     s:palette.magenta,     s:palette.none)
   call s:hi('SpaceduckViolet',      s:palette.violet,      s:palette.none)
-
-  call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
-  call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
-
   call s:hi('SpaceduckGrey',        s:palette.grey,        s:palette.none)
   call s:hi('SpaceduckLightGrey',   s:palette.lightgrey,   s:palette.none)
 
+  call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
+  call s:hi('SpaceduckBackground',  s:palette.background,  s:palette.none)
+  call s:hi('SpaceduckCursor',      s:palette.cursor,      s:palette.none)
+  call s:hi('SpaceduckSelection',   s:palette.selection,   s:palette.none)
 
   let s:palette.bg = s:palette.background
   let s:palette.fg = s:palette.foreground
@@ -113,7 +109,6 @@ if exists('g:spaceduck_dev_light_theme')
   call s:hi('SpaceduckMagenta',     s:palette.magenta,     s:palette.none)
 
   call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
-  call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
 
   let s:palette.bg = s:palette.foreground
   let s:palette.fg = s:palette.background
@@ -136,17 +131,17 @@ call s:hi('EndOfBuffer',      s:palette.selection,   s:palette.none             
 call s:hi('FoldColumn',       s:palette.selection,   s:palette.none                   )
 call s:hi('Folded',           s:palette.darkpurple,  s:palette.none                   )
 " TODO: better incsearch & Search
-call s:hi('IncSearch',        s:palette.black,       s:palette.darkpurple, 'underline')
-call s:hi('LineNr',           s:palette.selection,   s:palette.background             )
+call s:hi('IncSearch',        s:palette.white,       s:palette.cursor,     'underline')
+call s:hi('LineNr',           s:palette.selection,  s:palette.background              )
 call s:hi('MatchParen',       s:palette.white,       s:palette.darkpurple             )
 
 call s:hi('Pmenu',            s:palette.fg,          s:palette.cursor                 )
 call s:hi('PmenuSbar',        s:palette.none,        s:palette.selection              )
-call s:hi('PmenuSel',         s:palette.lightgrey,   s:palette.selection              )
+call s:hi('PmenuSel',         s:palette.white,       s:palette.selection              )
 call s:hi('PmenuThumb',       s:palette.none,        s:palette.darkpurple             )
 
 call s:hi('QuickFixLine',     s:palette.fg,          s:palette.cursor                 )
-call s:hi('Search',           s:palette.black,       s:palette.violet                 )
+call s:hi('Search',           s:palette.white,        s:palette.selection,            )
 call s:hi('SignColumn',       s:palette.orange,      s:palette.bg                     )
 call s:hi('SpecialKey',       s:palette.orange,      s:palette.bg                     )
 call s:hi('SpellBad',         s:palette.red,         s:palette.none,       'underline')
@@ -159,15 +154,15 @@ call s:hi('StatusLineTermNC', s:palette.bg,          s:palette.darkpurple, 'reve
 call s:hi('TabLine',          s:palette.bg,          s:palette.grey                   )
 call s:hi('TabLineFill',      s:palette.grey,        s:palette.black                  )
 call s:hi('TabLineSel',       s:palette.lightgrey,   s:palette.background             )
-call s:hi('VertSplit',        s:palette.darkpurple,  s:palette.none                   )
+call s:hi('VertSplit',        s:palette.selection,   s:palette.none                   )
 call s:hi('Visual',           s:palette.none,        s:palette.selection              )
 call s:hi('WarningMsg',       s:palette.orange,      s:palette.background             )
 call s:hi('WildMenu',         s:palette.black,       s:palette.lightgrey              )
 
 " SYNTAX: Predefined syntax groups {{{
-hi! link Comment        SpaceduckComment
 hi! link Boolean        SpaceduckYellow
 hi! link Character      SpaceduckYellow
+hi! link Comment        SpaceduckDarkPurple
 hi! link Conditional    SpaceduckGreen
 hi! link Constant       SpaceduckYellow
 hi! link Debug          SpaceduckLightPurple
@@ -190,11 +185,11 @@ hi! link PreProc        SpaceduckLightPurple
 hi! link Repeat         SpaceduckGreen
 hi! link Special        SpaceduckLightPurple
 hi! link SpecialChar    SpaceduckOrange
+hi! link SpecialComment Comment
 hi! link Statement      SpaceduckGreen
 hi! link StorageClass   SpaceduckLightPurple
 hi! link String         SpaceduckCyan
 hi! link Structure      SpaceduckCyan
-hi! link SpecialComment Comment
 hi! link Tag            SpaceduckLightPurple
 hi! link Type           SpaceduckMagenta
 hi! link Typedef        SpaceduckCyan
@@ -221,119 +216,117 @@ hi! link NonText        EndOfBuffer
 hi! link TermCursor     Cursor
 
 " C / C++ {{{
-hi link cFormat Title
-hi link cCppOutIf1 Normal
-hi link cCppOutIf2 Normal
-hi link cBracket Title
+hi link cFormat         Title
+hi link cCppOutIf1      Normal
+hi link cCppOutIf2      Normal
+hi link cBracket        Title
 " }}}
 
 " Fortran {{{
-hi link fortranType Tag
-hi link fortranStructure Structure
+hi link fortranType         Tag
+hi link fortranStructure    Structure
 hi link fortranStorageClass StorageClass
-hi link fortranUnitHeader Title
+hi link fortranUnitHeader   Title
 " }}}
 
 " Haskell {{{
-hi link haskellType Tag
-hi link haskellIdentifier Label
-hi link haskellKeyword Boolean
-hi link haskellDecl Boolean
+hi link haskellType         Tag
+hi link haskellIdentifier   Label
+hi link haskellKeyword      Boolean
+hi link haskellDecl         Boolean
 " }}}
 
 " Java {{{
-hi link javaClassDecl Structure
-hi link javaTypeDef Keyword
+hi link javaClassDecl       Structure
+hi link javaTypeDef         Keyword
 " }}}
 
 " HTML {{{
-hi link htmlTagName Function
-hi link htmlEndTag Conditional
-hi link htmlArg SpaceduckMagenta
-hi link htmlSpecialTagName Type
-hi! link htmlTag SpaceduckDarkPurple
-hi! link htmlEndTag SpaceduckDarkPurple
-hi! link htmlTitle SpaceduckPurple
-hi! link htmlH1 SpaceduckPurple
+hi link htmlTagName         Function
+hi link htmlEndTag          Conditional
+hi link htmlArg             SpaceduckMagenta
+hi link htmlSpecialTagName  Type
+hi! link htmlTag            SpaceduckDarkPurple
+hi! link htmlEndTag         SpaceduckDarkPurple
 " }}}
 
 " CSS {{{
-hi link cssBraces Normal
-hi! link cssSelectorOp SpaceduckViolet
-hi link cssAtKeyword SpaceduckLightPurple
-hi link cssBoxProp SpaceduckViolet
-hi link cssBackgroundProp SpaceduckMagenta
-hi link cssTextProp SpaceduckMagenta
-hi link cssTagName SpaceduckGreen
-hi link cssPseudoClassId SpaceduckMagenta
-hi link cssClassName SpaceduckViolet
+hi link cssBraces           Normal
+hi! link cssSelectorOp      SpaceduckViolet
+hi link cssAtKeyword        SpaceduckLightPurple
+hi link cssBoxProp          SpaceduckViolet
+hi link cssBackgroundProp   SpaceduckMagenta
+hi link cssTextProp         SpaceduckMagenta
+hi link cssTagName          SpaceduckGreen
+hi link cssPseudoClassId    SpaceduckMagenta
+hi link cssClassName        SpaceduckViolet
 " }}}
 
 " php {{{
-hi link phpFunction Function
-hi link phpKeyword Function
-hi link phpMethod Function
-hi link phpClass SpaceduckYellow
-hi link phpType SpaceduckPurple
-hi link phpIdentifier SpaceduckForeground
-hi link phpVarSelector SpaceduckDarkPurple
-hi link phpParent SpaceduckForeground
-hi link phpSuperglobals SpaceduckMagenta
-hi link Delimiter SpaceduckLightPurple
-hi link phpStringSingle String
-hi link phpStringDouble String
+hi link phpFunction         Function
+hi link phpKeyword          Function
+hi link phpMethod           Function
+hi link phpClass            SpaceduckYellow
+hi link phpType             SpaceduckPurple
+hi link phpIdentifier       SpaceduckForeground
+hi link phpVarSelector      SpaceduckDarkPurple
+hi link phpParent           SpaceduckForeground
+hi link phpSuperglobals     SpaceduckMagenta
+hi link Delimiter           SpaceduckLightPurple
+hi link phpStringSingle     String
+hi link phpStringDouble     String
 " }}}
 
 " JavaScript {{{
-hi link jsStorageClass Title
-hi link jsFunction Function
-hi link jsFuncName Special
-hi link jsOperator Operator
-hi link jsNull Constant
-hi link jsGlobalObjects Constant
-hi link jsFuncCall Function
-hi link jsOperatorKeyword Operator
-hi link jsExceptions Error
-hi link jsObjectProp Tag
-hi link jsTernaryIfOperator Title
+"hi link jsStorageClass Title
+"hi link jsFunction Function
+"hi link jsFuncName Special
+"hi link jsOperator Operator
+"hi link jsNull Constant
+"hi link jsGlobalObjects Constant
+"hi link jsFuncCall Function
+"hi link jsOperatorKeyword Operator
+"hi link jsExceptions Error
+"hi link jsObjectProp Tag
+"hi link jsTernaryIfOperator Title
 "hi! link jsTemplateBraces SpaceduckPurple
-hi link jsTemplateExpression String
-hi! link jsArrowFunction SpaceduckYellow
-hi! link jsFuncArgs SpaceduckMagenta
+"hi link jsTemplateExpression String
+"hi! link jsArrowFunction SpaceduckYellow
+"hi! link jsFuncArgs SpaceduckMagenta
 "hi! link jsFuncParens SpaceduckPurple
-hi! link jsDestructuringBraces SpaceduckDarkPurple
-hi! link jsObjectBraces SpaceduckDarkPurple
-hi! link jsModuleBraces SpaceduckDarkPurpl2
-hi! link jsBrackets SpaceduckDarkPurple
-hi! link jsTemplateExpression SpaceduckMagenta
+"hi! link jsDestructuringBraces SpaceduckDarkPurple
+"hi! link jsObjectBraces SpaceduckDarkPurple
+"hi! link jsModuleBraces SpaceduckDarkPurpl2
+"hi! link jsBrackets SpaceduckDarkPurple
+"hi! link jsTemplateExpression SpaceduckMagenta
 
-hi link jsxTagName HTMLTagName
-hi link jsxClosePunct jsxOpenPunct
-hi link jsxCloseString jsxClosePunct
-hi! link jsxOpenPunct SpaceduckDarkPurple
-hi! link jsxComponentName SpaceduckPurple
-hi! link jsxTag SpaceduckLightPurple
+"hi link jsxTagName HTMLTagName
+"hi link jsxClosePunct jsxOpenPunct
+"hi link jsxCloseString jsxClosePunct
+"hi! link jsxOpenPunct SpaceduckDarkPurple
+"hi! link jsxComponentName SpaceduckPurple
+"hi! link jsxTag SpaceduckLightPurple
 
-hi link jsAsyncKeyword SpaceduckLightPurple
-hi link jsForAwait SpaceduckLightPurple
-hi link jsAsyncKeyword SpaceduckOrange
-hi link jsForAwait SpaceduckOrange
+"hi link jsAsyncKeyword SpaceduckLightPurple
+"hi link jsForAwait SpaceduckLightPurple
+"hi link jsAsyncKeyword SpaceduckOrange
+"hi link jsForAwait SpaceduckOrange
 
-hi link jsClassKeyword SpaceduckPurple
-hi link jsClassDefinition SpaceduckYellow
-hi link jsClassDefinition SpaceduckLightPurple
-hi link jsClassFuncName SpaceduckGreen
-hi link jsObjectProp SpaceduckMagenta
-hi link jsObjectKey SpaceduckViolet
-hi link jsThis SpaceduckYellow
-hi link jsFunction SpaceduckLightPurple
-hi link jsFuncName SpaceduckGreen
+"hi link jsClassKeyword SpaceduckViolet
+"hi link jsClassDefinition SpaceduckYellow
+"hi link jsClassDefinition SpaceduckLightPurple
+"hi link jsClassFuncName SpaceduckGreen
+"hi link jsObjectProp SpaceduckMagenta
+"hi link jsObjectKey SpaceduckViolet
+"hi link jsThis SpaceduckYellow
+"hi link jsFunction SpaceduckLightPurple
+"hi link jsFuncName SpaceduckGreen
 
-hi link jsParensCatch SpaceduckLightPurple
-hi link jsParenCatch SpaceduckMagenta
+"hi link jsParensCatch SpaceduckLightPurple
+"hi link jsParenCatch SpaceduckMagenta
 
-hi link jsonQuote Label
-hi link jsoncBraces SpaceduckDarkPurple
+"hi link jsonQuote Label
+"hi link jsoncBraces SpaceduckDarkPurple
 " }}}
 
 " Others {{{
@@ -463,39 +456,43 @@ hi! link graphqlStructure Define
 hi link yamlKeyValueDelimiter Normal
 hi link yamlBlockMappingKey Function
 " }}}
-"
-" VIM {{{
+
+" VIML {{{
 hi link vimGroupName Normal
 hi! link vimLet SpaceduckPurple2
 hi! link vimVar SpaceduckForeground
 hi link vimScriptDelim SpaceduckMagenta
 " }}}
 
-" Plugins {{{
+" PLUGINS {{{
+
+" Vista
 hi link vistaTag Conditional
 hi link vistaIcon Identifier
 hi link vistaColon Normal
 hi link vistaScope Constant
 hi link vistaKind Conditional
-hi Sneak guifg=#000000 ctermfg=0 guibg=#f2ce00 ctermbg=220 gui=NONE cterm=NONE
+
+" Vim Sneak
+call s:hi('Sneak', s:palette.background, s:palette.yellow)
 
 " TODO: Update this with variables
-hi BufferCurrent guifg=#ecf0c1 ctermfg=251 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferVisible guifg=#535F97 ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferInactive guifg=#535F97 ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferTabpageFill guifg=#0f111b ctermfg=233 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferCurrentIndex guifg=#5ccc96 ctermfg=78 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferVisibleIndex guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferInactiveIndex guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferCurrentMod guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferVisibleMod guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferInactiveMod guifg=#e39400 ctermfg=172 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferCurrentSign guifg=#5ccc96 ctermfg=78 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferVisibleSign guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferInactiveSign guifg=#30365F ctermfg=237 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferCurrentTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferVisibleTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
-hi BufferInactiveTarget guifg=#ce6f8f ctermfg=168 guibg=#0f111b ctermbg=233 gui=NONE cterm=NONE
+hi link BufferCurrent        SpaceduckForeground
+hi link BufferVisible        SpaceduckDarkPurple
+hi link BufferInactive       SpaceduckDarkPurple
+hi link BufferTabpageFill    SpaceduckBackground
+hi link BufferCurrentIndex   SpaceduckGreen
+hi link BufferVisibleIndex   SpaceduckSelection
+hi link BufferInactiveIndex  SpaceduckSelection
+hi link BufferCurrentMod     SpaceduckOrange
+hi link BufferVisibleMod     SpaceduckOrange
+hi link BufferInactiveMod    SpaceduckOrange
+hi link BufferCurrentSign    SpaceduckGreen
+hi link BufferVisibleSign    SpaceduckSelection
+hi link BufferInactiveSign   SpaceduckSelection
+hi link BufferCurrentTarget  SpaceduckMagenta
+hi link BufferVisibleTarget  SpaceduckMagenta
+hi link BufferInactiveTarget SpaceduckMagenta
 
 " NERDTree:
 hi! link NERDTreeFlags SpaceduckCyan
@@ -503,41 +500,78 @@ hi! link FernRootText SpaceduckPurple
 
 " COC:
 call s:hi('CocHighlightText', s:palette.none, s:palette.cursor)
-hi! link CocErrorSign SpaceduckRed
-hi! link CocInfoSign SpaceduckYellow
-hi! link CocWarningSign SpaceduckOrange
+hi! link CocErrorSign       SpaceduckRed
+hi! link CocInfoSign        SpaceduckYellow
+hi! link CocWarningSign     SpaceduckOrange
+hi! link CocErrorHighlight  SpaceduckRed
+
+" COC Explorer TODO: Need to test
+hi link CocExplorerIndentLine         SpaceduckCursor
+hi link CocExplorerBufferRoot         SpaceduckCyan
+hi link CocExplorerFileRoot           SpaceduckCyan
+hi link CocExplorerBufferFullPath     SpaceduckDarkPurple
+hi link CocExplorerFileFullPath       SpaceduckDarkPurple
+hi link CocExplorerBufferReadonly     SpaceduckMagenta
+hi link CocExplorerBufferModified     SpaceduckMagenta
+hi link CocExplorerBufferNameVisible  SpaceduckGreen
+hi link CocExplorerFileReadonly       SpaceduckMagenta
+hi link CocExplorerFileModified       SpaceduckMagenta
+hi link CocExplorerFileHidden         SpaceduckDarkPurple
+hi link CocExplorerHelpLine           SpaceduckMagenta
 
 " TreeSitter:
-"hi SDComment guifg=#5F6799
-hi SDYellow guifg=#fccc5d
-hi SDPink guifg=#c586c0
-hi SDStolen guifg=#936ad9
-hi SDTeal guifg=#1abc9c
-hi SDLight guifg=#9cdcfe
-hi SDComment guifg=#677AE6
-hi SDComment2 guifg=#455199
-hi SDRed guifg=#F25244
 
-hi link TSKeyword SpaceduckOrange
-hi link TSProperty SpaceduckMagenta
-hi link TSConstructor SpaceduckPurple
-hi link TSParameter SpaceduckForeground
-hi link TSTypeBuiltIn SpaceduckYellow
-hi link CocErrorHighlight SpaceduckRed
-hi link TSComment SpaceduckDarkPurple
-hi link TSTag SpaceduckPurple
-hi link TSType SpaceduckMagenta
-hi link TSPunctBracket SpaceduckDarkPurple
-hi link TSPunctDelimiter SpaceduckForeground
-hi link TSPunctSpecial SpaceduckDarkPurple
-hi link TSTagDelimiter SpaceduckDarkPurple
-hi link TSConstBuiltin SpaceduckYellow
-hi link TSVariableBuiltin SpaceduckYellow
-hi link TSString SpaceduckCyan
-hi link TSBoolean SpaceduckYellow
-hi link TSConstant SpaceduckMagenta
-hi link TSNone SpaceduckForeground
-hi link TSTitle SpaceduckForeground
+" TODO: UNTESTED Treesitter
+hi link TSAnnotation         SpaceduckMagenta
+hi link TSAttribute          SpaceduckMagenta
+hi link TSBoolean            SpaceduckYellow
+hi link TSCharacter          SpaceduckYellow
+hi link TSComment            SpaceduckDarkPurple
+hi link TSConditional        SpaceduckGreen
+hi link TSConstBuiltin       SpaceduckYellow
+hi link TSConstMacro         SpaceduckPurple
+hi link TSConstant           SpaceduckMagenta
+hi link TSConstructor        SpaceduckPurple
+hi link TSEmphasis           SpaceduckForeground
+hi link TSError              SpaceduckRed
+hi link TSException          SpaceduckOrange
+hi link TSField              SpaceduckOrange
+hi link TSFloat              SpaceduckYellow
+hi link TSFuncBuiltin        SpaceduckGreen
+hi link TSFuncMacro          SpaceduckPurple
+hi link TSFunction           SpaceduckGreen
+hi link TSInclude            SpaceduckLightPurple
+hi link TSKeyword            SpaceduckOrange
+hi link TSKeywordOperator    SpaceduckForeground
+hi link TSLabel              SpaceduckOrange
+hi link TSLiteral            SpaceduckForeground
+hi link TSMethod             SpaceduckGreen
+hi link TSNamespace          SpaceduckPurple
+hi link TSNone               SpaceduckForeground
+hi link TSNumber             SpaceduckForeground
+hi link TSOperator           SpaceduckForeground
+hi link TSParameter          SpaceduckForeground
+hi link TSParameter          SpaceduckForeground
+hi link TSParameterReference SpaceduckForeground
+hi link TSProperty           SpaceduckMagenta
+hi link TSPunctBracket       SpaceduckDarkPurple
+hi link TSPunctDelimiter     SpaceduckForeground
+hi link TSPunctSpecial       SpaceduckDarkPurple
+hi link TSRepeat             SpaceduckGreen
+hi link TSString             SpaceduckCyan
+hi link TSStringEscape       SpaceduckCyan
+hi link TSStringRegex        SpaceduckOrange
+hi link TSStrong             SpaceduckForeground
+hi link TSStructure          SpaceduckPurple
+hi link TSTag                SpaceduckPurple
+hi link TSTagDelimiter       SpaceduckDarkPurple
+hi link TSText               SpaceduckForeground
+hi link TSType               SpaceduckMagenta
+hi link TSTypeBuiltIn        SpaceduckYellow
+hi link TSURI                SpaceduckForeground
+hi link TSUnderline          SpaceduckForeground
+hi link TSVariable           SpaceduckLightPurple
+hi link TSVariableBuiltin    SpaceduckPurple
 
 " }}}
 

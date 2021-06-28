@@ -9,7 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for user config for bold and italic text.
 - Full TreeSitter support.
 - Lua version of color scheme for neovim.
-- Better diff view colors.
+- Better vimdiff colors.
+- Popular plugin support:
+    - Vimwiki
+    - Startify
+    - Whichkey
+    - Easymotion
+    - Galaxyline
 
 
 ## [0.1.0, Unreleased] - 2020-06-TBD
@@ -18,9 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - This CHANGELOG file to hopefully serve as an evolving example of a
   standardized open source project CHANGELOG.
-- New organization: [Spaceduck Theme](https://github.com/spaceduck-theme)
+- New organization created: [Spaceduck Theme](https://github.com/spaceduck-theme)
     to track all ports.
-- Hot new violet color: #5c6dcc
+- Hot new violet color: #5c65cc
 
 ### Changed
 - Changed color names for more semantic consistency.
@@ -33,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Purple:     #7a5ccc -> #946cd9
   - Cyan:       #00a3cc -> #59C2FF
   - Magenta:    #ce6f8f -> #cc7893
-  - DarkPurple: #686f9a -> #535f97
+  - DarkPurple: #686f9a -> #5966a1
   - Selection:  #1b1c36 -> #30365F
 
 
@@ -42,6 +48,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ### Fixed
-- Brighter comment color. Yes you can see actually see them now. #30365F -> #535f97
+- Brighter comment color. Contrast ratio: of 3.43:1 still not full AA compliant but it's brighter. #30365F -> #5966a1
 
 <!--[Unreleased]: https://github.com/pineapplegiant/spaceduck/compare/v1.0.0...HEAD-->

@@ -8,7 +8,7 @@ local colors = {
   cyan        = '#59c2ff',
   purple      = '#936ad9',
   yellow      = '#f2e15c',
-  darkpurple  = '#535f97',
+  darkpurple  = '#5966a1',
   selection   = '#30365F',
   lightgrey   = '#c1c3cc'
 }
