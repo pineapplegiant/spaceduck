@@ -13,7 +13,6 @@
 " Version: 0.1.0
 " License: MIT
 
-=======
 "TODO:  0.1 release
 " Clean up syntax groups locations
 " Fix readme
@@ -54,6 +53,7 @@ if !exists('g:spaceduck_colorterm')
 endif
 
 "}}}2
+
 " Script Helpers: {{{2
 let s:attrs = {
       \ 'bold': g:spaceduck_bold == 1 ? 'bold' : 0,
@@ -164,10 +164,9 @@ if &background == 'dark'
   call s:h('SpaceduckOrangeBold',      s:palette.orange,      s:palette.none, [s:attrs.bold])
   call s:h('SpaceduckGreenBold',       s:palette.green,       s:palette.none, [s:attrs.bold])
   call s:h('SpaceduckYellowBold',      s:palette.yellow,      s:palette.none, [s:attrs.bold])
-  call s:h('SpaceduckPurpleBold',      s:palette.lavender,    s:palette.none, [s:attrs.bold])
+  call s:h('SpaceduckPurpleBold',      s:palette.purple,    s:palette.none, [s:attrs.bold])
   call s:h('SpaceduckDarkPurpleBold',  s:palette.darkpurple,  s:palette.none, [s:attrs.bold])
-  call s:h('SpaceduckPurple2Bold',     s:palette.purple2,     s:palette.none, [s:attrs.bold])
-  call s:h('SpaceduckDarkPurple2Bold', s:palette.darkpurple2, s:palette.none, [s:attrs.bold])
+  call s:h('SpaceduckLightPurpleBold',     s:palette.lightpurple,     s:palette.none, [s:attrs.bold])
   call s:h('SpaceduckCyanBold',        s:palette.cyan,        s:palette.none, [s:attrs.bold])
   call s:h('SpaceduckMagentaBold',     s:palette.magenta,     s:palette.none, [s:attrs.bold])
   
@@ -175,19 +174,17 @@ if &background == 'dark'
   call s:h('SpaceduckOrangeItalic',      s:palette.orange,      s:palette.none, [s:attrs.italic])
   call s:h('SpaceduckGreenItalic',       s:palette.green,       s:palette.none, [s:attrs.italic])
   call s:h('SpaceduckYellowItalic',      s:palette.yellow,      s:palette.none, [s:attrs.italic])
-  call s:h('SpaceduckPurpleItalic',      s:palette.lavender,    s:palette.none, [s:attrs.italic])
+  call s:h('SpaceduckPurpleItalic',      s:palette.purple,    s:palette.none, [s:attrs.italic])
   call s:h('SpaceduckDarkPurpleItalic',  s:palette.darkpurple,  s:palette.none, [s:attrs.italic])
-  call s:h('SpaceduckPurple2Italic',     s:palette.purple2,     s:palette.none, [s:attrs.italic])
-  call s:h('SpaceduckDarkPurple2Italic', s:palette.darkpurple2, s:palette.none, [s:attrs.italic])
+  call s:h('SpaceduckLightPurpleItalic',     s:palette.lightpurple,     s:palette.none, [s:attrs.italic])
   call s:h('SpaceduckCyanItalic',        s:palette.cyan,        s:palette.none, [s:attrs.italic])
   call s:h('SpaceduckMagentaItalic',     s:palette.magenta,     s:palette.none, [s:attrs.italic])
-  call s:h('SpaceduckCommentItalic', s:palette.comment, s:palette.none, [s:attrs.italic])
 
   call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
   call s:hi('SpaceduckBackground',  s:palette.background,  s:palette.none)
   call s:hi('SpaceduckCursor',      s:palette.cursor,      s:palette.none)
   call s:hi('SpaceduckSelection',   s:palette.selection,   s:palette.none)
-  call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
+  " call s:hi('SpaceduckComment',     s:palette.comment,     s:palette.none)
 
   let s:palette.bg = s:palette.background
   let s:palette.fg = s:palette.foreground
