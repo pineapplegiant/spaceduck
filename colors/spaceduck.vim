@@ -27,18 +27,24 @@ let g:colors_name="spaceduck"
 " Fix readme
 " Testing...
 
+      " \ 'yellow':       ['#f2e661', '221'],
 " PALETTE: {{{
 let s:palette = {
       \ 'red':          ['#f54f40', '203'],
       \ 'orange':       ['#f2b45c', '215'],
+      \ 'orange2':      ['#e78a4e', '215'],
       \ 'green':        ['#5ccc96', '78'],
-      \ 'yellow':       ['#f2e15c', '221'],
+      \ 'green2':       ["#00C9A7", '144'],
+      \ 'yellow':       ['#ffdc5e', '221'],
       \ 'lightpurple':  ['#b3a1e6', '146'],
       \ 'purple':       ['#936ad9', '98'],
       \ 'darkpurple':   ['#5966a1', '61'],
       \ 'cyan':         ['#59c2ff', '75'],
+      \ 'lightblue':    ['#30ccd0', '75'],
       \ 'magenta':      ['#cc7893', '174'],
       \ 'violet':       ['#5c67e6', '62'],
+      \
+      \ 'pink':         ['#D4A5D0', '255'],
       \
       \ 'background':   ['#0f111b', '233'],
       \ 'foreground':   ['#ecf0c1', '255'],
@@ -46,7 +52,7 @@ let s:palette = {
       \ 'cursor':       ['#1b1c36', '234'],
       \
       \ 'grey':         ['#818596', '102'],
-      \ 'lightgrey':    ['#c1c3cc', '102'],
+      \ 'lightgrey':    ['#6d7391', '102'],
       \ 'white':        ['#edeef2', '255'],
       \ 'black':        ['#000000', '0'],
       \
@@ -75,16 +81,23 @@ endfunction
 if &background == 'dark'
   call s:hi('SpaceduckRed',         s:palette.red,         s:palette.none)
   call s:hi('SpaceduckOrange',      s:palette.orange,      s:palette.none)
+  call s:hi('SpaceduckOrange2',      s:palette.orange2,      s:palette.none)
   call s:hi('SpaceduckGreen',       s:palette.green,       s:palette.none)
+  call s:hi('SpaceduckGreen2',       s:palette.green2,       s:palette.none)
   call s:hi('SpaceduckYellow',      s:palette.yellow,      s:palette.none)
   call s:hi('SpaceduckLightPurple', s:palette.lightpurple, s:palette.none)
   call s:hi('SpaceduckPurple',      s:palette.purple,      s:palette.none)
   call s:hi('SpaceduckDarkPurple',  s:palette.darkpurple,  s:palette.none)
   call s:hi('SpaceduckCyan',        s:palette.cyan,        s:palette.none)
   call s:hi('SpaceduckMagenta',     s:palette.magenta,     s:palette.none)
+
+  call s:hi('SpaceduckMagentaBold',     s:palette.magenta,     s:palette.none, 'bold')
   call s:hi('SpaceduckViolet',      s:palette.violet,      s:palette.none)
   call s:hi('SpaceduckGrey',        s:palette.grey,        s:palette.none)
   call s:hi('SpaceduckLightGrey',   s:palette.lightgrey,   s:palette.none)
+
+  call s:hi('SpaceduckPink',   s:palette.pink,   s:palette.none)
+  call s:hi('SpaceduckLightBlue',   s:palette.lightblue,   s:palette.none)
 
   call s:hi('SpaceduckForeground',  s:palette.foreground,  s:palette.none)
   call s:hi('SpaceduckBackground',  s:palette.background,  s:palette.none)
@@ -526,56 +539,62 @@ hi link CocExplorerHelpLine           SpaceduckMagenta
 " TreeSitter:
 
 " TODO: UNTESTED Treesitter
-hi link TSAnnotation         SpaceduckMagenta
-hi link TSAttribute          SpaceduckMagenta
+hi link TSAnnotation         SpaceduckForeground
+hi link TSAttribute          SpaceduckForeground
 hi link TSBoolean            SpaceduckYellow
-hi link TSCharacter          SpaceduckYellow
+hi link TSCharacter          SpaceduckForeground
 hi link TSComment            SpaceduckDarkPurple
 hi link TSConditional        SpaceduckGreen
-hi link TSConstBuiltin       SpaceduckYellow
-hi link TSConstMacro         SpaceduckPurple
-hi link TSConstant           SpaceduckMagenta
-hi link TSConstructor        SpaceduckPurple
+hi link TSConstBuiltin       SpaceduckCyan
+hi link TSConstMacro         SpaceduckForeground
+hi link TSConstant           SpaceduckForeground
+
+hi link TSConstructor        SpaceduckPink
+
 hi link TSEmphasis           SpaceduckForeground
-hi link TSError              SpaceduckRed
-hi link TSException          SpaceduckOrange
-hi link TSField              SpaceduckOrange
-hi link TSFloat              SpaceduckYellow
+hi link TSError              SpaceduckForeground
+hi link TSException          SpaceduckMagentaBold
+hi link TSField              SpaceduckForeground
+hi link TSFloat              SpaceduckForeground
 hi link TSFuncBuiltin        SpaceduckGreen
-hi link TSFuncMacro          SpaceduckPurple
+hi link TSFuncMacro          SpaceduckForeground
+
 hi link TSFunction           SpaceduckGreen
-hi link TSInclude            SpaceduckLightPurple
-hi link TSKeyword            SpaceduckOrange
-hi link TSKeywordOperator    SpaceduckForeground
-hi link TSLabel              SpaceduckOrange
+hi link TSMethod             TSFunction
+
+hi link TSInclude            SpaceduckMagenta
+
+hi link TSKeyword            SpaceduckMagentaBold
+hi link TSKeywordOperator    SpaceduckMagenta
+
+hi link TSLabel              SpaceduckForeground
 hi link TSLiteral            SpaceduckForeground
-hi link TSMethod             SpaceduckGreen
-hi link TSNamespace          SpaceduckPurple
+hi link TSNamespace          SpaceduckForeground
 hi link TSNone               SpaceduckForeground
-hi link TSNumber             SpaceduckForeground
-hi link TSOperator           SpaceduckForeground
+hi link TSNumber             SpaceduckYellow
+hi link TSOperator           SpaceduckOrange
 hi link TSParameter          SpaceduckForeground
 hi link TSParameter          SpaceduckForeground
 hi link TSParameterReference SpaceduckForeground
-hi link TSProperty           SpaceduckMagenta
-hi link TSPunctBracket       SpaceduckDarkPurple
+hi link TSProperty           SpaceduckLightPurple
+hi link TSPunctBracket       SpaceduckLightGrey
 hi link TSPunctDelimiter     SpaceduckForeground
-hi link TSPunctSpecial       SpaceduckDarkPurple
-hi link TSRepeat             SpaceduckGreen
+hi link TSPunctSpecial       SpaceduckForeground
+hi link TSRepeat             SpaceduckForeground
 hi link TSString             SpaceduckCyan
-hi link TSStringEscape       SpaceduckCyan
-hi link TSStringRegex        SpaceduckOrange
+hi link TSStringEscape       SpaceduckGreen
+hi link TSStringRegex        SpaceduckForeground
 hi link TSStrong             SpaceduckForeground
-hi link TSStructure          SpaceduckPurple
-hi link TSTag                SpaceduckPurple
+hi link TSStructure          SpaceduckForeground
+hi link TSTag                SpaceduckPink
 hi link TSTagDelimiter       SpaceduckDarkPurple
 hi link TSText               SpaceduckForeground
-hi link TSType               SpaceduckMagenta
-hi link TSTypeBuiltIn        SpaceduckYellow
+hi link TSType               SpaceduckYellow
+hi link TSTypeBuiltIn        SpaceduckForeground
 hi link TSURI                SpaceduckForeground
 hi link TSUnderline          SpaceduckForeground
-hi link TSVariable           SpaceduckLightPurple
-hi link TSVariableBuiltin    SpaceduckPurple
+hi link TSVariable           SpaceduckForeground
+hi link TSVariableBuiltin    SpaceduckLightPurple
 
 " }}}
 
