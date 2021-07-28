@@ -714,7 +714,7 @@ else
       \ s:palette['cyan'][0],
       \ s:palette['magenta'][0],
       \ s:palette['purple'][0],
-      \ s:palette['darkpurple'],
+      \ s:palette['darkpurple'][0],
       \ s:palette['darkpurple'][0],
       \ s:palette['red'][0],
       \ s:palette['green'][0],
