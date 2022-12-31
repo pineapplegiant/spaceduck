@@ -6,13 +6,7 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/pineapplegiant/spaceduck)](https://img.shields.io/github/languages/code-size/pineapplegiant/spaceduck)
 [![Made with Neovim :)](https://img.shields.io/badge/madewith-nvim%E2%9D%A4%EF%B8%8F-red)](https://img.shields.io/badge/madewith-nvim%E2%9D%A4%EF%B8%8F-red)
 
-<center>
-  <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/banner.png?raw=true" alt="Spaceduck Logo of duck in an astronaut uniform holding computer: credit to Lexi @kalrita_lw">
-</center>
-
-<center>
-  <img  src="https://github.com/pineapplegiant/spaceduck-terminal/blob/main/img/screenshot.png?raw=true" alt="Screenshot of terminal with vim spaceduck theme installed">
-</center>
+# This was forked from https://github.com/pineapplegiant/spaceduck for some custom colors. 
 
 # Inspiration 💭
 
