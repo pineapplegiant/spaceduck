@@ -6,6 +6,8 @@
 " License: MIT
 " Last Change: 2021/03/16 22:28
 " ===============================================================
+" Edited by Matthew Petricone 2022/12/29 20:37 - 2 Colors changed
+" ===============================================================
 
 set background=dark
 hi clear
