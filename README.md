@@ -74,17 +74,13 @@ _Note: if something looks off please submit an issue with a screenshot_
 
 # Install 💾
 
-If using Vim/Neovim I recommend installing the [vim-polyglot](https://github.com/sheerun/vim-polyglot) plugin for improved syntax highlighting:
-
-`Plug 'sheerun/vim-polyglot'`
-
 # Vim and Neovim
 
 This repo hosts the Vim/Neovim color scheme.
 
 Install the plugin with whatever plugin manager you use:
 
-`Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }`
+`Plug 'mpetricone/spacedork', { 'branch': 'main' }`
 
 And add this to your vimrc/init.vim configuration file:
 
