@@ -29,9 +29,9 @@ let s:visual2 = [ "#30365F", "#686f9a", 237, 60 ]
 let s:visual3 = [ "#30365F", "#686f9a", 237, 60 ]
 let g:airline#themes#spaceduck#palette.visual = airline#themes#generate_color_map(s:visual1, s:visual2, s:visual3)
 
-let s:inactive1 = [ "#1b1c36", "#16172d", 234, 234 ]
-let s:inactive2 = [ "#1b1c36", "#16172d", 234, 234 ]
-let s:inactive3 = [ "#1b1c36", "#16172d", 234, 234 ]
+let s:inactive1 = [ "#686f9a", "#16172d", 60, 234 ]
+let s:inactive2 = [ "#686f9a", "#16172d", 60, 234 ]
+let s:inactive3 = [ "#686f9a", "#16172d", 60, 234 ]
 let g:airline#themes#spaceduck#palette.inactive = airline#themes#generate_color_map(s:inactive1, s:inactive2, s:inactive3)
 
 if !get(g:, 'loaded_ctrlp', 0)
