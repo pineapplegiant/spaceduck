@@ -211,6 +211,10 @@ endif
 " }}}
 
 " Syntax Highlighting {{{
+"
+let s:palette.fg = s:palette.foreground
+let s:palette.bg = s:palette.background
+
 call s:hi('Normal',           s:palette.fg,          s:palette.bg                     )
 call s:hi('ColorColumn',      s:palette.none,        s:palette.cursor                 )
 call s:hi('CursorLine',       s:palette.none,        s:palette.cursor                 )
