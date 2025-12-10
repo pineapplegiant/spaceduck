@@ -287,7 +287,7 @@ hi! link Special        SpaceduckLightPurple
 hi! link SpecialChar    SpaceduckOrange
 hi! link SpecialComment Comment
 hi! link Statement      SpaceduckGreen
-hi! link StorageClass   SpaceduckLightPurple
+hi! link StorageClass   SpaceduckPink
 hi! link String         SpaceduckCyan
 hi! link Structure      SpaceduckCyan
 hi! link Tag            SpaceduckLightPurple
@@ -636,6 +636,21 @@ hi! link LspDiagSignInfoText        SpaceduckYellow
 hi! link LspDiagInlineHint          SpaceduckYellow
 hi! link LspDiagVirtualTextHint     SpaceduckYellow
 hi! link LspDiagSignHintText        SpaceduckYellow
+
+hi! link LspSemanticClass           SpaceDuckLightPurple
+hi! link LspSemanticEnumMember      NONE
+hi! link LspSemanticFunction        SpaceDuckGreen
+hi! link LspSemanticMacro           SpaceDuckPurple
+hi! link LspSemanticMethod          SpaceDuckGreen
+hi! link LspSemanticModifier        NONE
+hi! link LspSemanticNamespace       NONE
+hi! link LspSemanticNumber          SpaceDuckYellow
+hi! link LspSemanticOperator        NONE
+hi! link LspSemanticParameter       NONE
+hi! link LspSemanticProperty        NONE
+hi! link LspSemanticStruct          SpaceDuckCyan
+hi! link LspSemanticType            SpaceDuckMagenta
+hi! link LspSemanticVariable        NONE
 
 " TreeSitter:
 
